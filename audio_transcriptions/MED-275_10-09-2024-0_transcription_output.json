@@ -1,0 +1,1280 @@
+[
+    {
+        "start": 7.3599997,
+        "end": 24.505001,
+        "num_words": 59,
+        "speakers": [
+            0
+        ],
+        "text": "Wanted to give you guys updates. I know some people were asking about how I'm doing with chemo, and so we're letting my last cycle of chemo on Thursday. Feeling okay, a little nauseous, avoiding the Chipotle today because of that, had a small settlement earlier. Uh, but, um, it's kind of interesting. Every cycle is a little different."
+    },
+    {
+        "start": 24.805,
+        "end": 42.615,
+        "num_words": 55,
+        "speakers": [
+            0
+        ],
+        "text": "Every cycle you have a little different symptoms and, uh, but it's not bad. I haven't had to take too much, uh, nausea medication. And one thing I learned is Sofran is very constipated. So I've prescribed Sofran many, many times and it's constipated. So this is one thing I my patients never complained about."
+    },
+    {
+        "start": 42.775,
+        "end": 47.915,
+        "num_words": 18,
+        "speakers": [
+            0
+        ],
+        "text": "And I'm like, now I know. And they're like, oh, yeah. All the unclogged. Oh, yeah. Supran superfast."
+    },
+    {
+        "start": 48.855003,
+        "end": 81.205,
+        "num_words": 74,
+        "speakers": [
+            0
+        ],
+        "text": "And so, like, you know, it's kind of this discouragement to take sofran to get the result later. But, uh, wanted to start with seeing if anybody had any questions before we get started. So I'm gonna do a little, just a little whiteboard talk on 5 minutes on kind of my experience with healthcare access. So do you guys remember, you know, I had about 5 to 6 weeks of a cough. Right?"
+    },
+    {
+        "start": 82.64,
+        "end": 123.71,
+        "num_words": 74,
+        "speakers": [
+            0
+        ],
+        "text": "Then I have a chest x-ray and I have a CT scan and I have a bronch and then I have my diagnosis right so this was about so this is let's call this A, B imaging, C and then diagnosis. Okay, so this took, I don't know if you guys remember how long this took. So it took, it took about a week, 7 days. Right. So I found a study, of course."
+    },
+    {
+        "start": 124.775,
+        "end": 156.815,
+        "num_words": 77,
+        "speakers": [
+            0
+        ],
+        "text": "So if we start from 1st presentation A to imaging, A, what was the time there? So that was about, for me, that was 5 to 6 weeks. So then there's a study 2022, they use natural language processing and look at the electronic medical record, look to see when the symptoms were mentioned, when the vaccination. So any guesses as to how long that took for this population several 1,000 in University 1? Thank you, Gess."
+    },
+    {
+        "start": 157.195,
+        "end": 166.08,
+        "num_words": 22,
+        "speakers": [
+            0
+        ],
+        "text": "This took me about 6 weeks. Okay. My guess is how long that would take to the population? 6 months. 4 months."
+    },
+    {
+        "start": 166.08,
+        "end": 169.76,
+        "num_words": 9,
+        "speakers": [
+            0
+        ],
+        "text": "Months. 4 months. Okay. Pretty not bad. Not bad."
+    },
+    {
+        "start": 169.76,
+        "end": 183.405,
+        "num_words": 20,
+        "speakers": [
+            0
+        ],
+        "text": "So the the median was 2 89 days. 2 189 days. Right? So room for improvement. Room for improvement there."
+    },
+    {
+        "start": 183.94499,
+        "end": 194.20499,
+        "num_words": 15,
+        "speakers": [
+            0
+        ],
+        "text": "Okay. So from, uh, from x-ray diagnosis, so that took me 7 days. Yeah, Ross."
+    },
+    {
+        "start": 194.9,
+        "end": 201.78,
+        "num_words": 26,
+        "speakers": [
+            1
+        ],
+        "text": "What is the, is there a cause for that 2898? Is that like, like who is delaying that? Do we know if it's just all? Yeah."
+    },
+    {
+        "start": 201.78,
+        "end": 213.315,
+        "num_words": 51,
+        "speakers": [
+            0
+        ],
+        "text": "So that's a good question. And that's kind of, so I uploaded 3 papers to the canvas. If you can't find them, let me know. I've got a later one with today's date. And we don't know, there are a lot of barriers and I'll get to that in a minute."
+    },
+    {
+        "start": 213.315,
+        "end": 240.285,
+        "num_words": 65,
+        "speakers": [
+            0
+        ],
+        "text": "There are a lot of potential barriers for different people. In this particular study, they didn't really examine that per se about what was the delay in hospitals. Um, so yeah, so from B to D, so from imaging, so they sort of lump any imaging x-ray and CT together, to diagnosis. Um, what was that? Well, how many days do you think that took?"
+    },
+    {
+        "start": 241.065,
+        "end": 243.405,
+        "num_words": 3,
+        "speakers": [
+            1
+        ],
+        "text": "Any guesses? 30"
+    },
+    {
+        "start": 243.945,
+        "end": 271.475,
+        "num_words": 32,
+        "speakers": [
+            0
+        ],
+        "text": "days? Not bad. So it's about 43 days. So this is 43 days. This is 6 times 7, say 42 days for me so 2.89 and then for me that was 42."
+    },
+    {
+        "start": 273.72,
+        "end": 300.555,
+        "num_words": 79,
+        "speakers": [
+            0
+        ],
+        "text": "Okay. So, and then there's another weird vector that they did, which was the numbers seem not to add up. But I think this is because they had another point where it was referral or visit with a specialist. And that time to diagnosis was 72 days. So it's a little interesting the imaging sort of the time from imaging to diagnosis would order the time of seeing a specialist because frequently the specialist won't order imaging right away."
+    },
+    {
+        "start": 300.97,
+        "end": 324.905,
+        "num_words": 77,
+        "speakers": [
+            0
+        ],
+        "text": "So that was 72 days. But in my experience, in my case, I didn't put that on there because I sort of saw the specialist as I went along and sort of had to be involved there during there. So the right 42 versus 289, 7 days versus 43, right? And like the ideal case, right? I mean, other than maybe the 6 weeks, you could argue that 5 to 6 weeks, you could have gotten short."
+    },
+    {
+        "start": 325.045,
+        "end": 343.9,
+        "num_words": 43,
+        "speakers": [
+            0
+        ],
+        "text": "Could have been shortened in my case. So why did I have such a short time? What are the one of the my characteristics that allowed me to have such, you know, expedited care? What do you think? What was in my favor?"
+    },
+    {
+        "start": 344.205,
+        "end": 353.005,
+        "num_words": 23,
+        "speakers": [
+            0
+        ],
+        "text": "Sort of the opposite of variable? What was, what was it empowering me to get this fast care? So just name some things."
+    },
+    {
+        "start": 353.005,
+        "end": 354.225,
+        "num_words": 2,
+        "speakers": [
+            1
+        ],
+        "text": "Connections, possessions."
+    },
+    {
+        "start": 354.285,
+        "end": 375.965,
+        "num_words": 59,
+        "speakers": [
+            0
+        ],
+        "text": "So connections, perfect. So connections, you know, so, so, and, you know, network and you can even say, you know, so, so like social support, right? Social support, right? That's all part of that, right? People always call as you guys get your MDs and go and do your training, you know, they're going to be calling you, right?"
+    },
+    {
+        "start": 375.965,
+        "end": 384.04498,
+        "num_words": 31,
+        "speakers": [
+            0
+        ],
+        "text": "Even if you're a dermatologist, they'll be like, my dad got hospitalized for a heart attack. Can you help me? Right? You know, right? It doesn't matter what your specialty is."
+    },
+    {
+        "start": 384.04498,
+        "end": 389.58002,
+        "num_words": 21,
+        "speakers": [
+            0
+        ],
+        "text": "They're going to call you and ask you. So that is absolutely true. What else? What else is in my favor?"
+    },
+    {
+        "start": 389.96002,
+        "end": 392.22,
+        "num_words": 7,
+        "speakers": [
+            2
+        ],
+        "text": "Medical knowledge, you know, one of all."
+    },
+    {
+        "start": 392.44,
+        "end": 403.945,
+        "num_words": 28,
+        "speakers": [
+            0
+        ],
+        "text": "Perfect. So medical knowledge. So we call that also health literacy. So health literacy, health literacy is kind of an awkward phrase, but that's what I use. Absolutely."
+    },
+    {
+        "start": 403.945,
+        "end": 409.725,
+        "num_words": 18,
+        "speakers": [
+            0
+        ],
+        "text": "I have a second to an oncologist. I have pretty good health literacy in brains. Okay. What else?"
+    },
+    {
+        "start": 409.865,
+        "end": 412.925,
+        "num_words": 10,
+        "speakers": [
+            2
+        ],
+        "text": "Yeah. Absolutely. To a hospital that has type of resources."
+    },
+    {
+        "start": 413.145,
+        "end": 420.02,
+        "num_words": 21,
+        "speakers": [
+            0
+        ],
+        "text": "Fantastic. Fantastic. So location, right? I don't live in rural, I grew up in Tennessee. I don't live in rural Tennessee."
+    },
+    {
+        "start": 420.4,
+        "end": 430.18503,
+        "num_words": 18,
+        "speakers": [
+            0
+        ],
+        "text": "I live in a metropolitan area with access to an academic center. Perfect. What else? Probably insurance. Insurance."
+    },
+    {
+        "start": 430.18503,
+        "end": 433.225,
+        "num_words": 13,
+        "speakers": [
+            0
+        ],
+        "text": "Absolutely. I gotta pay for it. Right? I'm not gonna say, hey, I'm"
+    },
+    {
+        "start": 433.225,
+        "end": 434.345,
+        "num_words": 7,
+        "speakers": [
+            3
+        ],
+        "text": "not gonna go because I don't know"
+    },
+    {
+        "start": 434.345,
+        "end": 453.48,
+        "num_words": 46,
+        "speakers": [
+            0
+        ],
+        "text": "how I'm gonna pay for this. So insurance and then also associated with that kind of financial resources. So even if with these things, just having insurance doesn't guarantee necessarily everything's gonna get paid for. You have co pays, things may not get paid for. Doctor."
+    },
+    {
+        "start": 453.48,
+        "end": 465.625,
+        "num_words": 37,
+        "speakers": [
+            0
+        ],
+        "text": "Skoll is very nice. There was a weird thing going on with my CT scan and troubleshooted. Some nice troubleshooting for the for with me for that. So thank you for that. Um, so it's complicated, right?"
+    },
+    {
+        "start": 465.625,
+        "end": 474.38998,
+        "num_words": 30,
+        "speakers": [
+            0
+        ],
+        "text": "This is super complicated in the United States. Insurance. So you not only need insurance, you need some sort of financial resources for things that aren't covered by insurance scan."
+    },
+    {
+        "start": 474.77,
+        "end": 477.43,
+        "num_words": 10,
+        "speakers": [
+            2
+        ],
+        "text": "The time to like not go to your work and,"
+    },
+    {
+        "start": 477.49,
+        "end": 477.97,
+        "num_words": 2,
+        "speakers": [
+            1
+        ],
+        "text": "you know."
+    },
+    {
+        "start": 477.97,
+        "end": 486.405,
+        "num_words": 31,
+        "speakers": [
+            0
+        ],
+        "text": "So flexibility. So so that's sort of part of that. So so I sort of I have flexible time, right? I could take time off. I could nobody really cared, right?"
+    },
+    {
+        "start": 486.405,
+        "end": 496.185,
+        "num_words": 42,
+        "speakers": [
+            0
+        ],
+        "text": "And I could say, Hey, I gotta go to my appointment. Nobody's gonna ask me for that. I'm not gonna lose my job. Because of that. It's funny, I ran into Lloyd Minor on the way up and so kind and nice."
+    },
+    {
+        "start": 496.56497,
+        "end": 505.8,
+        "num_words": 21,
+        "speakers": [
+            0
+        ],
+        "text": "And yeah, you know, Stanford is not that way, but everybody's very supportive. What else? There's lots more things here. Yeah."
+    },
+    {
+        "start": 505.8,
+        "end": 507.66,
+        "num_words": 7,
+        "speakers": [
+            2
+        ],
+        "text": "Like means of getting to a doctor?"
+    },
+    {
+        "start": 507.96,
+        "end": 517.46497,
+        "num_words": 11,
+        "speakers": [
+            0
+        ],
+        "text": "Transportation. Absolutely. Very important. So what do I speak? English, right?"
+    },
+    {
+        "start": 522.805,
+        "end": 533.45996,
+        "num_words": 33,
+        "speakers": [
+            0
+        ],
+        "text": "Great. Fantastic. So these are kind of, you know, things that are in my favor. You could reverse this and you could say, geez, I know patients who have none of these. Right?"
+    },
+    {
+        "start": 533.45996,
+        "end": 549.315,
+        "num_words": 40,
+        "speakers": [
+            0
+        ],
+        "text": "Very easily. I saw a patient today who had none of these. Doesn't speak English, can't get there, can't get time off work. Challenges with insurance, lives far away. You know, lack of medical knowledge, doesn't know anybody, knows me."
+    },
+    {
+        "start": 549.315,
+        "end": 569.41504,
+        "num_words": 59,
+        "speakers": [
+            0
+        ],
+        "text": "So ask me who I would recommend. So you can see how our system in the US very complicated. I happen to have all of the check all of these boxes, right? And you know, luckily I was able to get very expedient care. You can argue this first part is mainly a more of a medical issue, right?"
+    },
+    {
+        "start": 569.555,
+        "end": 589.94,
+        "num_words": 68,
+        "speakers": [
+            0
+        ],
+        "text": "When do we order tests? When do we, you know, are you gonna order, you're not gonna order imaging at everybody. Everybody we saw came in with back pain that we ordered imaging on, right? We'd probably be, there'll be a social cost there and not, not, um, cost effective medicine. So this is, this part you could argue, well, that's probably as good as you're gonna get."
+    },
+    {
+        "start": 589.94,
+        "end": 604.65497,
+        "num_words": 43,
+        "speakers": [
+            0
+        ],
+        "text": "Someone's come for the cough, you know, you're not gonna really be able to shorten that time necessarily because there's a natural, let's see how things doing. Is it chronic? You know, if you respond to treatment. So really thanks to, uh, Doctor."
+    },
+    {
+        "start": 621.705,
+        "end": 643.86,
+        "num_words": 80,
+        "speakers": [
+            1
+        ],
+        "text": "We're going to stay seated at the moment. So first, I hope everyone echoes. Full disclosure, Brian happens to be my primary care doctor. And so when I learned about what Brian was going through, I had an appointment that was getting scheduled and Brian will remember this was a video visit and I found myself internally not wanting to do anything but just to check-in on him. I'm like, I know this visit is for me, but I'm fine."
+    },
+    {
+        "start": 644.0,
+        "end": 651.105,
+        "num_words": 22,
+        "speakers": [
+            1
+        ],
+        "text": "How are you? And I'm so grateful Brian just creating this opportunity. I think all of you know how I think all"
+    },
+    {
+        "start": 651.565,
+        "end": 651.845,
+        "num_words": 20,
+        "speakers": [
+            4
+        ],
+        "text": "of you know how unique it is to all of us have our own lived experiences. Many of you have"
+    },
+    {
+        "start": 651.845,
+        "end": 688.755,
+        "num_words": 146,
+        "speakers": [
+            1
+        ],
+        "text": "perhaps had them with your own interaction with the health system, your families. And so Brian just really grateful that you're going to continue to create this space because I could come with 30 PowerPoint slides or 60 and talk all around access and nothing's going to be as meaningful as what I hope is the conversation and what you're learning from Brian and I hope what I'm able to kind of have about the conversation with all of you about. I don't have any slides by the way. So let me maybe briefly just share a bit of I say how I landed in the seat And then I am actually gonna have us think a little bit more in expanding what Brian's already started, which is a little bit of like, what does good health care access actually look like? We can define it."
+    },
+    {
+        "start": 688.755,
+        "end": 697.39,
+        "num_words": 32,
+        "speakers": [
+            1
+        ],
+        "text": "What's it? What's good at? What does it look when it's great or ideal? A little bit expanding on a framework of what are the key barriers? Why is it so hard?"
+    },
+    {
+        "start": 698.09,
+        "end": 721.3,
+        "num_words": 84,
+        "speakers": [
+            1
+        ],
+        "text": "And we'll start broad and then we'll give a couple I'll share at least a couple specific nuances and Brian will join me in this. What's unique about cancer? Like are there elements of the access problem that are a little bit unique for those that are being diagnosed, treated and cared for or have survived and actually have had cancer? And then I certainly have to share a couple examples believing even at Stanford Healthcare. We have not solved this far from it."
+    },
+    {
+        "start": 721.3,
+        "end": 743.955,
+        "num_words": 96,
+        "speakers": [
+            1
+        ],
+        "text": "We've certainly done a number of things to try to help improve it again broadly in access but also specifically for cancer and so I'll share a few of those elements to follow-up. Honestly most of our time is actually a chance for us to interact and actually for all of you to be able to ask ask questions and hear what your thoughts and your experiences and perspectives are. I'm gonna do that in a minute by actually having to I say I've clicked a pair of chairs so you can eat your burrito while"
+    },
+    {
+        "start": 743.955,
+        "end": 744.755,
+        "num_words": 6,
+        "speakers": [
+            0
+        ],
+        "text": "you're doing it as long as"
+    },
+    {
+        "start": 744.755,
+        "end": 759.27997,
+        "num_words": 57,
+        "speakers": [
+            1
+        ],
+        "text": "you don't spit your burrito out and have your classmates sitting sitting next to you. You. So as Brian said, I did my clinical training here. So I grew up in the Midwest and did my clinical training here. So Peter Pompey was my resident preceptor in the clinic, which is why I was joking about that."
+    },
+    {
+        "start": 759.27997,
+        "end": 774.75,
+        "num_words": 55,
+        "speakers": [
+            1
+        ],
+        "text": "And I trained here in the late nineties. Then I spent 17 years at UCSF and then returned. Most of my career, my clinical work is what we now call a hospitalist. So I primarily take care of patients who are in the inpatient setting. That field didn't exist when I was finishing my training."
+    },
+    {
+        "start": 774.83,
+        "end": 817.39996,
+        "num_words": 169,
+        "speakers": [
+            1
+        ],
+        "text": "And the way I often describe it is that I always felt responsible for taking care of 2 patients, the patient in the bed in front of me and the building that that patient was getting cared in. Because oftentimes the building was full of the same diagnostic therapeutic challenges of what we now call kind of system improvement and quality and safety. And so much of my career, and actually started up primarily in medical education, uh, but a lot of the early work in helping educate and train the next generation, whether it was students and residents and fellows, in bringing a lens of doing systems improvement work and quality so that you will both take care of the patient in front of me but also helping the systems around so we can have a bigger impact on larger groups of patients. I never had the career goal to be in the current roles I'm in. Um, with most things, the story sounds linear, it's never linear."
+    },
+    {
+        "start": 817.565,
+        "end": 854.945,
+        "num_words": 140,
+        "speakers": [
+            1
+        ],
+        "text": "As most of you already know and have learned from many of the people you're getting here with. But part of the evolution for me of getting involved in the health systems, as health systems were getting larger and more complex, as I often joke, what I loved about Stanford when I was here as a resident is it removed a professional ceiling I had self imposed, um, and it reflected in the environment that was here, the people I got to interact with, those who invested in me and my energy, and learning to be a really amazing clinician, researcher, and educator. And we were a really small hospital. We were like a small boutique hospital that served the local community. And part of why it came back 4 years ago is because we're such a different place now."
+    },
+    {
+        "start": 855.245,
+        "end": 896.49,
+        "num_words": 149,
+        "speakers": [
+            1
+        ],
+        "text": "We're still kind of medium sized relative to our peers, but a lot of complexity related to access we feel in both similar and different ways than say if I was sitting at Kaiser or if I was sitting at another much larger academic health system. So as we think a little bit about the different structure of the systems. So what I'm going to ask you to do, I'm going to give you just a couple minutes and you can turn either to your neighbor, you can do this in twos and threes and just have a quick conversation around what would ideal healthcare access look like? If you were gonna describe, this is what ideal health care access would look like, what would it be? And this could be based on your own experiences, family members, friends, just what you've read and heard about health care access."
+    },
+    {
+        "start": 896.49,
+        "end": 1368.105,
+        "num_words": 49,
+        "speakers": [
+            1
+        ],
+        "text": "It's obviously a very big topic. Just take a couple minutes and just have a quick conversation. What does ideal healthcare access avoid look like? All right let's see if we can pull the conversation back, uh, back as a group. We need to eavesdrop on a few conversations."
+    },
+    {
+        "start": 1368.645,
+        "end": 1378.86,
+        "num_words": 38,
+        "speakers": [
+            1
+        ],
+        "text": "So we'd love to hear from a handful of groups. Where did your conversation start? Where did it end? Things that were consistent each of you were sharing with each other. What does ideal health care look like?"
+    },
+    {
+        "start": 1378.86,
+        "end": 1379.58,
+        "num_words": 2,
+        "speakers": [
+            1
+        ],
+        "text": "Yes, please."
+    },
+    {
+        "start": 1379.58,
+        "end": 1396.725,
+        "num_words": 54,
+        "speakers": [
+            2
+        ],
+        "text": "Um, we started talking about, like, um, the different, like, factors to getting health care access, and we eventually, like, came to the conclusion that all the factors were, like, compounding. So if you have one risk factor, you're at a higher risk for other risk factors in terms of getting health care access."
+    },
+    {
+        "start": 1396.725,
+        "end": 1398.745,
+        "num_words": 10,
+        "speakers": [
+            5
+        ],
+        "text": "And so that was kind of like where we ended."
+    },
+    {
+        "start": 1399.0449,
+        "end": 1400.485,
+        "num_words": 6,
+        "speakers": [
+            1
+        ],
+        "text": "Yeah, that's a really great observation."
+    },
+    {
+        "start": 1400.485,
+        "end": 1416.28,
+        "num_words": 44,
+        "speakers": [
+            3
+        ],
+        "text": "Yeah, we were talking about the first barrier being maybe cost and insurance coverage and how some countries have successfully implemented universal health care, but how with that also comes potentially longer wait times of distribution of resources is difficult in that sense too."
+    },
+    {
+        "start": 1416.28,
+        "end": 1419.16,
+        "num_words": 7,
+        "speakers": [
+            1
+        ],
+        "text": "Yeah, yeah, great. Others? Yeah, I guess."
+    },
+    {
+        "start": 1419.16,
+        "end": 1424.62,
+        "num_words": 13,
+        "speakers": [
+            0
+        ],
+        "text": "You were talking about maybe like a reporting emphasis on super advanced technologies"
+    },
+    {
+        "start": 1426.375,
+        "end": 1443.7401,
+        "num_words": 42,
+        "speakers": [
+            1
+        ],
+        "text": "treatment, less of an emphasis on preventative services. It's almost a cultural element, even more than a technical. Others? Others? This half of the room, so I'll come to this half of the room because all of you were chatting as well."
+    },
+    {
+        "start": 1444.92,
+        "end": 1467.145,
+        "num_words": 74,
+        "speakers": [
+            2
+        ],
+        "text": "Yeah, we also talked a lot about cost and how that shouldn't be a barrier, like someone's financial status shouldn't be a barrier to them at some care. We also talked about proximity. I'm from New Mexico, and so there's a really big problem there where there's only 1, um, level 4 trauma center in the entire state. And so, like, people don't seek out care that, um, they might need simply because it's."
+    },
+    {
+        "start": 1469.81,
+        "end": 1470.77,
+        "num_words": 3,
+        "speakers": [
+            1
+        ],
+        "text": "Medical deserts Yeah."
+    },
+    {
+        "start": 1470.8501,
+        "end": 1471.89,
+        "num_words": 7,
+        "speakers": [
+            3
+        ],
+        "text": "Which we talk about in a lot"
+    },
+    {
+        "start": 1471.89,
+        "end": 1486.045,
+        "num_words": 51,
+        "speakers": [
+            2
+        ],
+        "text": "of different. Yeah. We also talk about, like, trust and, like, being willing to talk to your doctor. And, like, a lot of people will not go to the doctor because they're worried, like, oh, go ahead. That changed and, like, all their issues can be told just equate a lot."
+    },
+    {
+        "start": 1486.9851,
+        "end": 1488.185,
+        "num_words": 5,
+        "speakers": [
+            0
+        ],
+        "text": "Really important way to come."
+    },
+    {
+        "start": 1488.185,
+        "end": 1488.425,
+        "num_words": 3,
+        "speakers": [
+            4
+        ],
+        "text": "What did it"
+    },
+    {
+        "start": 1488.425,
+        "end": 1490.125,
+        "num_words": 7,
+        "speakers": [
+            1
+        ],
+        "text": "come back to that with redemption trust?"
+    },
+    {
+        "start": 1490.185,
+        "end": 1497.3251,
+        "num_words": 23,
+        "speakers": [
+            2
+        ],
+        "text": "We also spoke about safety and cleanliness of the sites with the clinics in hospitals with how that may vary in different states."
+    },
+    {
+        "start": 1501.66,
+        "end": 1515.725,
+        "num_words": 49,
+        "speakers": [
+            1
+        ],
+        "text": "We met did we miss any topics that others brought up that haven't been brought up by your colleagues so far? We talked a little bit about access to health literacy and what that would look like if everybody in the system had the same model of health literacy."
+    },
+    {
+        "start": 1521.3049,
+        "end": 1532.5,
+        "num_words": 31,
+        "speakers": [
+            4
+        ],
+        "text": "Yeah. Yeah. To Ross's point aside here, talking about prevention and running a parasite, Not just because it's like, it's really like if the nearby areas are only past due, right?"
+    },
+    {
+        "start": 1532.5,
+        "end": 1538.4199,
+        "num_words": 18,
+        "speakers": [
+            1
+        ],
+        "text": "That's not great. You can consider good health. Similarly, how do we teach people about their habits that"
+    },
+    {
+        "start": 1538.4199,
+        "end": 1539.96,
+        "num_words": 7,
+        "speakers": [
+            4
+        ],
+        "text": "are being armed and in that hospital."
+    },
+    {
+        "start": 1543.055,
+        "end": 1583.965,
+        "num_words": 137,
+        "speakers": [
+            1
+        ],
+        "text": "Yeah, you can see why no one has solved the problem. You've nicely identified why it's complex and part of why this exercise is really helpful and I hope you'll keep it in mind as you, for those of you that are in medicine are gonna go through like, don't forget this conversation because you're gonna live and see every department. Yourself and patients you take care of and family members, um, and it almost reflects the larger challenges in our healthcare environment. And I love the fact that a number of you are bringing up both very appropriately kind of system technical elements of the healthcare system, but you're also gonna be really core elements of as a society, how do we invest in health, not healthcare? As a society, what does it mean to trust?"
+    },
+    {
+        "start": 1584.31,
+        "end": 1612.5,
+        "num_words": 120,
+        "speakers": [
+            1
+        ],
+        "text": "What does it mean to have a provider or a system that you actually are going to go to because you actually believe that your interests are going to be taken? I think we'd argue that if you don't have that trust, you can have much access as you want and it's going to make it very difficult to come in. So I love the fact that you're all thinking really broadly, that there are many many facets to the challenges broadly with health care access. So I'm giving you one framework is actually your exercise with Brian actually touched on a bunch of them. So this actually goes back and someone will correct me if they actually Google it."
+    },
+    {
+        "start": 1613.06,
+        "end": 1636.8351,
+        "num_words": 87,
+        "speakers": [
+            1
+        ],
+        "text": "I believe this goes back to a framework back in like the 1980s. That when initially this idea of talking about access and the comment you made of, wow, it seems like when you have one barrier, you're at high risk for the others. Isn't in fact exactly why this framework was developed To show the feature dependencies that's in different facets of access. And so this is referred to as the 5 A's of access. And you can see you've actually touched almost all of them."
+    },
+    {
+        "start": 1636.8351,
+        "end": 1660.805,
+        "num_words": 91,
+        "speakers": [
+            1
+        ],
+        "text": "So the notions of affordability, accessibility, availability, accommodation, and acceptability. And the other lens I would have all of us think a little bit about is we'll say, which of these elements have gotten better or worse? And we'll just say the last 5 years, we'll call it pandemic years. Because I need as many examples where in some ways we've made progress in some elements that we've actually made it much, much harder than others. And we'll come back to the Vibase just to talk about them for a moment."
+    },
+    {
+        "start": 1661.105,
+        "end": 1703.53,
+        "num_words": 153,
+        "speakers": [
+            1
+        ],
+        "text": "But the secondary question is one of the kind of key barriers, and I put green notations next to again large buckets that all of you had talked about. I think this big piece of connection is hard to characterize, but I think when you hear the stories so often it's I landed here because I reached out to so and so, whether they're in healthcare or not. And yes, there's a big part of that as frequently the entry point that lands with me. And a lot of times it is, as I'll talk about, like how to not so much make it that I'm the solution, because in reality, if I'm the solution in the bottleneck, then our system is failing. And so usually for me, it's I can serve as the individual conduit, as Brian kindly shared to actually to our system that helps address when these issues come up."
+    },
+    {
+        "start": 1703.53,
+        "end": 1745.5751,
+        "num_words": 149,
+        "speakers": [
+            1
+        ],
+        "text": "And I'm really intentional about that when people say, because honestly, even in Brian's case, it wasn't so much that I fixed it. Mainly what I did was make a connection to the team I knew that helps patients navigate when they're having insurance coverage issues for in this case was an imaging test. So a lot of what you'll hear me focus on is how do we build the right systems and people so that when key barriers are coming up, we have some ability to help patients, whoever they are, kind of navigate through it. Um, so the connection piece, um, the location piece, so the example you were giving, I just can't emphasize enough that, um, the lens of geography of if you're in an urban setting versus a rural setting. And I'll say that even that's getting blurred, and I'll give you the example locally."
+    },
+    {
+        "start": 1745.5751,
+        "end": 1782.485,
+        "num_words": 120,
+        "speakers": [
+            1
+        ],
+        "text": "It's one of our local counties, and as some of you may know, in California, we're really fortunate from a coverage perspective that largely most have access to health insurance, and a lot of our Medicaid plans are very county based. It's almost what we call the Kaiser plans where they're all managed medical at the county level. So it allows a bit of coordination to help address many of these issues for patients particularly that have Medicaid. But one of the elements that comes from a lot of that is we have one of our counties that had a single neurologist for their county health plan. That neurologist retired last year, and they've been unable to recruit another neurologist."
+    },
+    {
+        "start": 1782.5449,
+        "end": 1801.4751,
+        "num_words": 64,
+        "speakers": [
+            1
+        ],
+        "text": "So they've essentially lost. So I'm putting up here one thing that wasn't mentioned was workforce, like actual people. So when we go through each of these different elements, the 5 A's, you've kind of intersected these into here. So affordability, there's the affordability side that many of you are focused on and Brian shared this. Some of it's about resources for the patient."
+    },
+    {
+        "start": 1801.6951,
+        "end": 1866.835,
+        "num_words": 222,
+        "speakers": [
+            1
+        ],
+        "text": "Sometimes increasing is also the resources of the ability for the provider of the system to care for those patients. So again, in our region, from a primary care standpoint, Brian knows better than me, we've lost a lot of primary care providers because they're going into what we call retainer practices where essentially they don't take insurance and they provide a different care model, but by definition, that care model is only eligible to people who have the ability to be able afford it. So it's solving one set of problems, but it's creating a different set of problems. So the affordability, just to have us think of there's 2 sides to the affordability and true for health systems as well of how they manage the basics of where the dollars come from, how they use them, how the resources get together. And the accessibility, a number of you touched on, some of that is about accessibility, about location and geography, but even around availability, one of the things we did a lot in the pandemic is, so at Stanford prior to, and Brian knows as well, prior to the pandemic, hadn't arrived here yet, but prior to the pandemic, uh, take a guess at what percentage of kind of clinic visits were done through now what we call video visits."
+    },
+    {
+        "start": 1867.0549,
+        "end": 1882.7999,
+        "num_words": 51,
+        "speakers": [
+            1
+        ],
+        "text": "Take a guess. What percentage of all of so we currently have about 2,200,000 ambulatory visits across kind of Stanford on the adult side. What percentage of those visits would you guess were video visits before the pandemic? Are you raising your hand, are you putting 1 up as 1%? Yeah."
+    },
+    {
+        "start": 1882.7999,
+        "end": 1893.295,
+        "num_words": 26,
+        "speakers": [
+            1
+        ],
+        "text": "Yeah. So it was less than 2%. What would you guess that number is? What was that number the 1st 6 months of the pandemic? 90."
+    },
+    {
+        "start": 1893.435,
+        "end": 1905.86,
+        "num_words": 25,
+        "speakers": [
+            1
+        ],
+        "text": "Yeah. Like 95 plus percent. And what do you think that number is today? Yeah, so, not less. We run around 35% that we sustain."
+    },
+    {
+        "start": 1905.86,
+        "end": 1932.9199,
+        "num_words": 93,
+        "speakers": [
+            1
+        ],
+        "text": "And by the way, that 35%, when you look at our peer academic health institutions, puts us in amongst the highest in the entire country. And then the question becomes, why? The often easy answer or hypothesis, we live in Silicon Valley, everyone's like tech. It's actually not, it's part of that, but it's part of actually what has happened really intentionally, which is 35% have not spread across every area. Just gets a little bit to kind of ways we've tried to approach this here is back to the supply and demand."
+    },
+    {
+        "start": 1933.7,
+        "end": 1958.1849,
+        "num_words": 84,
+        "speakers": [
+            1
+        ],
+        "text": "So the availability, uh, how do we match what patients need versus what we have the ability to provide? Sometimes what we have the ability to provide is sometimes do we have enough people and providers? Sometimes we have enough space for those patients to be seen. And so examples of mental and behavioral health, which as all we know is a massive access problem nationally, locally, and regionally. 90 plus percent of all of our mental and behavioral health visits are video visits."
+    },
+    {
+        "start": 1958.57,
+        "end": 1981.105,
+        "num_words": 78,
+        "speakers": [
+            1
+        ],
+        "text": "Doesn't mean that there isn't a role for a morning person, but it's actually helped us with a lot of the access issues. Whereas someone who's coming in with an urgent care issue that's gonna need diagnostics, we wanna make sure we've access for those patients to come in person. So the 35% is not spread evenly across specialties. In some specialties it's 80% and others it's 10, 15% very appropriately. But those were things we didn't know."
+    },
+    {
+        "start": 1981.105,
+        "end": 2014.4049,
+        "num_words": 123,
+        "speakers": [
+            1
+        ],
+        "text": "Those were things we had to learn through the process to say, are we doing it safely? And our patients who are getting video visits, how many of them are actually then subsequently coming to see if you're not in person, even after video visits. So I share it because even access through that lens of availability is still really new at the mouthful. We're still learning where do we use video visits safely and where do we use them otherwise. And then the other component of the number we touched on, and I've written social drivers of health, because to me, this is one example of when a patient or a community is at risk for 1, they're at risk for multiple."
+    },
+    {
+        "start": 2014.86,
+        "end": 2042.155,
+        "num_words": 97,
+        "speakers": [
+            1
+        ],
+        "text": "So when we think about the social drivers of health, which many of you have touched on, whether it's through language proficiency, whether it's through feeling included or excluded, it gets to trust and gets to other elements. We know that you could have 3 or 4 of these, quote, unquote, solved, but if you haven't thought through how to help address the social drivers of health, it's not gonna matter. Right? This is because I was telling Brian the story this morning. So my I have family that is still in India, um, mostly pretty weird."
+    },
+    {
+        "start": 2042.155,
+        "end": 2061.875,
+        "num_words": 73,
+        "speakers": [
+            1
+        ],
+        "text": "And so my mom texted me this morning a little, like, what looks like a prescription pass chicken scratch of her brother who's 80, 85. And she's like, what do you make of this? I don't have many physicians in my family, and the health literacy is, like, so so. And he's in a pretty small village in India. And the the script, as far as I could tell, handwriting was not great."
+    },
+    {
+        "start": 2061.875,
+        "end": 2092.085,
+        "num_words": 100,
+        "speakers": [
+            1
+        ],
+        "text": "Makes me not makes me realize I for as much problems with the electronic health records, I don't understand handwriting, myself included. Um, and it essentially said what I thought was, like, right pleural effusion and said new, and then had a test order for an ultrasound. And so it took my, the price for that ultrasound was listed right next to it and the direction of the specialist. And so again, this is that international different ways people address access. You can still think of them through the 5 A's, but they're going to be thought of really different."
+    },
+    {
+        "start": 2092.085,
+        "end": 2118.085,
+        "num_words": 106,
+        "speakers": [
+            1
+        ],
+        "text": "I actually don't know. Is it a good thing or bad thing that my uncle is getting a prescription pad that says, here's the ultrasound, here's how much it's going to cost. And if he doesn't have the availability of resource to pay for that to stay, then we're back into this one of the time periods between symptoms and diagnosis. And by the way, I don't know what he has if I'm concerned, because he has lead pleural effusion and he's 55, and generally those are not good things. Um, but I don't know because I can't actually even decipher what's been written on it."
+    },
+    {
+        "start": 2118.085,
+        "end": 2132.97,
+        "num_words": 50,
+        "speakers": [
+            1
+        ],
+        "text": "So, uh, I think as we think about the different 5 layers in the 5 As and all of you in your Bryan exercise kinda talk through the different components, This is why it's so complex. Does anyone identify a single solution here? Like this is a complexity. Yeah, please."
+    },
+    {
+        "start": 2134.1501,
+        "end": 2143.545,
+        "num_words": 25,
+        "speakers": [
+            2
+        ],
+        "text": "I understand that it has all this complexity and that Stanford had varying abilities to address aspects of these complex complexity. One question I have"
+    },
+    {
+        "start": 2143.545,
+        "end": 2144.1848,
+        "num_words": 5,
+        "speakers": [
+            5
+        ],
+        "text": "for you is how do"
+    },
+    {
+        "start": 2144.1848,
+        "end": 2179.31,
+        "num_words": 96,
+        "speakers": [
+            2
+        ],
+        "text": "you reconcile having, like, not investing maybe more resources into training people and into having maybe a larger health medical school or PA school or whatever. Um, because maybe that would help, like, from my perspective, bring more doctors and, you know, if we can educate more people, they can go into more of the rural areas and they can provide more services. And it seems like Stanford is at an especially good place to be able to educate more people and solve, you know, a large part of this. Yet their acceptance rate of medical,"
+    },
+    {
+        "start": 2179.31,
+        "end": 2179.95,
+        "num_words": 3,
+        "speakers": [
+            4
+        ],
+        "text": "so I'm not"
+    },
+    {
+        "start": 2179.95,
+        "end": 2182.1902,
+        "num_words": 7,
+        "speakers": [
+            2
+        ],
+        "text": "applying, is I can assume pretty low."
+    },
+    {
+        "start": 2182.1902,
+        "end": 2192.725,
+        "num_words": 34,
+        "speakers": [
+            1
+        ],
+        "text": "Yeah. Right? Should we go get a D minor? So let me broaden your question. It's a really, really important one, and it gets a bit to kind of the workforce piece you described."
+    },
+    {
+        "start": 2192.725,
+        "end": 2228.295,
+        "num_words": 125,
+        "speakers": [
+            1
+        ],
+        "text": "So let me try and answer it in 2 ways, including I can't give you a specific answer as to strategy for the Stanford Medical School, but I'll give you an example for the state of California. So workforce here, here we're talking about kind of physician where you're appropriately broadening into things like other clinicians, whether it's a best practice providers, nursing workforce, that a lot of what you've seen happen nationally in the pandemic just accelerated this was a lot of places had physical spaces, melons, and just didn't have people, including in hospitals. Couldn't hire, couldn't retain, couldn't keep nurses. We're fortunate we did not have that particular year. From a workforce standpoint, I guess there's 2 ways to think about it."
+    },
+    {
+        "start": 2228.295,
+        "end": 2280.165,
+        "num_words": 162,
+        "speakers": [
+            1
+        ],
+        "text": "One is state of California has actually done this study looking at the population, the demographics of California, how they might change over the next 20 to 30 years, and where do investments need to be made. So again, from the state of California, the biggest levers they have are where you have the 5 medical schools that are state oriented, which are the 5 University of California systems. And having come from one of them, that was a lot of what allowed some of the growth of different programs, both from a school of nursing, school of dentistry, school of pharmacy, school of medicine, advanced practice areas, and others. So the state schools are very tied to the strategy of the state level because the resources obviously help support them in both directions. The other question you might ask is if you look at graduates of medical schools from the US, are we matching the supply and demand of what's needed?"
+    },
+    {
+        "start": 2280.165,
+        "end": 2319.6,
+        "num_words": 131,
+        "speakers": [
+            1
+        ],
+        "text": "So this is the classic description of a number we touched on prevention, where when you look at our country compared to other countries, do we invest enough in prevention, which often is through people like Prime, primary care physicians. So our relative primary care physician workforce is not nearly as wide and depth as many other countries and a smaller group of specialists where we have in some cases almost inverted pyramid of that in many areas. So that's a different, that's not about who we're bringing into medical school, that's one of the way we're creating and matching people into where the needs are. So the other very good example you gave is, again, I'll use the UC system. They opened a brand new medical school in Merced recently."
+    },
+    {
+        "start": 2319.9001,
+        "end": 2340.13,
+        "num_words": 77,
+        "speakers": [
+            1
+        ],
+        "text": "And part of why they did that was for the very reason your question's getting at is they recognized a big gap in physicians in a community that needs them. Let's put a medical school there. Let's try to recruit people from the community who want to be trained and that want to work in that community. So there's a lot of that happening in multiple parts of the country. It doesn't address the specialty generalist people."
+    },
+    {
+        "start": 2340.19,
+        "end": 2373.77,
+        "num_words": 126,
+        "speakers": [
+            1
+        ],
+        "text": "It doesn't address the fact the most competitive residency programs are the first to the fewest number of slots, but are they really matched to where the grants lead? That's a much larger policy kind of conversation. I wish I had a better answer for you for kind of Stanford strategy in terms of the school of medicine and other Stanford like every other place has it did place a role in our larger healthcare ecosystem. And I think all of you, I hope you're here. You're here as medical students because you realize you're here to have an amazing clinical training experience, but also because all of you already have accomplished something that is going to allow you to also be the leaders of tomorrow."
+    },
+    {
+        "start": 2373.77,
+        "end": 2405.095,
+        "num_words": 104,
+        "speakers": [
+            1
+        ],
+        "text": "And then maybe that's in research, maybe it's in education, maybe it's in innovation, maybe it's because we live in Silicon Valley and you're going to be helping start new products. I think that's the thinking about what each part of the ecosystem does help address the workforce piece. And there's lots of policy thinking about how we do that state, state and federal. Let me pause again, I'd love to hear other questions and reactions. Again, this is really just to give you a labeled framework, because all of you have touched on the 5As, and the barriers, there's lots of interdependence too."
+    },
+    {
+        "start": 2405.095,
+        "end": 2423.0,
+        "num_words": 64,
+        "speakers": [
+            1
+        ],
+        "text": "I will come back before we have in our last 5 minutes, just give you a couple examples specific to cancer, um, of areas where we've tried to address some of this. Again, not perfectly, but actually recent examples. But before I make that transition, let me just see if there are other questions or just reflections or observations on the complexity of access."
+    },
+    {
+        "start": 2427.3801,
+        "end": 2446.215,
+        "num_words": 63,
+        "speakers": [
+            5
+        ],
+        "text": "Something that we talked about was taking like ambulances, for example, um, how they're so expensive, but we're encouraged to be like dial 91 when there's an emergency. But then it comes with a huge cost, and that prevents like a lot of people from actually like dialing 911 and getting the care that they need. Um, what are your thoughts on that?"
+    },
+    {
+        "start": 2447.395,
+        "end": 2466.865,
+        "num_words": 62,
+        "speakers": [
+            1
+        ],
+        "text": "So one, I think the answer to that question is a great place where sometimes data can be helpful. Because as you know, one of the markers nationally of ambulance time response, and they've studied this from different cities, where that response time for ambulance actually has huge impact on outcomes for things like stroke and heart attacks and others. Um, I"
+    },
+    {
+        "start": 2466.865,
+        "end": 2467.505,
+        "num_words": 5,
+        "speakers": [
+            4
+        ],
+        "text": "don't know if I have"
+    },
+    {
+        "start": 2467.505,
+        "end": 2515.51,
+        "num_words": 168,
+        "speakers": [
+            1
+        ],
+        "text": "an elegant response to the idea because I think the role of EMTs, I'd say less about ambulances, but more about the professional services that EMTs have continued to bring. Remember, it's not that old, but EMTs really started in the last 60 years or so. I mean, before you could do nothing in the ambulance, before what has evolved in terms of care. The example I'll give you, I'll go back to India, because I learned about this group when I was interned here and through colleagues, is during the pandemic, they actually, an ambulance company there redeployed all their ambulances actually to provide access in rural areas, not to bring people back to where this town was, but actually to take care kind of out. So where your question goes to me is it's another part of the health care ecosystem, and are we optimizing what we could be doing, not so much with the physical ambulances, but the care that's provided through the ambulance care?"
+    },
+    {
+        "start": 2515.51,
+        "end": 2536.48,
+        "num_words": 78,
+        "speakers": [
+            1
+        ],
+        "text": "Because I don't know if I know enough about why people call 911 and why they don't. Is it some of the same different factors and is the solution more ambulances or is the solution a different solution? That I can't answer for you, but I do think your question around can ambulances, the expertise that EMTs bring, should we be thinking about them more broadly as ways to provide care in place that have less access? Absolutely."
+    },
+    {
+        "start": 2537.02,
+        "end": 2563.455,
+        "num_words": 98,
+        "speakers": [
+            0
+        ],
+        "text": "And that touches on access to primary care. If you have a good relationship with your primary care doctor, perhaps you don't call, or if you have easy access or somebody answers the phone, like we have a clinical advice service 24 hours, 20 fourseven at Stanford, and they didn't have that when I started at Stanford. So if you call no matter what and you say, I need to talk to a nurse, they'll get you, you will be able to speak to a nurse who can help you with that decision, because it's confusing, very confusing."
+    },
+    {
+        "start": 2564.3699,
+        "end": 2591.6301,
+        "num_words": 109,
+        "speakers": [
+            1
+        ],
+        "text": "And Brian's giving an example of one of the things I was gonna share, which is a good example as the systems grow larger, this tension of do you call the practice? So I have an issue, do I just pick up the phone 20 fourseven and called Brian's office and asked for support. But part of what Stanford's invested in is a centralized clinical device center. It's based out in Newark. I've gone there several times and usually what I do when I go there is I spend about an hour and a half and I just listen in on phone calls with the team that's doing it."
+    },
+    {
+        "start": 2591.6301,
+        "end": 2615.345,
+        "num_words": 90,
+        "speakers": [
+            1
+        ],
+        "text": "It's, how have you ever been out to New York? It's amazing. They sit there with 3 screens and I've listened, they're organized in 3 areas of the types of phone calls. If they're like really generic, basic, how do I get a primary care doctor? They get routed to one group of people who are kind of more early in the clinical advice versus I've been seen by 3 specialists, I need this appointment and this diagnostic gets routed to somebody who's gotten more and higher levels of training."
+    },
+    {
+        "start": 2615.345,
+        "end": 2677.66,
+        "num_words": 197,
+        "speakers": [
+            1
+        ],
+        "text": "So it's one of the solutions that we've created, which is an investment to allow patients access to at least help them troubleshoot and problem solve where they need to go. On the cancer side, as all of you know, and as you've probably learned even through this experience with Bryant, is I think 2024, and I'm not the cancer specialist, will be the 1st year we had 2,000,000 new cases of cancer. And when you look at the prevalence of cancer, while many diseases fortunately are getting much better treatments, people are surviving, living longer with it, but also getting a massive continued growth of number of cases. So when Stanford Medicine, one of the large initiatives over the next 5 10 years is actually really doubling down on cancer care in particular, including the idea and design and vision to build a cancer kind of specific campus, partly because cancer, as Brian's helping teach you, has gotten me so complex in the diagnostics, the therapeutics, the specialization. And so an example here that Brian's certainly aware of is, even in the last year, our cancer center kind of service has actually built a diagnostics clinic."
+    },
+    {
+        "start": 2678.2798,
+        "end": 2717.505,
+        "num_words": 149,
+        "speakers": [
+            1
+        ],
+        "text": "Because if you were a primary care doctor, and let's say you were in this process that you had a patient, chest x-ray shows something concerning, what used to happen 15 years ago is they'd get rid of the hospital and they'd be there for a week getting all the different diagnostic therapeutic tests before they had a diagnosis. Maybe the therapy would start while they were still in the hospital, be a 3 week hospitalization. So much of cancer care now, I've watched this in my own practice the last 25 years in the hospital, things we used to take care of in the hospital almost rarely see the hospital. Now when they come to the hospital, it's from all the unfortunate complications and the progression of the disease. Most at this stage, as Brian's already demonstrated to you, you never even see the inside of a hospital."
+    },
+    {
+        "start": 2717.7449,
+        "end": 2743.76,
+        "num_words": 92,
+        "speakers": [
+            1
+        ],
+        "text": "And so the challenge that it creates is how do you get this time window to become a little more efficient? As Bryants alluded to, I always say this for many patients, the hardest part is the waiting part. It's the uncertainty, it's the waiting to know what it is, what it's not, what it's gonna mean. So we've set up a diagnostic clinic specifically for patients who don't yet have a diagnosis but a high suspicion for. And it allows that centralized clinic to basically help shepherd patients through the process."
+    },
+    {
+        "start": 2744.14,
+        "end": 2771.6702,
+        "num_words": 113,
+        "speakers": [
+            1
+        ],
+        "text": "What we haven't solved for are some of the other elements that all of you brought up. Some of the social drivers of health, some of the insurance access that again, the country we live in and the state we live in, where you are insured has a huge impact on your health outcomes. Believe me, from a policy perspective, I wish that was not the case, but that is the case. And so, as you're going out and voting and you're hearing and learning about what's happening in legislation, this is the impact you can see in different ways. Let me pause again and see, we've got, I think, 2 minutes left."
+    },
+    {
+        "start": 2771.6702,
+        "end": 2812.515,
+        "num_words": 144,
+        "speakers": [
+            1
+        ],
+        "text": "Let me just see if there are other questions folks have or as you're hearing about the challenges of access both in cancer and otherwise. The other part of cancer that I'll also point out that our cancer team thinks a lot about is we now have 8 or 9 different sites across the Bay Area. So again, this idea of location. You know, how do we make the access easier because so much of cancer has gotten so specialized and as Brian also knows well, um, we talk a lot about clinical trials and I and many of the folks that specialize in cancer often say clinical trials are not about research, clinical trials are clinical care. And we know what happens as patients get opportunities to participate in clinical trials is that the care allows us to continue evolving and getting better."
+    },
+    {
+        "start": 2812.515,
+        "end": 2836.095,
+        "num_words": 87,
+        "speakers": [
+            1
+        ],
+        "text": "Clinical trials are not representative of our entire population and community. It's one of the biggest barriers. So when we're trying to use evidence to say which patients are going to benefit with which cancer specific therapy, our studies need to also match the variations we're taking care of. And we had lots of work to do there to make that a bigger realization as well. So my hope here was to give you a very broad just framework as many of you frankly already had highlighted."
+    },
+    {
+        "start": 2836.395,
+        "end": 2863.4749,
+        "num_words": 101,
+        "speakers": [
+            1
+        ],
+        "text": "Kind of the 5 A's is just a framework to think about the access elements and then recognize cancer has some unique flavors of that, but I think you'd agree all of the things that affect access in cancer affect access more broadly. We could have had the same discussion on mental and behavioral health and had a similar conversation with so many different nuances of what availability and accessibility would look like. But again, let me pause. We've got about a minute or 2 left. Let me just see if there are other final thoughts, final questions, reflections about access."
+    },
+    {
+        "start": 2864.255,
+        "end": 2876.26,
+        "num_words": 37,
+        "speakers": [
+            1
+        ],
+        "text": "Does Stanford have like a IVA's dashboard? You know, where Good question. We're trying to figure out how are we doing on affordability? How are we doing it? Does that exist or how does the housing institute?"
+    },
+    {
+        "start": 2876.26,
+        "end": 2888.44,
+        "num_words": 41,
+        "speakers": [
+            1
+        ],
+        "text": "It's a really good question. So this is the, how do we as an organization assess how we're doing? And then where do we have opportunities? So we have, I'll describe 2 structures. So we have 1 large access leadership team."
+    },
+    {
+        "start": 2888.605,
+        "end": 2912.92,
+        "num_words": 85,
+        "speakers": [
+            1
+        ],
+        "text": "So that access leadership team meets literally almost every week, and they do have kind of data dashboards. Some of them are not probably as mature enough to be able to adequately capture some of what the barriers are. But for example, now the state of California has required all hospitals to assess every patient for social drivers of health. So we are now doing that in a way that we weren't 6 months ago. So now it allows us to actually say simple measures."
+    },
+    {
+        "start": 2913.0598,
+        "end": 2931.565,
+        "num_words": 67,
+        "speakers": [
+            1
+        ],
+        "text": "How long does it take to get a clinic appointment? Is it equally easy or equally hard depending on your insurance? Is it equally easy, equally hard depending on whether English is your primary language? And now we can start asking those same questions for social drivers of health. So I think we're maturing to be able to better understand particularly down at the service level, right?"
+    },
+    {
+        "start": 2931.565,
+        "end": 2946.77,
+        "num_words": 56,
+        "speakers": [
+            1
+        ],
+        "text": "At the organizational level, you only get a certain view. What I'm all interested in, back to the video, have examples. Where are we doing things really well and why? And where can we learn and spread those? The other example I'll give to Brian's clinical advice centers, we also have something called network access optimization."
+    },
+    {
+        "start": 2946.99,
+        "end": 2977.175,
+        "num_words": 109,
+        "speakers": [
+            1
+        ],
+        "text": "So this idea of for patients who no matter where they are, the goal is to provide them better care, the right care at the right time in the right place, that has to be closer to where they are. And so a lot of these efforts are trying to say as we become larger and we're more in the region, how do we make sure that someone who lives in Pleasanton doesn't need to drive to Palo Alto if we can provide care with our teams closer to Pleasanton? So I think a lot of those central structures are trying to do a better job. Any other thoughts?"
+    },
+    {
+        "start": 2977.395,
+        "end": 2982.595,
+        "num_words": 15,
+        "speakers": [
+            2
+        ],
+        "text": "I'm just wondering if you can find what affordability means with cancer care, because to"
+    },
+    {
+        "start": 2982.595,
+        "end": 2985.475,
+        "num_words": 9,
+        "speakers": [
+            5
+        ],
+        "text": "me, they don't seem synonymous at all, especially when"
+    },
+    {
+        "start": 2985.475,
+        "end": 2987.975,
+        "num_words": 7,
+        "speakers": [
+            2
+        ],
+        "text": "you think about insurance. It's pretty clear."
+    },
+    {
+        "start": 2988.2751,
+        "end": 3003.64,
+        "num_words": 49,
+        "speakers": [
+            1
+        ],
+        "text": "Yeah, Brian and I were just joking about the medication Zofran. Was joking about being consummate because we were reflecting that almost stopping me. 7, 7, 8 years ago, Zofran is a medication you couldn't prescribe it to anybody unless they had a cancer diagnosis, and even then, you"
+    },
+    {
+        "start": 3003.64,
+        "end": 3003.88,
+        "num_words": 1,
+        "speakers": [
+            0
+        ],
+        "text": "could"
+    },
+    {
+        "start": 3003.88,
+        "end": 3004.9436,
+        "num_words": 3,
+        "speakers": [
+            1
+        ],
+        "text": "only prescribe like"
+    }
+]
