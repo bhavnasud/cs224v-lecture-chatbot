@@ -1,0 +1,1442 @@
+[
+    {
+        "start": 54.62,
+        "end": 63.76,
+        "num_words": 28,
+        "speakers": [
+            0
+        ],
+        "text": "When we get started, you know, that takes a little bit of every session right to the end. So, you know, make sure we get started on time."
+    },
+    {
+        "start": 64.22,
+        "end": 64.72,
+        "num_words": 1,
+        "speakers": [
+            1
+        ],
+        "text": "So,"
+    },
+    {
+        "start": 64.78,
+        "end": 79.595,
+        "num_words": 47,
+        "speakers": [
+            0
+        ],
+        "text": "yeah, just grab your food. Thanks for coming again. And it's really, you know, I feel like the classes are going well. If there's anything we're not covering that you want covered, let us know. Just a reminder on November 16th, we have a cancer storytelling event."
+    },
+    {
+        "start": 80.455,
+        "end": 80.854996,
+        "num_words": 2,
+        "speakers": [
+            1
+        ],
+        "text": "We have"
+    },
+    {
+        "start": 80.854996,
+        "end": 106.255,
+        "num_words": 60,
+        "speakers": [
+            0
+        ],
+        "text": "a cancer storytelling event with the health library. So that's a Saturday. They'll show a short documentary that a friend of mine made about me writing letters to my kids after my diagnosis. And we'll have Brian Fees who's a graphic artist who wrote Mom's Cancer. So it's a graphic novel about his mother experience with his mother having cancer."
+    },
+    {
+        "start": 106.255,
+        "end": 138.325,
+        "num_words": 99,
+        "speakers": [
+            0
+        ],
+        "text": "And it turns out his mother was treated at Sanford. I found out later. Um, so he'll be there give a little workshop and then we'll have Lauren Tober who teaches art and anatomy. She will teach about how to draw the skeleton and then, uh, we will have, oh, and then we'll have Frish Brandt talking about letters And then, uh, we'll have, uh, my son I recruited force him to teach a session on how to use ChatGPT to make it cancer swine in a video game. So that'll be sort of a parallel parallel session there."
+    },
+    {
+        "start": 138.385,
+        "end": 155.535,
+        "num_words": 64,
+        "speakers": [
+            0
+        ],
+        "text": "And then we'll have cancer storytelling, uh, from about 3:15 to 4:15 from a few patients we've asked to tell their own story. So please come. Uh, we created this event because of the class, so we hope that a lot of the students would be able to, uh, attend the, uh, event as well. So there's a registration page I think we can"
+    },
+    {
+        "start": 155.535,
+        "end": 157.215,
+        "num_words": 4,
+        "speakers": [
+            1
+        ],
+        "text": "Uh, send out later."
+    },
+    {
+        "start": 157.215,
+        "end": 161.615,
+        "num_words": 16,
+        "speakers": [
+            0
+        ],
+        "text": "Yes. And then there's the code today. Any other kind of business before we get started?"
+    },
+    {
+        "start": 161.615,
+        "end": 169.55501,
+        "num_words": 28,
+        "speakers": [
+            2
+        ],
+        "text": "Um, no, just make sure that you continue filling out those, um, the attendance, uh, and assignments on Canvas as well as the assignments that are there too."
+    },
+    {
+        "start": 170.35,
+        "end": 198.46,
+        "num_words": 74,
+        "speakers": [
+            0
+        ],
+        "text": "So great to have a session today on caregiving. Um, this is an area that is so important to every patient's life. Anybody who's been diagnosed with serious illness such as cancer, having a support system around you is really crucial. Again, to kind of playing off last week's theme of kind of what characteristics did I have that really benefited me in my care. I have a great support system, a great family."
+    },
+    {
+        "start": 198.68001,
+        "end": 214.63501,
+        "num_words": 61,
+        "speakers": [
+            0
+        ],
+        "text": "Uh, my wife, Christine, there in the back, she's going to be speaking a little later. Uh, without her, I would not be in such good shape that I am today. Uh, but not only my wife, but my brother flew in. He's flown in. He's gonna fly in a 3rd time to help us out and drive the kids around."
+    },
+    {
+        "start": 214.63501,
+        "end": 259.87,
+        "num_words": 129,
+        "speakers": [
+            0
+        ],
+        "text": "And my 17 year old has still got his learner's permit. So he goes and drives with him and, uh, you know, picks up food from Costco. And, uh, my sister who's in the area in San Carlos, you know, she is an internist so she can give her medical support as well as you know supportive, um, bringing us food and taking us out to eat and that emotional support we all need. So I've been a great beneficiary of having a great support system, and I can't emphasize how important it is to have that support system. And so today we have Professor Ramak Trivedi, who's one of my, uh, colleagues and good friends from CARE, uh, who's basically the expert at Stanford on research and caregiving."
+    },
+    {
+        "start": 260.01,
+        "end": 278.375,
+        "num_words": 59,
+        "speakers": [
+            0
+        ],
+        "text": "So, uh, we'll have Doctor. Trivedi speak, and then my wife, Christine, will speak briefly. And then we also have one of our, uh, auditors, uh, Skip Victor, who's a former GCI fellow, who's going to talk about his experience as a caregiver, uh, for his daughter, uh, at the end. So please join me in welcoming Doctor. Trivedi."
+    },
+    {
+        "start": 298.045,
+        "end": 323.875,
+        "num_words": 88,
+        "speakers": [
+            3
+        ],
+        "text": "So, hi, everybody. Can you hear me? I'm Ronit, and I'm really honored to be here to play a small part in this incredibly brave and courageous thing that Ryan was doing, um, and to share some of the work we've been doing with you, as well as hopefully open your eyes a little bit to how we are putting real gaps in this area, uh, and especially with the major physical health care system. Some of you how much of you are undergraduates? People are walking in."
+    },
+    {
+        "start": 323.875,
+        "end": 331.35498,
+        "num_words": 12,
+        "speakers": [
+            3
+        ],
+        "text": "I was talking. Any medical students? Okay. Uh, PhD, undergraduate students. Okay."
+    },
+    {
+        "start": 331.35498,
+        "end": 357.285,
+        "num_words": 83,
+        "speakers": [
+            3
+        ],
+        "text": "So so mainly undergrads and then medical students. So you are all the people who work with can help us change how we view and engage caregivers. So I'm gonna focus in a very short time and talking super fast, um, uh, of kind of steps how we're developing a culture to an intervention, but that's really just a sort of a springboard to talk a little bit more of the broader field as well. I don't have any financial comments. I'm interested."
+    },
+    {
+        "start": 358.225,
+        "end": 366.885,
+        "num_words": 25,
+        "speakers": [
+            3
+        ],
+        "text": "I don't know how many of you have been following this. This is something the the comment should touch on. I anybody? You know? Yes."
+    },
+    {
+        "start": 367.12997,
+        "end": 371.28998,
+        "num_words": 11,
+        "speakers": [
+            0
+        ],
+        "text": "It's awesome. We went to find a bay and it's awesome."
+    },
+    {
+        "start": 371.28998,
+        "end": 374.03,
+        "num_words": 13,
+        "speakers": [
+            3
+        ],
+        "text": "This is from Crestview. We're close to where you guys are. Oh, perfect."
+    },
+    {
+        "start": 374.09,
+        "end": 377.21,
+        "num_words": 14,
+        "speakers": [
+            0
+        ],
+        "text": "Yeah. Actually, yeah, my, we actually went the first day, but we missed it."
+    },
+    {
+        "start": 377.21,
+        "end": 377.44998,
+        "num_words": 2,
+        "speakers": [
+            3
+        ],
+        "text": "Oh, yeah."
+    },
+    {
+        "start": 377.44998,
+        "end": 379.545,
+        "num_words": 8,
+        "speakers": [
+            0
+        ],
+        "text": "So it was a little too late. Yeah."
+    },
+    {
+        "start": 379.70502,
+        "end": 400.71,
+        "num_words": 66,
+        "speakers": [
+            3
+        ],
+        "text": "So, you know, this this comet was the last scene, uh, when by us witnessed by Neanderthals from Mars. So it's been, what's it, 80000, 88000 years ago? And it makes you realize we're just blips in existence, right? We're just mere blips. And anything we can do to leave this planet, this little blip of our life a better place, I think we should do."
+    },
+    {
+        "start": 401.01,
+        "end": 432.59,
+        "num_words": 106,
+        "speakers": [
+            3
+        ],
+        "text": "And I I just wanna applaud Brian for taking this opportunity to vulnerably and intimately share his journey and making the most of, you know, hit the blip that we have here. So it's just something that's making me reflect a lot about the passage of time and what our very small existence can mean in the grand scheme of the universe. A little bit more practically, what do you think and I know some of you got a sneak preview, but you guess. You can shout out the answer. What do you think is the annual cost of unvascular family therapy in the United States?"
+    },
+    {
+        "start": 432.59,
+        "end": 444.275,
+        "num_words": 44,
+        "speakers": [
+            3
+        ],
+        "text": "So I was going through a slide and some people were here, so I'm gonna let those people hold their answer. I just want people to guess. And this is, uh, this is an annual annual class. Anyway, just draw numbers. It doesn't matter."
+    },
+    {
+        "start": 444.275,
+        "end": 452.32,
+        "num_words": 10,
+        "speakers": [
+            3
+        ],
+        "text": "You're not getting graded. So what? Percocet. Yeah. How much?"
+    },
+    {
+        "start": 452.32,
+        "end": 460.0,
+        "num_words": 15,
+        "speakers": [
+            3
+        ],
+        "text": "$150,000 percocet. Okay. On paid caregiving. I so this is the annual cost nationally. Sorry."
+    },
+    {
+        "start": 460.0,
+        "end": 464.70502,
+        "num_words": 12,
+        "speakers": [
+            3
+        ],
+        "text": "I shouldn't make that. Like, to the United States. $1,000,000,000. $1,000,000,000,000. Okay."
+    },
+    {
+        "start": 465.165,
+        "end": 469.505,
+        "num_words": 6,
+        "speakers": [
+            3
+        ],
+        "text": "Going once. $1,000,000,000. Sorry? $3,000,000,000. 3,000,000,000."
+    },
+    {
+        "start": 469.805,
+        "end": 473.585,
+        "num_words": 13,
+        "speakers": [
+            3
+        ],
+        "text": "So we got a range here. $3,000,000,000. Any other? Come on. Just numbers."
+    },
+    {
+        "start": 474.285,
+        "end": 483.12,
+        "num_words": 19,
+        "speakers": [
+            3
+        ],
+        "text": "Number numbers? Okay. Some people who had a sneak preview, what was the number? $60,000,000,000. $600,000,000,000 of unpaid care."
+    },
+    {
+        "start": 484.30002,
+        "end": 496.85498,
+        "num_words": 45,
+        "speakers": [
+            3
+        ],
+        "text": "And this is caregiving to adults. We're not talking about parenting. We're actually not even talking of providing care to children who may have a health condition disability. Okay, this is the cost of adults caring for other adults. Now that's a lot of zeros."
+    },
+    {
+        "start": 496.91498,
+        "end": 517.4,
+        "num_words": 64,
+        "speakers": [
+            3
+        ],
+        "text": "I can't wrap my head around that. So this is the today's market cap of these companies right now. So right now, if you think about it, caregiving was a company, it was a top 100, Fortune 100. You have UnitedHealthcare, which is less than that, Visa, which is less than that. And I just needed an omni emoji to keep me very professional."
+    },
+    {
+        "start": 518.33997,
+        "end": 542.06,
+        "num_words": 73,
+        "speakers": [
+            3
+        ],
+        "text": "Here, that's a lot of unpaid care that we rely on adults to give other adults. Um, what do we mean by caregivers? These are family members and friends who support people who have a chronic condition or a serious health condition. And there's a lot of terms reviews. And 1 in 5 people in the United States are caregivers, so 53,000,000 which is where that number comes from the cost comes from."
+    },
+    {
+        "start": 543.0,
+        "end": 562.49,
+        "num_words": 49,
+        "speakers": [
+            3
+        ],
+        "text": "This is a pretty gendered, um, role. So 2 thirds of caregivers are women and, you know caveat these surveys are always gender and binary. So a third of all caregivers are not women or men. These questions are always answered in binary unfortunately. Mostly these are family members."
+    },
+    {
+        "start": 562.49,
+        "end": 583.765,
+        "num_words": 61,
+        "speakers": [
+            3
+        ],
+        "text": "I mean, Brian just talked about a brother and sister and other people who are stepping in. And these caregiving practices are deeply embedded in culture, whether it's general roles like why people provide care. It's all embedded in the culture. There's a lot of joy caregiving brings to people. So 83% thankfully say that actually caregiving does give them joy."
+    },
+    {
+        "start": 583.765,
+        "end": 604.885,
+        "num_words": 74,
+        "speakers": [
+            3
+        ],
+        "text": "And the joy can come from just being useful, right? Being supporting somebody you care about to sort of show the next generation what is what you need to do to provide care. What does it look like? You have to share transmission of values, to feel like you're, um, just bonding. People feel a great sense of kind of bonding with somebody because they're now in this very intimate way of supporting them."
+    },
+    {
+        "start": 605.10504,
+        "end": 630.15,
+        "num_words": 67,
+        "speakers": [
+            3
+        ],
+        "text": "But it's not without its negative effects. And you'll be in the caregiver literature, you're gonna see way more talk about the negative effects than the positive because that's where we need to fix things. Right? Uh, common things that caregiver burden, which is specifically the stress people experience, um, as they are providing care. There's a financial cost to it, you know, $150,000 potentially a year."
+    },
+    {
+        "start": 631.065,
+        "end": 661.85504,
+        "num_words": 76,
+        "speakers": [
+            3
+        ],
+        "text": "And there's a lot of stress, burnout, anxiety. It all adds up to negative effects. And so that we need to create programs to fix these issues even while making sure that the positive aspects don't go away or get amplified. In cancer, this has received significant attention. There's been a lot of research over the decades on how do we improve caregiving, our caregiver well-being and quality of life in somebody's providing care for cancer."
+    },
+    {
+        "start": 662.47504,
+        "end": 682.77496,
+        "num_words": 61,
+        "speakers": [
+            3
+        ],
+        "text": "Um, these are pretty dated data at this point. They, you know, as you can see, 2015. But anywhere between 3 to 6000000 people in the United States are providing care to somebody with cancer, an adult with cancer. People are providing up to 33 hours a week, so that's almost a full time job if you think about it. Right?"
+    },
+    {
+        "start": 682.77496,
+        "end": 712.16,
+        "num_words": 99,
+        "speakers": [
+            3
+        ],
+        "text": "33 hours is a that's a full job that is 40 hours a week. And, actually, a third do provide more than 41 hours of care a week, which is a huge amount of care. And people do all kinds of different things, and I'll talk about that for a minute in a minute. And yet despite this that this is so common and there's so many needs, turns out that, uh, we less than a third are actually have had providers ask them how they are doing and if the providers can do something. Oh, come on, please."
+    },
+    {
+        "start": 715.125,
+        "end": 759.2,
+        "num_words": 135,
+        "speakers": [
+            3
+        ],
+        "text": "And I just put a mastrix to say, you know, I'm on the Cancer Collaborative and Research Advisory Board for National Hands of Caregiving, which is the top policy organization in the US. And they they they're the ones who every 5 years do these reports. So we are actually working on updating this cancer. So hopefully soon we'll have more contemporary statistics, because cancer prevalence and all has changed, but cancer caregiving and cancer survivorship has changed a lot too in the last 10 years. More and more people are talking of self management in cancer in a way that we've talked historically historically in other chronic conditions like diabetes and heart disease, but there's been much more recent phenomena in cancer and more and more people are thinking of the chronic care model."
+    },
+    {
+        "start": 760.06,
+        "end": 780.125,
+        "num_words": 72,
+        "speakers": [
+            3
+        ],
+        "text": "So what does it mean by self management? Self management is literally everything that the health care team tells the patient to do when they leave the clinic. Right? So take your you know, make sure you get your vaccinations, make sure your father's diet, go and get your 10,000 steps, whatever it might be, right? These are the medicines, make sure you take them, whatever, all that is considered self management."
+    },
+    {
+        "start": 780.66504,
+        "end": 821.81,
+        "num_words": 128,
+        "speakers": [
+            3
+        ],
+        "text": "And caregivers play a huge role. So in a chronic, in the broader chronic illness literature, what we know is that when people have somebody to provide them support, whether it's a family caregiver or just a support structure, they're better at their way to self management recommendations, right? And so family caregivers are really important in making sure that things outside of the clinic are taken care of. In serious illnesses like cancer, you also have things, you might have wound care, you might have other biologics that need to be given, because so much of cancer care is more and more moving to outpatient care rather than inpatient care at least in the US. So family caregivers are on the hook for all of that stuff."
+    },
+    {
+        "start": 824.11005,
+        "end": 850.52,
+        "num_words": 84,
+        "speakers": [
+            3
+        ],
+        "text": "And yet we do not empower caregivers to navigate and, you know, we're gonna hear about people with who have the embodied knowledge of being cancer caregivers and they'll be able to speak to this also. Uh, but caregivers are kind of still left at a distance. They're still not engaged explicitly and systematically by the health care system and it's something that you all are gonna teach. Why why are why are we not empowering caregivers? Well, there's multiple love challenges to this."
+    },
+    {
+        "start": 850.52,
+        "end": 865.17505,
+        "num_words": 49,
+        "speakers": [
+            3
+        ],
+        "text": "There's the individual level. So caregivers themselves don't have the time. Right? They're I mean, they just spend 33 hours taking care of somebody. They don't, not to mention, they might have jobs at other caregivers, including kids and older folks and all kinds of other things going on."
+    },
+    {
+        "start": 865.17505,
+        "end": 886.59503,
+        "num_words": 65,
+        "speakers": [
+            3
+        ],
+        "text": "They don't have time to come in and with and be engaged with the health care system. There's interpersonal issues. So not everybody gets along, and so there might be some interpersonal barriers to engaging caregivers. Either the caregiver and the health care system are not interacting effectively or within the patient caregiver diet, there's some tension and so it's playing out. There's policy issues."
+    },
+    {
+        "start": 886.59503,
+        "end": 904.0,
+        "num_words": 59,
+        "speakers": [
+            3
+        ],
+        "text": "Right now, we don't have in the fee for service model really good policies that support reimbursement of, uh, indicating caregiver. There are reimbursement posts. We're not really using them very well. And then clinic time is, you know, uh, those of you who are going to be a physician or physicians already know that there's no time. Right?"
+    },
+    {
+        "start": 904.0,
+        "end": 921.895,
+        "num_words": 66,
+        "speakers": [
+            3
+        ],
+        "text": "You barely have time to get through the key thing with your patient. You know, you don't have time. You're not being given time to actually be thoughtfully engaging caregivers. And then there's cultural issues and this is where I'm going to talk a little bit more about. So there's cultural like language barrier being the most obvious thing that people that might come to mind."
+    },
+    {
+        "start": 921.895,
+        "end": 949.915,
+        "num_words": 78,
+        "speakers": [
+            3
+        ],
+        "text": "But there's cultural practices like who's in charge? The typical way that we think about, uh, in the US is like if you have a patient, the partner is the default family caregivers, but that may not be true in different cultures. Um, it may be another woman, especially if the patient was a woman. So those things need to be understood so that we can culturally provide culturally to care to our patients. Um, there's gender differences."
+    },
+    {
+        "start": 950.055,
+        "end": 973.215,
+        "num_words": 69,
+        "speakers": [
+            3
+        ],
+        "text": "So there's a lot of cultures in which I mean, basically all cultures women are the de facto caregiver. But to give you an example, there's, um, in the US, about 2 thirds of caregivers are women. In India, 81% are women. And what they provide care also is different in who provides care. So in India, it's more the daughters in law, the wives and daughters in law."
+    },
+    {
+        "start": 973.29504,
+        "end": 1004.225,
+        "num_words": 99,
+        "speakers": [
+            3
+        ],
+        "text": "In the US, it's more daughters and the wives, partners. The motivation is culturally embedded, so there might be more a sense of duty for in some cultures versus affection or love that might be driving the caregiver responsibilities. Intergenerational care is also culturally embedded if you think of the cultures that you live in, like who's providing care of. If you just think about right now, who's providing care to somebody older in your family, somebody sick in your family or friends even. And you'll sort of see how this is playing out in just in your milieu."
+    },
+    {
+        "start": 1006.20496,
+        "end": 1044.17,
+        "num_words": 102,
+        "speakers": [
+            3
+        ],
+        "text": "Among LGBTQ plus groups, for example, there's a lot more peer care than intergenerational care because they often are estranged from their families of origin and often then do not have kids. And so there's a lot more peer support that happens in among the LGBTQ plus communities. And then different cultures have a different takeovers, individualist culture versus collectivist cultures that matters too. Um, there's certain conditions of stigmatized, like cancer is more dementia, some of this can be stigmatized, that can add an additional burden. And then there are times that their religious beliefs can contradict with evidence based approaches."
+    },
+    {
+        "start": 1044.39,
+        "end": 1078.34,
+        "num_words": 124,
+        "speakers": [
+            3
+        ],
+        "text": "Uh, we have a project going on, a paper that's almost ready to get submitted, focusing on this exact issue actually. Kind of just went through this in the interest of time. I mean, you're gonna get this slide, so I put a little bit more on the slides that I'm gonna go through so you have it. But these are all data from the US, um, and I've kind of touched on it. This I'm gonna respond this particular statistic out because I'm gonna talk about our work is Asian caregivers in general, of of all the racial ethnic minority groups in these national surveys, Asian caregivers are the ones that are most likely to say they didn't feel they had a choice."
+    },
+    {
+        "start": 1078.34,
+        "end": 1083.7251,
+        "num_words": 22,
+        "speakers": [
+            3
+        ],
+        "text": "They had to do it. Like, it it was their duty. It was expect expected. I'm sorry. They had to do it."
+    },
+    {
+        "start": 1085.625,
+        "end": 1114.3151,
+        "num_words": 94,
+        "speakers": [
+            3
+        ],
+        "text": "So this has led us to come up with a suite of projects that we're calling suffered with South Asian Family Approaches to Diseases. Suffered in, uh, my mother thing is godrati, and it means succeed in guadrati. So our our goal is to get people to succeed in, uh, and get supported and succeed at whatever conditions they're managing. And we've had historically a suite of studies that are based on succeed and Web 60, so we're able to kinda stay in that. These are the things that gives us jollies as professors."
+    },
+    {
+        "start": 1118.535,
+        "end": 1146.475,
+        "num_words": 86,
+        "speakers": [
+            3
+        ],
+        "text": "For South Asian breast cancer, this is our work. My current work is focused on this. 1 in 5 people globally have a South Asian heritage, so a lot of the statistics are coming out of the care studies actually that, uh, Bryant and Lata have, uh, are leading the center. Um, and, actually, India just became the most populous country in the world, right, and surpassing China just not that long ago. I mentioned the cultural context of breast cancer management is affected by culture."
+    },
+    {
+        "start": 1146.855,
+        "end": 1179.745,
+        "num_words": 99,
+        "speakers": [
+            3
+        ],
+        "text": "In in one study, um, uh, people said that almost half the people said that sexual tempos, uh, were interfering with getting good preventive care like mammography. In fact, only 33% of people are getting preventive care, preventive screening, breast cancer screening in in India. There's a stigma around cancer. In fact, there's, um, there's actually no words in a lot of the I speak 2 other languages that are for cancer or survivor. Cancer is just cancer, so it's almost like people you know, this is a weird dog even gonna come up with a word for that."
+    },
+    {
+        "start": 1179.965,
+        "end": 1212.9,
+        "num_words": 83,
+        "speakers": [
+            3
+        ],
+        "text": "And for survivor, American Cancer Society actually has Hindi language materials, which is good, but it's like super high caliber, like you know it's just like the health records is very high. And the phrase they use basically try any Hindi speakers here? It translates to those who have escaped cancer. So you can see that instead of like a survivor which kind of has this positive connotation like you survived, like here this is good, there's this pew, you escaped cancer. Right?"
+    },
+    {
+        "start": 1212.9,
+        "end": 1231.535,
+        "num_words": 64,
+        "speakers": [
+            3
+        ],
+        "text": "So that's sort of that stigma and the fear is kinda embedded in the language as well. And our health care system, we know this, is not designed to handle this cultural project. We just throw our English materials at people, maybe get a medical interpreter and fingers crossed, hope for the best. Right? And we know that's doesn't not how it works out."
+    },
+    {
+        "start": 1233.355,
+        "end": 1264.865,
+        "num_words": 105,
+        "speakers": [
+            3
+        ],
+        "text": "I know there's people who are gonna be talking about their experience, so these are my parents. Um, my mom has had metastatic cancer for about 19 years at this point, and actually she's in hospice now. So we're kind of looking at sort of the next stage of it, but we've been as a family caregiving for a long time. And my dad, who is now 82, this is just 2 years ago, this is Tahoe they were visiting. And my dad has had long standing issues with, you know, basic cardiovascular disease, South Asian heritage, you know, it kinda comes with the territory."
+    },
+    {
+        "start": 1265.3251,
+        "end": 1317.405,
+        "num_words": 175,
+        "speakers": [
+            3
+        ],
+        "text": "And the 2 of them I've seen over the years just take care of each other. And that's been a big driver of the work that I've done in terms of making sure that we honor not just the patient, not just the caregiver, but both together, because what they bring together with each other transcends what each one brings in to this. So if we just do patient focused work, then we're certainly missing the caregiver, but if we just do caregiver focused work, we're actually missing the role, the patient, and their relationship plays. So this inspired me to come up with this, um, VADI Health Behavior Change Model that this is the most recent measure I published almost 10 years ago now. And the idea is that to argue the contribution is that the this is this box over here is really focusing on how did the dyadic coping, dyadic relationships, the interpersonal factors, how does that play into how well people can take care of all kinds of different chronic conditions?"
+    },
+    {
+        "start": 1317.7051,
+        "end": 1346.115,
+        "num_words": 92,
+        "speakers": [
+            3
+        ],
+        "text": "Um, so this is what we're doing right now. Um, so in the suffered study, we already finished this phase, we're kind of finishing up the management for this. What we did was we talked with 13 breast cancer survivors, um, 13 caregivers of breast cancer survivors, um, in the Bay Area who are South Asian. We also talk with, uh, 12, uh, clinical providers. This is in the pandemic time, so it's kind of all roughly became Stanford, but because there was no way to do community outreach at the time."
+    },
+    {
+        "start": 1346.195,
+        "end": 1362.09,
+        "num_words": 44,
+        "speakers": [
+            3
+        ],
+        "text": "There was no community centers. Um, and we did interviews and surveys, um, with them. To put it as because we just don't know. This is a very, very uncharted territory of South Asian experiencing breast cancer. What is it like to do that?"
+    },
+    {
+        "start": 1362.25,
+        "end": 1400.12,
+        "num_words": 121,
+        "speakers": [
+            3
+        ],
+        "text": "So we use hour long interviews that we thought might be too long, or we were told too long. And actually people spent 2 hours with interviews with us because they really have stories to share and then nobody had asked these stories, right? So we are now analyzing these and trying to get them out and basically we use that to also identify what do people need in home and community based services, what do they need within the health care system, how are they managing it, what are the fears, What's kind of the uplift? All of that. And then we're using that to then co design an intervention, and then we'll be working on doing a clinical trial."
+    },
+    {
+        "start": 1400.12,
+        "end": 1462.89,
+        "num_words": 196,
+        "speakers": [
+            3
+        ],
+        "text": "So we this is kind of we're wrapping this phase up, um, and then we're starting this process right now, the in recruiting stakeholders. So the idea here is we're kind of pulling in this we're combining this approach of this, um, community based participatory research approaches so that we can work directly with the communities that will ultimately be served with these groups, but also bringing this human centered co design aspects into that so that we not only are just asking people at the end, once we create something, to say, here's a prototype what you think, but really embedding them in the design and creation of the process, just suffusing them throughout, which is this generative core design framework for health care innovation, which is a mouthful. And our goal will be to kind of identify or take our intervention we already have at WebSucceed, identify some of the some cultural enhancements, and then incorporate them and and pilot test it. These are some of the, uh, quotations from our study that I just wanted to share with you. Uh, sequencing was a huge theme that we heard, um, because of the stigma."
+    },
+    {
+        "start": 1463.325,
+        "end": 1481.92,
+        "num_words": 69,
+        "speakers": [
+            3
+        ],
+        "text": "So here's a woman saying, Promise don't tell your mom. She's saying that to her cousin. Like, don't tell your mom it was my mom, go back, because they're sisters. Right? Um, and so it's like this idea that, you know, I will tell you, I'll tell you my, uh, my cousin, but aunts cannot know because then that generation will know and it'll be go out of control."
+    },
+    {
+        "start": 1482.38,
+        "end": 1493.4451,
+        "num_words": 38,
+        "speakers": [
+            3
+        ],
+        "text": "Here's, um, a survivor saying, I was terrified. No one's going to come in with a cape and save the day. Like, this is real life. I could really die. Another survivor saying you feel emptiness and loneliness."
+    },
+    {
+        "start": 1494.2251,
+        "end": 1518.4249,
+        "num_words": 73,
+        "speakers": [
+            3
+        ],
+        "text": "Here's a family caregiver who's really talking the loneliness again that says it's a chain reaction going home, not having friends, and feeling really lonely. The need for culturally attuned interventions. Here is this woman, uh, sophomore, her mom who has cancer saying, I remember my mom reading all the diet recommendation, like eat salads and all this stuff. She's like, I don't even eat half of this. This is very American food."
+    },
+    {
+        "start": 1518.4249,
+        "end": 1536.26,
+        "num_words": 73,
+        "speakers": [
+            3
+        ],
+        "text": "This is not what we'll eat at home. And we are bath themed a lot. Uh, some people said once a person said, I guess this cancer is never out of your mind. I think you never go back to being the carefree person you were. And here's a male caregiver saying, I just went almost silent in terms of not even talking about it because my wife was trying to be brave."
+    },
+    {
+        "start": 1536.26,
+        "end": 1591.91,
+        "num_words": 172,
+        "speakers": [
+            3
+        ],
+        "text": "So I'm really feeling that they have to hold the gluten kind of stress for both of them because he would normally just share it with his wife, but he can't because she's already the survivor at this point. And so that's gonna lead us to, uh, now the next phases, as I mentioned, of this work. Um, we were kind of getting started on this part and keeping our fingers crossed for an R21 that's forward really well over the next January. Right. And so I just wanted to put this up because people are students, if people are looking for opportunities for a collaboration or if you work with us, like I said, we have this co design process and we've created a playbook so once we develop this, our goal is to take the intervention and really be able to give it to adapt to any kind of other minoritized group you might be interested in because we are we have a process that we've developed and are developing."
+    },
+    {
+        "start": 1592.2101,
+        "end": 1622.56,
+        "num_words": 95,
+        "speakers": [
+            3
+        ],
+        "text": "And so it doesn't matter what the group is as long as we follow these steps and then the ultimate product and then we palates and whatever minoritized group that people might be interested in. And we've kept the intervention nimble to allow that and the process, uh, rigorous and yet with some enough wiggle room so that you can adapt it. We have an ongoing clinical trial of our intervention. I'm happy to talk more about that later or you can email me. We have these South Asian data that are ripe for writing."
+    },
+    {
+        "start": 1624.1549,
+        "end": 1647.7001,
+        "num_words": 89,
+        "speakers": [
+            3
+        ],
+        "text": "We have large national data sets of high need high risk, I was talking to Rachel about this earlier, with large national data sets of high need high risk veterans because I also work at the VA, and caregivers of high need high risk veterans. So these are people who are really high risk of dying within the next year. So a really unique data set. Um, so if anybody's interested in working with these, just reach out to me, please. To summarize, family caregivers can play important roles."
+    },
+    {
+        "start": 1647.7001,
+        "end": 1674.4199,
+        "num_words": 80,
+        "speakers": [
+            3
+        ],
+        "text": "You're gonna hear about more about that from others. Uh, we need to empower caregivers, but it will require changes at all levels. We need to understand individually, interpersonal, policy, systemic, institutional levels. And, you know, I encourage people to think about dyadic interventions because, you know, when you're you're not just working with the wrong person usually or thing working with a whole system. At the very least, involving people, um, the closest people who are engaged is important."
+    },
+    {
+        "start": 1675.28,
+        "end": 1691.195,
+        "num_words": 53,
+        "speakers": [
+            3
+        ],
+        "text": "And that's that. Oh, so that reflects pharmacy 2 of the Human Health Service has its amazing quotation. It says when you ignore caregivers, you'll be apple too much of it. I see one cute person, but I get the basketball offense. So, yeah, a lot of people over the years have collaborated."
+    },
+    {
+        "start": 1691.815,
+        "end": 1693.195,
+        "num_words": 5,
+        "speakers": [
+            3
+        ],
+        "text": "So there, Anne, thank you."
+    },
+    {
+        "start": 1697.11,
+        "end": 1704.95,
+        "num_words": 33,
+        "speakers": [
+            0
+        ],
+        "text": "Thank you so much. Uh, in the interest of time, just why don't we have the caregivers come up first and then we'll do all the Q and A. Hold on, sorry. Okay."
+    },
+    {
+        "start": 1704.95,
+        "end": 1707.59,
+        "num_words": 12,
+        "speakers": [
+            3
+        ],
+        "text": "So you want me to turn this off? Yeah, take that off."
+    },
+    {
+        "start": 1707.59,
+        "end": 1714.225,
+        "num_words": 23,
+        "speakers": [
+            0
+        ],
+        "text": "I invite, uh, my wonderful wife, Christine, and skip up at the same time, and we'll all 4 of us sit here. And"
+    },
+    {
+        "start": 1715.485,
+        "end": 1716.6849,
+        "num_words": 8,
+        "speakers": [
+            3
+        ],
+        "text": "Oh, you want me to be there, actually?"
+    },
+    {
+        "start": 1716.6849,
+        "end": 1719.0249,
+        "num_words": 10,
+        "speakers": [
+            0
+        ],
+        "text": "Yeah. Yeah. Yeah. Why don't you take the last 4?"
+    },
+    {
+        "start": 1719.1649,
+        "end": 1721.245,
+        "num_words": 11,
+        "speakers": [
+            3
+        ],
+        "text": "Should I keep I think we should be passing this on."
+    },
+    {
+        "start": 1721.245,
+        "end": 1722.5249,
+        "num_words": 10,
+        "speakers": [
+            2
+        ],
+        "text": "Yes. So if you if you can Yeah. Why don't"
+    },
+    {
+        "start": 1722.5249,
+        "end": 1723.325,
+        "num_words": 4,
+        "speakers": [
+            0
+        ],
+        "text": "we pass this slide?"
+    },
+    {
+        "start": 1723.325,
+        "end": 1723.9049,
+        "num_words": 2,
+        "speakers": [
+            3
+        ],
+        "text": "Yeah. Okay."
+    },
+    {
+        "start": 1725.06,
+        "end": 1745.015,
+        "num_words": 33,
+        "speakers": [
+            0
+        ],
+        "text": "So So let me start with, um, my wife, uh, Christine, and we can talk about your experience, when I was diagnosed. And and in particular, we can talk about the food content."
+    },
+    {
+        "start": 1745.955,
+        "end": 1751.585,
+        "num_words": 21,
+        "speakers": [
+            3
+        ],
+        "text": "Why don't you feed 1, and then we'll pass on the Okay. Something. We'll pass on the next one. Which one?"
+    },
+    {
+        "start": 1756.51,
+        "end": 1791.7849,
+        "num_words": 103,
+        "speakers": [
+            4
+        ],
+        "text": "It was a very overwhelming experience, at least at the beginning. Because, you know, you know, lucky for us, uh, Brian was diagnosed very quickly within a very short period of time, and he was able to get treated very quickly. However, all those information coming in, I literally felt I could not digest at all. I was bringing a notebook into the clinic when he had, uh, his appointment, uh, with doctor Blakely, and they were just talking in medical language that I did not understand. And I was trying to basically take notes, and I after a while, I gave up."
+    },
+    {
+        "start": 1791.7849,
+        "end": 1812.14,
+        "num_words": 70,
+        "speakers": [
+            4
+        ],
+        "text": "I basically was like, okay. Never mind. I don't understand any of this. Just tell me what I need to do. But I I do think that as a caregiver person, you know, somebody so close to, you know, the the patients, um, you are taking on both the the emotional stress and definitely the the actual actions of what needs to be done to take the patient for treatment."
+    },
+    {
+        "start": 1812.6799,
+        "end": 1844.26,
+        "num_words": 90,
+        "speakers": [
+            4
+        ],
+        "text": "And you have to, uh, very quickly come to speed. Uh, even though you may get a lot of help and whatnot, but you didn't have a moment to really just sort of like, okay. Let me digest of what's going on. So luckily, I I do feel that we are very, you know, uh, in a position that, you know, cancer, even though it hasn't really happened to us directly to our family, but it's not a new subject. And certainly lung cancer, I've heard a lot for Bryant."
+    },
+    {
+        "start": 1844.56,
+        "end": 1862.8849,
+        "num_words": 47,
+        "speakers": [
+            4
+        ],
+        "text": "So it's it's not so novel in that sense. But, um, still, it it was a lot. Um, and for me personally, I have to get organized very quickly. But I actually, you know, felt overall very hopeful because I felt like, okay. Well, greatest care possible."
+    },
+    {
+        "start": 1865.1001,
+        "end": 1875.18,
+        "num_words": 33,
+        "speakers": [
+            4
+        ],
+        "text": "And so, you know, we just have to do what we are told, essentially. Uh, but I also embrace it very much as if not a short term thing, but really think of"
+    },
+    {
+        "start": 1875.18,
+        "end": 1876.095,
+        "num_words": 5,
+        "speakers": [
+            3
+        ],
+        "text": "it as a long term."
+    },
+    {
+        "start": 1877.0549,
+        "end": 1888.575,
+        "num_words": 47,
+        "speakers": [
+            4
+        ],
+        "text": "So and I actually after I learned about you know, I I did have to tell my boss that, hey. By the way, I'm gonna take time off, you know, here and there, and you're just gonna see me disappear. Uh, I did share my story with"
+    },
+    {
+        "start": 1888.735,
+        "end": 1899.9801,
+        "num_words": 44,
+        "speakers": [
+            0
+        ],
+        "text": "She had to she had a business trip actually to Japan, and I needed when this was I was being diagnosed, I said I told her, I said, then you need to cancel the business trip because I think something is not right here."
+    },
+    {
+        "start": 1900.04,
+        "end": 1909.6749,
+        "num_words": 33,
+        "speakers": [
+            4
+        ],
+        "text": "Yeah. Yeah. And that's when I really realized, okay, he's not dropping. This is really serious. He it was just like, I want you to be there when they come on the news."
+    },
+    {
+        "start": 1910.0549,
+        "end": 1958.415,
+        "num_words": 168,
+        "speakers": [
+            4
+        ],
+        "text": "And so, you know, so there's a lot of arrangement that needs to happen, but I what I what I was trying to say is that I learned actually that a few people at work also have, uh, experienced cancer. And some people have actually been experiencing it for a long time, uh, that they have immediate families who have been having cancer for, like, 7 or 8 years. And what I've learned is that there's a lot of emotional ups and downs because, you know, the treatment is working really well, you know, at the beginning, and then you just don't know, and then something is not working right. And then they will have to switch treatment, change something or maybe, you know, do something a little more drastic. So then you kind of go through that emotional roller coaster where you kind of get hopeful, really happy and then you're like, oh my God, I may have to embrace for the worst or something like that."
+    },
+    {
+        "start": 1958.9751,
+        "end": 1988.135,
+        "num_words": 94,
+        "speakers": [
+            4
+        ],
+        "text": "And so that actually is always very tricky. Um, and also, you know, at the same time, you're trying to make emotions with, uh, in our case, you know, also with our kids. And, you know, luckily, our kids are generally, you know, very happy go lucky kids. So, you know, they take it really well, or they just basically seem, you know, somewhat ignorant of of not really realizing the gravity of it all. Um, but I think the key, though, is that definitely lean on your friends and family if they offer."
+    },
+    {
+        "start": 1988.135,
+        "end": 2000.8099,
+        "num_words": 41,
+        "speakers": [
+            4
+        ],
+        "text": "Like, don't turn them down. Don't don't don't try to be polite. Like, just pretend. And and that happens to us, and, you know, people would just, like, show up with food. That was really nice, like, without me even asking."
+    },
+    {
+        "start": 2000.87,
+        "end": 2011.59,
+        "num_words": 45,
+        "speakers": [
+            4
+        ],
+        "text": "They said, hey. I know you know, when are you coming home for your chemo? I'm just gonna drop off food around the time that you come home so you have dinner ready to go. Don't even bother with anything. I really, really appreciated that."
+    },
+    {
+        "start": 2011.59,
+        "end": 2028.78,
+        "num_words": 56,
+        "speakers": [
+            4
+        ],
+        "text": "That was really nice. Or my friend's like, hey. I heard that you're now looking into a more like the cancer friendly, better diet, switching into vegetarians and stuff. And so my friend's like, just get me a couple of recipes I'll cook for you. And I really try to push hard on that with bread."
+    },
+    {
+        "start": 2029.0,
+        "end": 2037.58,
+        "num_words": 30,
+        "speakers": [
+            4
+        ],
+        "text": "And I'm like, okay. You no longer can't have any sausages or any, uh, red meat or, you know, like, we are gonna do vegan now. And he's like, what?"
+    },
+    {
+        "start": 2039.005,
+        "end": 2049.105,
+        "num_words": 26,
+        "speakers": [
+            0
+        ],
+        "text": "My reaction was like the bubble. I'm like, I don't eat this food. That's why that resonated. And I was like, that's not food I eat."
+    },
+    {
+        "start": 2049.4849,
+        "end": 2063.37,
+        "num_words": 55,
+        "speakers": [
+            4
+        ],
+        "text": "That's definitely a little bit of a battle because, you know, I spent all this time, you know, like, cooking, like, different type of food, you know, like, oh, in my mind, very healthy. And then he was like, oh, I there's coconut oil. I smelled it. I'm used to like coconut. Not not anymore."
+    },
+    {
+        "start": 2063.37,
+        "end": 2063.61,
+        "num_words": 1,
+        "speakers": [
+            4
+        ],
+        "text": "No."
+    },
+    {
+        "start": 2063.61,
+        "end": 2064.43,
+        "num_words": 2,
+        "speakers": [
+            3
+        ],
+        "text": "And so"
+    },
+    {
+        "start": 2064.97,
+        "end": 2072.705,
+        "num_words": 26,
+        "speakers": [
+            4
+        ],
+        "text": "then, you you know, it's the kind of thing. So as a caregiver, you feel a little disappointed. You feel almost insulted. It's okay. You know?"
+    },
+    {
+        "start": 2072.705,
+        "end": 2079.185,
+        "num_words": 26,
+        "speakers": [
+            4
+        ],
+        "text": "But you you, you know, you try. Right? Like and you you kinda have to have that, uh, mentality that, like, okay. It's okay. You know?"
+    },
+    {
+        "start": 2079.185,
+        "end": 2092.51,
+        "num_words": 52,
+        "speakers": [
+            4
+        ],
+        "text": "Like, we're just gonna get through this. There will be a lot of waste, but just don't worry about it. And I think once you let those go, then you kind of like, okay. You know, uh, it's alright. Like, we just have to go through it one day at a time."
+    },
+    {
+        "start": 2092.51,
+        "end": 2122.425,
+        "num_words": 101,
+        "speakers": [
+            4
+        ],
+        "text": "And I think that's actually my mantra. You know, I don't play very far, which is very contrasting with what I used to do. You know, I was literally just like, okay. I know what I need to do for the next few days or maybe a week, but I literally wouldn't think anything else because I just know that I need to be staying as flexible as possible. Um, and you need to be you know, it's a big ask on a lot of caregivers, um, and that depending on the personality, because you have to be suddenly prepared patient."
+    },
+    {
+        "start": 2123.945,
+        "end": 2150.9248,
+        "num_words": 88,
+        "speakers": [
+            4
+        ],
+        "text": "Because, you know, like, especially when you see the patients going through, you know, pain and and or just discomfort. You know, they they may not intentionally wanna scream at you, but, you know, they could. Alright? Like and you just have to be very understanding, like, it's not on you, that it it's really just a situation, and you kinda have to put yourself into their their position. But at the same time, you also have to have sympathy for yourself because you have to remind yourself."
+    },
+    {
+        "start": 2150.9248,
+        "end": 2170.95,
+        "num_words": 68,
+        "speakers": [
+            4
+        ],
+        "text": "You know? And my mom told me this, and it's really funny when I told my parents, you know, oh, Brian has been diagnosed with lung cancer. They said, we want to help you. We wanna come to your place right now and help you, but we realized if we come to you, we're imposing on you because now you have 2 more people staying at your house,"
+    },
+    {
+        "start": 2171.41,
+        "end": 2171.5698,
+        "num_words": 1,
+        "speakers": [
+            0
+        ],
+        "text": "and"
+    },
+    {
+        "start": 2171.5698,
+        "end": 2188.355,
+        "num_words": 65,
+        "speakers": [
+            4
+        ],
+        "text": "we're causing more trouble. So we're gonna stay remote. We're just gonna, like, be there, and we don't even wanna call you because we feel that if we call you, you may be too busy, and you you you just feel obligated to pick up the phone and ask for us. So but we just wanna let you know that we're here. Call us anytime."
+    },
+    {
+        "start": 2188.895,
+        "end": 2205.0552,
+        "num_words": 48,
+        "speakers": [
+            4
+        ],
+        "text": "And and and and that was actually really interesting, uh, for me because I feel like, okay. Now with all the cares that people are offering, I actually have the man insurance. Right? So it's sort of, you know, like, some people are organized. They're like, oh, okay."
+    },
+    {
+        "start": 2205.0552,
+        "end": 2230.1,
+        "num_words": 89,
+        "speakers": [
+            4
+        ],
+        "text": "Let me get this spreadsheet going, and we'll have, like, different people deliver food for you. Uh, but I didn't wanna ask for that. But, you know, but that's actually the there's some people who are in that position that needs to do that. So I would say, you know, get the help, but definitely remember that you have the best caregiver have to take care of themselves as well. Um, and, you know, if basically, you know, if I go down, the rest of the family goes down."
+    },
+    {
+        "start": 2230.1,
+        "end": 2231.8801,
+        "num_words": 6,
+        "speakers": [
+            4
+        ],
+        "text": "So that's kinda how I get."
+    },
+    {
+        "start": 2232.26,
+        "end": 2239.305,
+        "num_words": 17,
+        "speakers": [
+            0
+        ],
+        "text": "Yeah. Just before we head up to skip, talk about how complex everything was at the beginning."
+    },
+    {
+        "start": 2239.685,
+        "end": 2241.925,
+        "num_words": 7,
+        "speakers": [
+            3
+        ],
+        "text": "Oh, yeah. Yeah. In terms of appointments"
+    },
+    {
+        "start": 2241.925,
+        "end": 2244.165,
+        "num_words": 6,
+        "speakers": [
+            4
+        ],
+        "text": "and Right. Especially. Yeah. Yeah. Yeah."
+    },
+    {
+        "start": 2244.165,
+        "end": 2268.815,
+        "num_words": 84,
+        "speakers": [
+            4
+        ],
+        "text": "This is the one part, like, in a way, again, we we got really, really lucky, um, because, you know, all the appointments were either made for us or Bryon knows how to navigate this system, right, which I think most people wouldn't wouldn't have the knowledge. Like, just don't know even where I go about. Like, who do I call? You know, like, that kind of thing. And so and I felt that that was actually quite a lot to keep track of."
+    },
+    {
+        "start": 2269.355,
+        "end": 2274.5698,
+        "num_words": 15,
+        "speakers": [
+            4
+        ],
+        "text": "You know, you know, I got myself onto, like, you know, onto the the health"
+    },
+    {
+        "start": 2274.73,
+        "end": 2275.8699,
+        "num_words": 4,
+        "speakers": [
+            0
+        ],
+        "text": "My Health. My Health."
+    },
+    {
+        "start": 2275.93,
+        "end": 2279.0498,
+        "num_words": 9,
+        "speakers": [
+            4
+        ],
+        "text": "Yeah. Right? And, Constantly, they have all this, like,"
+    },
+    {
+        "start": 2279.0498,
+        "end": 2296.595,
+        "num_words": 64,
+        "speakers": [
+            0
+        ],
+        "text": "up on Usually, you have your kids. Like, you have access to your kids because they're minors or what. And, you know, as adults but, you know, I have lots of patients who are on their My Health connected for their parents. Right? But, you know, obviously, I never thought I would need my wife to be on My Health, but I'm like, great."
+    },
+    {
+        "start": 2296.595,
+        "end": 2300.7751,
+        "num_words": 20,
+        "speakers": [
+            0
+        ],
+        "text": "This is great. I can invite you to My My Health, and you can see all the appointments and everything."
+    },
+    {
+        "start": 2301.1702,
+        "end": 2308.3901,
+        "num_words": 19,
+        "speakers": [
+            4
+        ],
+        "text": "Right. Right. And and that's actually I mean, for cancer in particular probably. Right? It's it's, uh, so many."
+    },
+    {
+        "start": 2308.9302,
+        "end": 2322.475,
+        "num_words": 49,
+        "speakers": [
+            4
+        ],
+        "text": "Unbelievable. I think it was even more than when I gave birth. Mhmm. The the the number of, you know, appointments that needs to happen. And and I think for you know, I I have to be, you know, honest that I actually don't like, I just show up."
+    },
+    {
+        "start": 2322.615,
+        "end": 2334.6401,
+        "num_words": 45,
+        "speakers": [
+            4
+        ],
+        "text": "I just I actually don't even know sometimes what those appointment are about, like, other than, like, I reread the title with MRI screening. Oh, okay. Okay. That kinda makes sense. And then everything else is sort of like, well, what are they talking about?"
+    },
+    {
+        "start": 2334.6401,
+        "end": 2364.42,
+        "num_words": 82,
+        "speakers": [
+            4
+        ],
+        "text": "And I think this is where, like, I think having a caregiving system, uh, to help the caregivers understand what's going on. Because a lot of times, the caregivers, you know, become the the point of contact for the rest of the family. Because other people, you know, the the grandparents or the parents or the sisters, siblings, like, lucky we're not in that situation that much. Uh, they will call you and say, oh, so how's Brian's doing? I don't know."
+    },
+    {
+        "start": 2364.6401,
+        "end": 2381.9749,
+        "num_words": 49,
+        "speakers": [
+            4
+        ],
+        "text": "Like, he's okay. So, like, a lot of that, and they kinda wants constantly wanna be, like, updated. And so you know? And but as a caregiver, you're kinda too busy, and and you don't necessarily even understand. So I think that that is, uh, is quite a bit."
+    },
+    {
+        "start": 2381.9749,
+        "end": 2382.375,
+        "num_words": 1,
+        "speakers": [
+            4
+        ],
+        "text": "Yeah."
+    },
+    {
+        "start": 2382.375,
+        "end": 2383.4148,
+        "num_words": 2,
+        "speakers": [
+            3
+        ],
+        "text": "Mhmm. Great."
+    },
+    {
+        "start": 2383.4148,
+        "end": 2384.495,
+        "num_words": 7,
+        "speakers": [
+            0
+        ],
+        "text": "Well, thank you. I will give Yeah."
+    },
+    {
+        "start": 2384.615,
+        "end": 2395.5898,
+        "num_words": 21,
+        "speakers": [
+            1
+        ],
+        "text": "Let me hand it over to Simon. Okay. Great. First, I wanna thank Brian. Brian's been very helpful in my And"
+    },
+    {
+        "start": 2395.5898,
+        "end": 2403.19,
+        "num_words": 23,
+        "speakers": [
+            0
+        ],
+        "text": "also clip it to Sherry if you will, because that's easier Okay. Than you don't have to hold this. At least I'll just"
+    },
+    {
+        "start": 2403.43,
+        "end": 2435.8699,
+        "num_words": 77,
+        "speakers": [
+            1
+        ],
+        "text": "So, uh, my daughter, 31 years old, was diagnosed in January with a very rare and aggressive cancer called nut carcinoma. There's really no treatment for it. If you went to a hospital outside of maybe the top 5 or 6 hospitals in the country, it's likely that you wouldn't be correctly diagnosed. So I'm grateful to Bryant and the people here at Stanford. Uh, my daughter has had a, uh, very, very challenging, uh, treatment plan."
+    },
+    {
+        "start": 2435.8699,
+        "end": 2464.5,
+        "num_words": 48,
+        "speakers": [
+            1
+        ],
+        "text": "She had a 14 hour endoscopic, uh, surgery, removed a tumor, but also they needed to remove her left eye. She had 6 weeks of daily radiation. She's had multiple rounds of different types of chemotherapy. She was extremely nauseous, uh, required frequent hospitalizations. Her medications are voluminous."
+    },
+    {
+        "start": 2465.44,
+        "end": 2517.61,
+        "num_words": 120,
+        "speakers": [
+            1
+        ],
+        "text": "Uh, we've had at least a 100 different doctors and others at Stanford and around the company and around the country, um, meeting with her. Um, and she's currently in a in a clinical trial now as there's really no, there's very, very little expertise around this particular type of cancer. So I have to say that there are times in this discussion of caregiving, it is a business, there are people that are looking at it in statistical terms and lost dollars and what it means. I can honestly say I never thought of myself and still don't think of myself as a caregiver. I'm the father of a daughter who's very sick and requires a lot of care."
+    },
+    {
+        "start": 2518.55,
+        "end": 2559.175,
+        "num_words": 101,
+        "speakers": [
+            1
+        ],
+        "text": "Um, it's not that hard for me. It's much harder for her. Um, and care, really, you know, I thought to myself, I would at least share a framework since you won't be treating statistics, you will be treating individuals. So the care of a 6 year old is a little different than the care of a 14 year old, a 30 year old, 50, 60, 70, 90. The conversations that an 80 year old doctor can have with a 94 year old person is pretty different than the kind of conversation you wanna have with a 31 year old person."
+    },
+    {
+        "start": 2560.195,
+        "end": 2586.4148,
+        "num_words": 65,
+        "speakers": [
+            1
+        ],
+        "text": "So I'm a loving father, and there's nothing I'm not going to try to do to help, uh, my daughter. It's very difficult for one person to provide all the care that you need. What kind of care does this person really need? And not everybody needs the same care. There are certain things in my family that I can do better than everybody else."
+    },
+    {
+        "start": 2587.035,
+        "end": 2607.99,
+        "num_words": 52,
+        "speakers": [
+            1
+        ],
+        "text": "There are many things that I can't do. And so the point was made earlier about having a large support group. And I think that's true. And I think if you are a caring person, it becomes just an easier way to think about that. Like, what does this person really need?"
+    },
+    {
+        "start": 2607.99,
+        "end": 2616.715,
+        "num_words": 30,
+        "speakers": [
+            1
+        ],
+        "text": "How will you interact with them? It? And so for me, what is it, what is caring? What does it mean to be a caregiver? What do you actually do?"
+    },
+    {
+        "start": 2617.095,
+        "end": 2655.3901,
+        "num_words": 96,
+        "speakers": [
+            1
+        ],
+        "text": "I think of it in 2 broad buckets. One is you are reacting to facts and things that happen that you hadn't anticipated. And that just as a result of not being able to anticipate it, you just have to react to whatever the need happens to be. The care that my daughter needed when a tumor was on her nerve and she was hospitalized and no amount of morphine could alleviate her pain, that's different than the fact that she's out now and out of the hospital. Still needs care, but it's very different care."
+    },
+    {
+        "start": 2655.3901,
+        "end": 2673.905,
+        "num_words": 53,
+        "speakers": [
+            1
+        ],
+        "text": "So caregiving is not a uniform thing and it changes with time. And as you heard before, you know, uh, people call it a marathon. I think it's a sprint and a marathon, and then there are times when there's literally nothing. So it is not one thing. Cancer is not one thing."
+    },
+    {
+        "start": 2674.445,
+        "end": 2727.865,
+        "num_words": 124,
+        "speakers": [
+            1
+        ],
+        "text": "The other thing that I think caregiving or caring doesn't have to be for a person with cancer, just being caring in your relationships takes you 80% of the way down to caring for somebody that's sick. And that's anticipating what a person's needs are. I now, and our family knows what things could change, and then we'll react to the circumstances. But we spend a lot of time planning and anticipating and having contingency plans and and so on and what happens. So, you know, for me, um, living in in the world that I call of of cancer stand, which is living with cancer, I wouldn't expect I certainly didn't have any appreciation for what that world is like until you're in"
+    },
+    {
+        "start": 2727.865,
+        "end": 2728.605,
+        "num_words": 2,
+        "speakers": [
+            3
+        ],
+        "text": "it. But"
+    },
+    {
+        "start": 2731.3052,
+        "end": 2771.78,
+        "num_words": 101,
+        "speakers": [
+            1
+        ],
+        "text": "and you heard a point about planning and sort of change with respect to how you think about the future. But I think of myself more just as a loving, caring parent. And we have, you know, a family that is trying to do everything we can, and we're not always successful, uh, at it. But I think if you spend all of your time thinking about the person and what they need, they may communicate exactly what they need, and then they may not communicate what they need. Or they may tell you something that you don't think they need."
+    },
+    {
+        "start": 2772.3198,
+        "end": 2800.8098,
+        "num_words": 73,
+        "speakers": [
+            1
+        ],
+        "text": "So I think the, from my, you know, I wouldn't begin to be able to advise anybody else how to care for the people that they love, other than how do you care for them generally and how do you show people that you love them. And then it becomes a little less burdensome and a little less, um, terrible, really. But, um, I guess that's my 2\u00a2. I'll pass it to her."
+    },
+    {
+        "start": 2800.8098,
+        "end": 2806.485,
+        "num_words": 31,
+        "speakers": [
+            0
+        ],
+        "text": "Why don't we open it up to questions? I know we only have a couple minutes left, but what we can do is I think we still have the room afterwards."
+    },
+    {
+        "start": 2806.7852,
+        "end": 2810.625,
+        "num_words": 16,
+        "speakers": [
+            2
+        ],
+        "text": "Yeah. So if folks need to head out for other classes, welcome to. But otherwise, we"
+    },
+    {
+        "start": 2810.625,
+        "end": 2811.185,
+        "num_words": 5,
+        "speakers": [
+            0
+        ],
+        "text": "have kind of like an"
+    },
+    {
+        "start": 2811.185,
+        "end": 2812.625,
+        "num_words": 9,
+        "speakers": [
+            2
+        ],
+        "text": "off start with the Q and A on. Yeah."
+    },
+    {
+        "start": 2812.625,
+        "end": 2845.7449,
+        "num_words": 78,
+        "speakers": [
+            0
+        ],
+        "text": "So why don't we open it up to questions, and please go ahead. Maybe I'll start with a question is, um, for Skip. So, you know, as a loving parent and as being a parent, although my kids were younger, our kids were younger, it can be very stressful to be a parent in many, at all ages, in any situations. So how did you manage that aspect of this, you know, for you personally as a father?"
+    },
+    {
+        "start": 2847.4849,
+        "end": 2873.135,
+        "num_words": 56,
+        "speakers": [
+            1
+        ],
+        "text": "Good question. And I think it kind of, I know your relationship with your kids doesn't start at age 30 or 50 or whatever it is. So you bring a relationship already to the table. And what cancer does is it just, for me, it sort of made it more so. So it becomes very exaggerated."
+    },
+    {
+        "start": 2873.9949,
+        "end": 2913.0398,
+        "num_words": 70,
+        "speakers": [
+            1
+        ],
+        "text": "And kids were scared and fearful. They didn't know the answer. And I feel fortunate that, you know, um, our kids are older, so they are adults, and we have, over our lives together, tried work and have worked very hard to have loving adult conversations. I am I listen to the kids and really listen to them. And I don't discount their feelings and I don't have the answers."
+    },
+    {
+        "start": 2913.5798,
+        "end": 2949.925,
+        "num_words": 98,
+        "speakers": [
+            1
+        ],
+        "text": "And I let them know that some days are easier than others. I think we try to be as gracious in understanding with each other. Sometimes I've had times when my daughter did not wanna continue with her treatment where she was in too much pain. I had one daughter who could not focus on her job and needed to take some time off. I could do all the parenting that I wanted to do, and I would parent them differently if they were 8 and needed to go to school, I could force them to do things."
+    },
+    {
+        "start": 2950.545,
+        "end": 2980.865,
+        "num_words": 87,
+        "speakers": [
+            1
+        ],
+        "text": "But if you're forcing 31 year old kids to do something, it's not a card that I really wanna use very often. So I respect them. We built a relationship over the years, and I think we were fortunate. They they gave me the benefit of the doubt when I was not at my best, and I try to give them the benefit of the doubt when they're not at their best. And the one thing that I know is how I told my daughter three things."
+    },
+    {
+        "start": 2981.405,
+        "end": 3004.9187,
+        "num_words": 56,
+        "speakers": [
+            1
+        ],
+        "text": "You will never be alone. You will have the best care that we can imagine. And however you think you feel today, it's likely that you're gonna feel differently tomorrow. So no matter what happened, you know, the Etch A Sketch is completely started afresh, and we try to be forgiving and loving and understand that"
+    }
+]
