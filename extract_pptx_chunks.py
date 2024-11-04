@@ -1,17 +1,44 @@
 import json
 from pptx import Presentation
 import glob
+import os
 
 INPUT_DIR = "slides"
 OUTPUT_DIR = "chunked_slide_transcriptions"
+# Set default metadata
+TITLE = "Slides"
+LANGUAGE = "en"
 
 
-def pptx_to_json(pptx_file, json_file):
-    # Load the presentation
-    presentation = Presentation(pptx_file)
+slides = {
+    "Caregiving in Cancer Med 275 FINAL.pptx": {
+        "name": "Developing Culturally Attuned Interventions to Support Caregiving in Cancer (Ranak Trivedi)",
+        "last_edit_date": "2024-10-16",
+    },
+    "MED 275 - Dr. Lin slides Sep 25.pptx": {
+        "name": "MED 275 – Diagnosis and Screening (Bryant Lin)",
+        "last_edit_date": "2024-09-25",
+    },
+    "MED 275 - Dr. Lui slides Sep 25.pptx": {
+        "name": "Lung cancer staging and screening (Natalie Lui)",
+        "last_edit_date": "2024-09-25",
+    },
+    "Stanford MED 275 Epidemiology 12.56.51 PM.pptx": {
+        "name": "MED 275 - Epidemiology and Cultural Considerations (Jeffrey Velotta)",
+        "last_edit_date": "2024-10-30",
+    },
+}
+
     
-    # Initialize the list to hold slide data
-    slides_data = []
+slides_data = []
+# Process each PowerPoint file in the input directory
+for pptx_file in slides:
+    # Load the presentation
+    presentation = Presentation(os.path.join(INPUT_DIR, pptx_file))
+
+    words_for_chunk = 0
+    text_for_chunk = ""
+    chunk_start_slide = 1
 
     # Iterate through each slide in the presentation with their index
     for slide_index, slide in enumerate(presentation.slides, start=1):  # Start counting from 1
@@ -34,22 +61,27 @@ def pptx_to_json(pptx_file, json_file):
 
         # Join all text into a single string
         text = "\n".join(slide_text)
+        text_for_chunk += ("\n" + text if text_for_chunk else text)
         num_words = len(text.split())
         
-        # Append slide data to the list with slide number
-        slides_data.append({
-            "slide_number": slide_index,
-            "num_words": num_words,
-            "text": text
-        })
+        words_for_chunk += num_words
+        if (words_for_chunk > 300) or slide_index == len(presentation.slides):
+            entry = {
+                "document_title": TITLE,
+                "full_section_title": f"{TITLE} > {slides[pptx_file]['name']} > Slide {chunk_start_slide}-{slide_index}",
+                "content": text_for_chunk,
+                "block_type": "text",
+                "language": LANGUAGE,
+                "last_edit_date": slides[pptx_file]["last_edit_date"],
+            }
+            slides_data.append(entry)
+            words_for_chunk = 0
+            text_for_chunk = ""
+            chunk_start_slide = slide_index + 1
 
-    # Write the data to a JSON file
-    with open(json_file, 'w', encoding='utf-8') as f:
-        json.dump(slides_data, f, ensure_ascii=False, indent=4)
-
-# Process each PowerPoint file in the input directory
-for pptx_file in glob.glob(INPUT_DIR + "/*.pptx"):
-    print("Processing file:", pptx_file)
-    output_file = pptx_file.replace(".pptx", "_transcription_output.json").replace(INPUT_DIR, OUTPUT_DIR)
-    pptx_to_json(pptx_file, output_file)
-    print(f"Data successfully saved to {output_file}")
+# Define output file path and write JSON lines format data
+output_file = os.path.join(OUTPUT_DIR, "slides.jsonl")
+with open(output_file, "w") as json_file:
+    for entry in slides_data:
+        json.dump(entry, json_file, ensure_ascii=False)
+        json_file.write("\n")
