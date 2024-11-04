@@ -7,8 +7,8 @@ import time
 import json
 
 # Set your Together API key and Pinecone API key as environment variables for security (or insert directly for testing)
-os.environ["TOGETHER_API_KEY"] = "61c3d30d6e3b2cc30504a65a11ddd0acb4d6e8912f32040d831c03285c51caa7"
-os.environ["PINECONE_API_KEY"] = "62011fee-32f3-46e5-85a7-d3c12ba81e84"
+os.environ["TOGETHER_API_KEY"] = 
+os.environ["PINECONE_API_KEY"] = 
 
 # Initialize Together AI Client
 together_client = Together(api_key=os.environ["TOGETHER_API_KEY"])
@@ -16,7 +16,7 @@ together_client = Together(api_key=os.environ["TOGETHER_API_KEY"])
 with open("cs224v-lecture-chatbot/chunked_audio_transcriptions_even/MED-275_09-25-2024-0_transcription_output.json", "r") as file:
     data = json.load(file)
 
-# chunk_texts = [entry["text"] for entry in data if "text" in entry]
+#chunk_texts = [entry["text"] for entry in data if "text" in entry]
 chunk_texts = ["soup is bad", "pasta is good", "cats are not good", "dogs are great"]
 
 # Step 1: Generate M2-BERT Embeddings for Document Chunks
@@ -120,4 +120,3 @@ response = rag_chatbot(user_query)
 print("Chatbot Response:", response)
 
 # Optional: Clean up Pinecone index after use
-pinecone_client.delete_index(index_name)
