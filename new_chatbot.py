@@ -2,9 +2,13 @@ import requests
 import os
 import json
 from together import Together
+from collections import deque
+from pydantic import BaseModel, Field
+import together
 
 os.environ["TOGETHER_API_KEY"] = ""
 together_client = Together(api_key=os.environ["TOGETHER_API_KEY"])
+together = Together()
 
 def fetch_from_rag(user_queries):  # Accepts a list of queries now
     rag_endpoint = "https://search.genie.stanford.edu/stanford_MED275"
@@ -12,7 +16,7 @@ def fetch_from_rag(user_queries):  # Accepts a list of queries now
         "query": user_queries,  # Now expects a list of queries
         "rerank": True,
         "num_blocks_to_rerank": 20,
-        "num_blocks": 3
+        "num_blocks": 3 # TODO: potentially increase this to 10
     }
     rag_headers = {
         "Content-Type": "application/json"
@@ -21,21 +25,13 @@ def fetch_from_rag(user_queries):  # Accepts a list of queries now
         response = requests.post(rag_endpoint, headers=rag_headers, data=json.dumps(rag_payload))
         response.raise_for_status()  # Checks for HTTP request errors
         rag_data = response.json()
-        json_rag_data = json.dumps(rag_data)
-        return json_rag_data
-        # all_contents = []
-        # for entry in rag_data:
-        #     for result in entry['results']:
-        #         content = result.get('content', '')  # Default to empty string if 'content' is not present
-        #         all_contents.append(content)
+        return rag_data
 
     except requests.RequestException as e:
         print("HTTP Status Code:", response.status_code)  # Additional debugging information
         print("Response Text:", response.text)
         print("Error contacting RAG system:", e)
         return []
-
-    # return all_contents
 
 def together_generation(prompt):
     try:
@@ -56,37 +52,98 @@ def together_generation(prompt):
         return "There was an issue generating a response. Please try again later."
 
 def generate_response_with_llm(user_query, documents, prev_context):
-    # Combine the retrieved documents into a single text block
-    # retrieved_text = " ".join(documents)
-
     # Format the prompt to provide context and the user query
     prompt = (
-        f"You are a chatbot answering student questions about MED 275, a lung cancer course taught by Prof. Bryant Lin at Stanford University. Use only the provided context (from current or previous queries) and conversation history to respond. If specific details are unavailable, inform the user with something like, 'That topic wasn’t covered in the information I have so far, but it might appear in later lectures or supplementary materials.' Reuse information from past responses if relevant, but do not create new information beyond what’s provided. If entirely missing, state, 'I'm sorry, I don't have enough information on that topic.\n\n"
-        f"Maintain a conversational tone, cite sources naturally in sentences (e.g., 'In Lecture 1, on Diagnosis and Screening, they discussed...'), and do not compile citations at the end.\n\n"
+        f"You are a chatbot answering student questions about MED 275, a lung cancer course taught by Prof. Bryant Lin at Stanford University."
+        f"Use only the provided context (from current or previous queries) and conversation history to respond. If specific details are unavailable,"
+        f"inform the user with something like, 'That topic wasn’t covered in the information I have so far, but it might appear in later lectures or"
+        f"supplementary materials.' Reuse information from past responses if relevant, but do not create new information beyond what’s provided."
+        f"If entirely missing, state, 'I'm sorry, I don't have enough information on that topic.\n\n"
+        # f"Maintain a conversational tone, cite sources naturally in sentences (e.g., 'In Lecture 1, on Diagnosis and Screening, they discussed...'), and do not compile citations at the end.\n\n"
+        f"Cite the source used in each sentence of the response by adding the name of the source in parenthesis after the sentence (for example (Lecture 3)), if a source was used for that sentence\n\n"
+        f"Previous Conversation History:\n{prev_context}\n\n"
         f"User Question:\n{user_query}\n\n"
         f"Context:\n{documents}\n\n"
-        f"Previous Conversation History:\n{prev_context}\n\n"
         f"Answer:"
     )
     # Generate a response using the Together API
     response = together_generation(prompt)
     return response
 
+# Define the schema for the output
+class RelevantDocumentIndices(BaseModel):
+    indices: list[int] = Field(description="The document indices that are relevant to the user query")
+
+def filter_relevant_documents(documents, prev_context, user_query):
+    # Call the LLM with the JSON schema
+    extract = together.chat.completions.create(
+        messages=[
+            {
+                "role": "system",
+                "content": f"The following is a list of documents that may be relevant to the user query."
+                f"Return the indices of the documents that are relevant to the user query,"
+                f"using prev_context as the context of the conversation. Indices must be between 0 and {len(documents) - 1}."
+                f"Only answer in JSON.",
+            },
+            {
+                "role": "user",
+                "content": json.dumps({
+                    "user_query": user_query,
+                    "prev_context": prev_context,
+                    "documents": documents
+                })
+            },
+        ],
+        model="meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo",
+        response_format={
+            "type": "json_object",
+            "schema": RelevantDocumentIndices.model_json_schema(),
+        },
+    )
+
+    relevant_document_indices = json.loads(extract.choices[0].message.content)
+    relevant_documents = []
+    print("returned indices ", relevant_document_indices["indices"])
+    print("number of documents ", len(documents))
+    for index in relevant_document_indices["indices"]:
+        relevant_documents.append(documents[index])
+    return relevant_documents
+
 def chatbot():
+    # Potential fail cases: querying with time range of lecture, asking for recommendations -> should lead to graceful failure or cite additional resources,
+    # asking about a lecture that doesn't exist
     print("Welcome to the Terminal Chatbot! Type 'exit' to quit.")
     prev_context = ""
+    documents_queue = deque([])
     while True:
         user_query = input("You: ")
         if user_query.lower() == "exit":
             break
+        if user_query == "":
+            print(f"Bot: Please enter a query")
+            continue
 
         # Fetch relevant documents using RAG
         documents = fetch_from_rag(user_query)
+        documents_queue.append(documents)
+        if len(documents_queue) > 3: # TODO: potentially increase length of queue
+            documents_queue.popleft()
+        
+        documents_list = []
+        for item in documents_queue:
+            if len(item) > 0:
+                documents_list.extend(item[0]["results"])
+        relevant_documents = filter_relevant_documents(documents_list, prev_context, user_query)
+        print("Number of relevant documents ", len(relevant_documents))
+        if len(relevant_documents) == 0:
+            response = "Bot: No relevant documents"
+            # TODO: have LLM generate RAG query to retrieve potentially relevant documents
+        else:
+            # Generate a response with the LLM using RAG documents as context
+            response = generate_response_with_llm(user_query, json.dumps(relevant_documents), prev_context)
 
-        # Generate a response with the LLM using RAG documents as context
-        response = generate_response_with_llm(user_query, documents, prev_context)
-
-        prev_context += "query: {}, documents: {}, response: {}".format(user_query, documents, response)
+        # TODO: perhaps only include the documents that were used in response
+        prev_context += "query: {}, response: {}".format(user_query, response)
         
         # Print the chatbot response
         print(f"Bot: {response}")
