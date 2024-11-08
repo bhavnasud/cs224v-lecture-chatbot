@@ -3,7 +3,7 @@ import os
 import json
 from together import Together
 
-os.environ["TOGETHER_API_KEY"] = 
+os.environ["TOGETHER_API_KEY"] = ""
 together_client = Together(api_key=os.environ["TOGETHER_API_KEY"])
 
 def fetch_from_rag(user_queries):  # Accepts a list of queries now
@@ -21,11 +21,13 @@ def fetch_from_rag(user_queries):  # Accepts a list of queries now
         response = requests.post(rag_endpoint, headers=rag_headers, data=json.dumps(rag_payload))
         response.raise_for_status()  # Checks for HTTP request errors
         rag_data = response.json()
-        all_contents = []
-        for entry in rag_data:
-            for result in entry['results']:
-                content = result.get('content', '')  # Default to empty string if 'content' is not present
-                all_contents.append(content)
+        json_rag_data = json.dumps(rag_data)
+        return json_rag_data
+        # all_contents = []
+        # for entry in rag_data:
+        #     for result in entry['results']:
+        #         content = result.get('content', '')  # Default to empty string if 'content' is not present
+        #         all_contents.append(content)
 
     except requests.RequestException as e:
         print("HTTP Status Code:", response.status_code)  # Additional debugging information
@@ -33,7 +35,7 @@ def fetch_from_rag(user_queries):  # Accepts a list of queries now
         print("Error contacting RAG system:", e)
         return []
 
-    return all_contents
+    # return all_contents
 
 def together_generation(prompt):
     try:
@@ -55,13 +57,14 @@ def together_generation(prompt):
 
 def generate_response_with_llm(user_query, documents, prev_context):
     # Combine the retrieved documents into a single text block
-    retrieved_text = " ".join(documents)
+    # retrieved_text = " ".join(documents)
 
     # Format the prompt to provide context and the user query
     prompt = (
-        f"You are a chatbot that answers student questions about MED 275, a class on lung cancer taught by Prof. Bryant Lin at Stanford University. Please use the provided context and previous conversation history to answer the user's question. Do not mention you used context.\n\n"
+        f"You are a chatbot answering student questions about MED 275, a lung cancer course taught by Prof. Bryant Lin at Stanford University. Use only the provided context (from current or previous queries) and conversation history to respond. If specific details are unavailable, inform the user with something like, 'That topic wasn’t covered in the information I have so far, but it might appear in later lectures or supplementary materials.' Reuse information from past responses if relevant, but do not create new information beyond what’s provided. If entirely missing, state, 'I'm sorry, I don't have enough information on that topic.\n\n"
+        f"Maintain a conversational tone, cite sources naturally in sentences (e.g., 'In Lecture 1, on Diagnosis and Screening, they discussed...'), and do not compile citations at the end.\n\n"
         f"User Question:\n{user_query}\n\n"
-        f"Context:\n{retrieved_text}\n\n"
+        f"Context:\n{documents}\n\n"
         f"Previous Conversation History:\n{prev_context}\n\n"
         f"Answer:"
     )
@@ -83,7 +86,7 @@ def chatbot():
         # Generate a response with the LLM using RAG documents as context
         response = generate_response_with_llm(user_query, documents, prev_context)
 
-        prev_context += "query: {}, response: {}".format(user_query, response)
+        prev_context += "query: {}, documents: {}, response: {}".format(user_query, documents, response)
         
         # Print the chatbot response
         print(f"Bot: {response}")
