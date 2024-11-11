@@ -76,13 +76,16 @@ for pptx_file in slides:
         if (words_for_chunk > 300) or slide_index == len(presentation.slides):
             entry = {
                 "document_title": TITLE,
-                "full_section_title": f"{TITLE} > {slides[pptx_file]['name']} > Slide {chunk_start_slide}-{slide_index}",
+                "section_title": f"{TITLE} > {slides[pptx_file]['name']}",
                 "content": text_for_chunk,
-                "block_type": "text",
-                "language": LANGUAGE,
                 "last_edit_date": slides[pptx_file]["last_edit_date"],
                 "url": slides[pptx_file]["url"],
-                "author": slides[pptx_file]["author"]
+                "block_metadata": {
+                    "slide_range": f"Slide {chunk_start_slide}-{slide_index}",
+                    "block_type": "text",
+                    "language": LANGUAGE,
+                    "author": slides[pptx_file]["author"],
+                }
             }
             slides_data.append(entry)
             words_for_chunk = 0

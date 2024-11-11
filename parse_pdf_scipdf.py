@@ -1,6 +1,5 @@
 import scipdf
 import json
-import glob
 import os
 import re
 
@@ -63,12 +62,14 @@ for reading in readings:
         abstract = article_dict["abstract"]
         entry = {
             "document_title": TITLE,
-            "full_section_title": f"{TITLE} > {readings[reading]['name']} > Abstract",
+            "section_title": f"{TITLE} > {readings[reading]['name']} > Abstract",
             "content": abstract,
-            "block_type": "text",
-            "language": LANGUAGE,
             "last_edit_date": readings[reading]["last_edit_date"],
-            "url": readings[reading]["url"]
+            "url": readings[reading]["url"],
+            "block_metadata": {
+                "block_type": "text",
+                "language": LANGUAGE,
+            }
         }
         json_lines.append(entry)
 
@@ -128,12 +129,14 @@ for reading in readings:
                 if word_count > 0:
                     entry = {
                         "document_title": TITLE,
-                        "full_section_title": f"{TITLE} > {readings[reading]['name']} > {heading if heading else 'Section'}",
+                        "section_title": f"{TITLE} > {readings[reading]['name']} > {heading if heading else 'Section'}",
                         "content": chunk_text,
-                        "block_type": "text",
-                        "language": LANGUAGE,
                         "last_edit_date": readings[reading]["last_edit_date"],
-                        "url": readings[reading]["url"]
+                        "url": readings[reading]["url"],
+                        "block_metadata": {
+                            "block_type": "text",
+                            "language": LANGUAGE,
+                        }
                     }
                     json_lines.append(entry)
 
