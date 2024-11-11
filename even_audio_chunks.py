@@ -5,8 +5,8 @@ import json
 text_chunk_size = 1200
 
 # Define the directory and file name
-input_directory = 'cs224v-lecture-chatbot/chunked_audio_transcriptions'  
-output_directory = 'cs224v-lecture-chatbot/chunked_audio_transcriptions_even'
+input_directory = 'chunked_audio_transcriptions'  
+output_directory = 'chunked_audio_transcriptions_even'
 
 def sec_to_min(seconds):
     minutes = seconds // 60
@@ -16,6 +16,10 @@ def sec_to_min(seconds):
 
 for filename in os.listdir(input_directory):
     input_file_path = os.path.join(input_directory, filename)
+    output_file_path = os.path.join(output_directory, filename)
+    if os.path.exists(output_file_path):
+        print("Already evened ", output_file_path)
+        continue
     
     # Check if it is a file (and not a directory)
     if not os.path.isfile(input_file_path):
@@ -50,7 +54,6 @@ for filename in os.listdir(input_directory):
         new_list[new_i]["speakers"] = list(new_list[new_i]["speakers"])
         new_list[new_i]["end"] = sec_to_min(new_list[new_i]["end"])
 
-    output_file_path = os.path.join(output_directory, filename)
     with open(output_file_path, 'w') as file:
         json.dump(new_list, file, indent=4)
     

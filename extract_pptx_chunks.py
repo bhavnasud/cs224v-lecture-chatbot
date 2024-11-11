@@ -12,20 +12,28 @@ LANGUAGE = "en"
 
 slides = {
     "Caregiving in Cancer Med 275 FINAL.pptx": {
-        "name": "Developing Culturally Attuned Interventions to Support Caregiving in Cancer (Ranak Trivedi)",
+        "name": "Developing Culturally Attuned Interventions to Support Caregiving in Cancer",
         "last_edit_date": "2024-10-16",
+        "author": "Ranak Trivedi (PhD, FSBM, FGSA)",
+        "url": "https://canvas.stanford.edu/courses/198463/files?preview=14095971"
     },
     "MED 275 - Dr. Lin slides Sep 25.pptx": {
-        "name": "MED 275 – Diagnosis and Screening (Bryant Lin)",
+        "name": "MED 275 – Diagnosis and Screening",
         "last_edit_date": "2024-09-25",
+        "author": "Bryant Lin (MD)",
+        "url": "https://canvas.stanford.edu/courses/198463/files?preview=14018782"
     },
     "MED 275 - Dr. Lui slides Sep 25.pptx": {
-        "name": "Lung cancer staging and screening (Natalie Lui)",
+        "name": "Lung cancer staging and screening",
         "last_edit_date": "2024-09-25",
+        "author": "Natalie Liu (MD)",
+        "url": "https://canvas.stanford.edu/courses/198463/files?preview=14018783"
     },
     "Stanford MED 275 Epidemiology 12.56.51 PM.pptx": {
-        "name": "MED 275 - Epidemiology and Cultural Considerations (Jeffrey Velotta)",
+        "name": "MED 275 - Epidemiology and Cultural Considerations",
         "last_edit_date": "2024-10-30",
+        "author": "Jeffrey Velotta (MD, FACS)",
+        "url": "https://canvas.stanford.edu/courses/198463/files?preview=14191559"
     },
 }
 
@@ -73,6 +81,8 @@ for pptx_file in slides:
                 "block_type": "text",
                 "language": LANGUAGE,
                 "last_edit_date": slides[pptx_file]["last_edit_date"],
+                "url": slides[pptx_file]["url"],
+                "author": slides[pptx_file]["author"]
             }
             slides_data.append(entry)
             words_for_chunk = 0

@@ -30,7 +30,7 @@ readings = {
     "MED 275 Syllabus_ From Diagnosis to Dialogue_ A Doctor's Real-Time Battle with Cancer.pdf": {
         "name": "MED 275 Syllabus: From Diagnosis to Dialogue: A Doctor's Real-Time Battle with Cancer",
         "last_edit_date": "2024-10-30",
-        "url": ""
+        "url": "https://canvas.stanford.edu/courses/198463/files?preview=14191550"
     },
     "nihms-1977779.pdf": {
         "name": "Lung cancer in patients who have never smoked — an emerging disease (LoPiccolo et al)",
@@ -40,7 +40,7 @@ readings = {
     "Serious-Illness-Conversation-Guide.pdf": {
         "name": "Serious Illness Conversation Guide",
         "last_edit_date": "2023-05-01",
-        "url": ""
+        "url": "https://canvas.stanford.edu/courses/198463/files?preview=13816482"
     },
     "tlcr-07-04-450.pdf": {
         "name": "Lung cancer in never smokers—the East Asian experience",

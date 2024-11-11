@@ -6,7 +6,7 @@ import glob
 
 # Path to the audio file
 AUDIO_DIR = "audio_files"
-OUTPUT_DIR = "audio_transcriptions"
+OUTPUT_DIR = "chunked_audio_transcriptions"
 
 # Get API key from environment variables
 API_KEY = os.getenv("DEEPGRAM_API_KEY")
