@@ -6,7 +6,7 @@ from collections import deque
 from pydantic import BaseModel, Field
 import together
 
-os.environ["TOGETHER_API_KEY"] = ""
+os.environ["TOGETHER_API_KEY"] = "61c3d30d6e3b2cc30504a65a11ddd0acb4d6e8912f32040d831c03285c51caa7"
 together_client = Together(api_key=os.environ["TOGETHER_API_KEY"])
 together = Together()
 
@@ -15,8 +15,8 @@ def fetch_from_rag(user_queries):  # Accepts a list of queries now
     rag_payload = {
         "query": user_queries,  # Now expects a list of queries
         "rerank": True,
-        "num_blocks_to_rerank": 20,
-        "num_blocks": 3 # TODO: potentially increase this to 10
+        "num_blocks_to_rerank": 25,
+        "num_blocks": 4 # TODO: potentially increase this to 10
     }
     rag_headers = {
         "Content-Type": "application/json"
@@ -38,7 +38,7 @@ def together_generation(prompt):
         response = together_client.completions.create(
             model="meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo",
             prompt=prompt,
-            max_tokens=200,  
+            max_tokens=400,  
             temperature=0.5,  
         )
         
@@ -59,8 +59,10 @@ def generate_response_with_llm(user_query, documents, prev_context):
         f"inform the user with something like, 'That topic wasn’t covered in the information I have so far, but it might appear in later lectures or"
         f"supplementary materials.' Reuse information from past responses if relevant, but do not create new information beyond what’s provided."
         f"If entirely missing, state, 'I'm sorry, I don't have enough information on that topic.\n\n"
+        f"If asked for a reccomendation, you can provide relevant URLs.\n\n"
+        f"Only answer the student's question.\n\n"
         # f"Maintain a conversational tone, cite sources naturally in sentences (e.g., 'In Lecture 1, on Diagnosis and Screening, they discussed...'), and do not compile citations at the end.\n\n"
-        f"Cite the source used in each sentence of the response by adding the name of the source in parenthesis after the sentence (for example (Lecture 3)), if a source was used for that sentence\n\n"
+        f"Cite the source used to generate each sentence in the response by adding the section_title of the source in parenthesis after the sentence.\n\n"
         f"Previous Conversation History:\n{prev_context}\n\n"
         f"User Question:\n{user_query}\n\n"
         f"Context:\n{documents}\n\n"
@@ -75,6 +77,9 @@ class RelevantDocumentIndices(BaseModel):
     indices: list[int] = Field(description="The document indices that are relevant to the user query")
 
 def filter_relevant_documents(documents, prev_context, user_query):
+    for doc in documents:
+        print(doc)
+        print("/n")
     # Call the LLM with the JSON schema
     extract = together.chat.completions.create(
         messages=[
@@ -83,6 +88,7 @@ def filter_relevant_documents(documents, prev_context, user_query):
                 "content": f"The following is a list of documents that may be relevant to the user query."
                 f"Return the indices of the documents that are relevant to the user query,"
                 f"using prev_context as the context of the conversation. Indices must be between 0 and {len(documents) - 1}."
+                f"If no documents are relevant, return an empty list."
                 f"Only answer in JSON.",
             },
             {
@@ -106,13 +112,17 @@ def filter_relevant_documents(documents, prev_context, user_query):
     print("returned indices ", relevant_document_indices["indices"])
     print("number of documents ", len(documents))
     for index in relevant_document_indices["indices"]:
-        relevant_documents.append(documents[index])
+        if index >= 0 and index < len(documents):
+            relevant_documents.append(documents[index])
+        # TODO: Remove print statement later. Only for debugging.
+        else:
+            print(f"Invalid index: {index}")
     return relevant_documents
 
 def chatbot():
     # Potential fail cases: querying with time range of lecture, asking for recommendations -> should lead to graceful failure or cite additional resources,
     # asking about a lecture that doesn't exist
-    print("Welcome to the Terminal Chatbot! Type 'exit' to quit.")
+    print("Welcome to the MED 275 Chatbot! Please enter a question. Type 'exit' to quit.")
     prev_context = ""
     documents_queue = deque([])
     while True:
@@ -120,7 +130,7 @@ def chatbot():
         if user_query.lower() == "exit":
             break
         if user_query == "":
-            print(f"Bot: Please enter a query")
+            print(f"Bot: Please enter a question or type 'exit' to quit.")
             continue
 
         # Fetch relevant documents using RAG
@@ -136,7 +146,7 @@ def chatbot():
         relevant_documents = filter_relevant_documents(documents_list, prev_context, user_query)
         print("Number of relevant documents ", len(relevant_documents))
         if len(relevant_documents) == 0:
-            response = "Bot: No relevant documents"
+            response = "No relevant documents"
             # TODO: have LLM generate RAG query to retrieve potentially relevant documents
         else:
             # Generate a response with the LLM using RAG documents as context

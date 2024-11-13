@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+    <style>
+        /* Cool and Calm color scheme */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #E8F1F2; /* Soft Blue-Gray */
+        }
+
+        #chat-container {
+            width: 500px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header styling */
+        #chat-header {
+            background-color: #457B9D; /* Slate Blue */
+            color: #ffffff;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        #messages {
+            padding: 15px;
+            height: 500px;
+            overflow-y: auto;
+            background-color: #fafafa;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            scroll-behavior: smooth;
+        }
+
+        .message {
+            padding: 12px;
+            border-radius: 12px;
+            max-width: 75%;
+            word-wrap: break-word;
+            font-size: 14px;
+            line-height: 1.4;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .user-message {
+            background-color: #A8DADC; /* Pastel Aqua */
+            align-self: flex-end;
+            color: #313638; /* Dark Slate */
+        }
+
+        .bot-message {
+            background-color: #e9ecef;
+            align-self: flex-start;
+            color: #313638; /* Dark Slate */
+        }
+
+        #input-container {
+            display: flex;
+            padding: 10px;
+            background-color: #ffffff;
+            border-top: 1px solid #ddd;
+        }
+
+        #user-input {
+            flex: 1;
+            padding: 10px;
+            font-size: 15px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            outline: none;
+            margin-right: 8px;
+            transition: border-color 0.3s;
+        }
+
+        #user-input:focus {
+            border-color: #457B9D; /* Slate Blue */
+        }
+
+        #send-button {
+            padding: 10px;
+            font-size: 16px;
+            background-color: #1D3557; /* Navy Blue */
+            color: #ffffff;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.1s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+        }
+
+        #send-button:hover {
+            background-color: #1d2b43; /* Darker Navy Blue */
+        }
+
+        #send-button:focus {
+            outline: none;
+            background-color: #1d2b43; /* Darker Navy Blue */
+        }
+
+        #send-button:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+    <div id="chat-container">
+        <div id="chat-header">MED 275 Chatbot</div> <!-- Chat header -->
+        
+        <div id="messages">
+            <div class="message bot-message">
+                Bot: Welcome to the MED 275 Chatbot! Please enter a question. Type 'exit' to quit.
+            </div>
+        </div>
+        
+        <div id="input-container">
+            <input type="text" id="user-input" placeholder="Type a message..." />
+            <button id="send-button" onclick="sendMessage()">&#10148;</button> <!-- Send icon -->
+        </div>
+    </div>
+
+    <script>
+        async function sendMessage() {
+            const userInput = document.getElementById("user-input").value;
+            if (userInput.trim() === "") return;
+
+            // Append user message
+            document.getElementById("messages").innerHTML += `
+                <div class="message user-message">User: ${userInput}</div>`;
+            document.getElementById("messages").scrollTop = document.getElementById("messages").scrollHeight;
+
+            // Send message to server
+            const response = await fetch("/chat", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ message: userInput }),
+            });
+            
+            const data = await response.json();
+
+            // Append bot response
+            document.getElementById("messages").innerHTML += `
+                <div class="message bot-message">Bot: ${data.response}</div>`;
+            document.getElementById("messages").scrollTop = document.getElementById("messages").scrollHeight;
+
+            // Clear input field
+            document.getElementById("user-input").value = "";
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+    <style>
+        /* Modern sleek design styles */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f6f8;
+        }
+        
+        #chat-container {
+            width: 400px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        #messages {
+            padding: 15px;
+            height: 400px;
+            overflow-y: scroll;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background-color: #fafafa;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .message {
+            padding: 10px;
+            border-radius: 15px;
+            max-width: 80%;
+            word-wrap: break-word;
+        }
+        
+        .user-message {
+            background-color: #d1eaff;
+            align-self: flex-end;
+            color: #007bff;
+        }
+        
+        .bot-message {
+            background-color: #e9ecef;
+            align-self: flex-start;
+            color: #495057;
+        }
+        
+        #input-container {
+            display: flex;
+            padding: 10px;
+            background-color: #ffffff;
+        }
+        
+        #user-input {
+            flex: 1;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            outline: none;
+            margin-right: 10px;
+            transition: border-color 0.3s;
+        }
+        
+        #user-input:focus {
+            border-color: #007bff;
+        }
+        
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+        button:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="chat-container">
+        <div id="messages">
+            <div class="message bot-message">Bot: Welcome to the MED 275 Chatbot! Please enter a question. Type 'exit' to quit.</div>
+        </div>
+        <div id="input-container">
+            <input type="text" id="user-input" placeholder="Type a message..." />
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script>
+        async function sendMessage() {
+            const userInput = document.getElementById("user-input").value;
+            if (userInput.trim() === "") return;
+
+            // Append user message
+            document.getElementById("messages").innerHTML += `<div class="message user-message">User: ${userInput}</div>`;
+            document.getElementById("messages").scrollTop = document.getElementById("messages").scrollHeight;
+
+            // Send message to server
+            const response = await fetch("/chat", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ message: userInput }),
+            });
+            
+            const data = await response.json();
+
+            // Append bot response
+            document.getElementById("messages").innerHTML += `<div class="message bot-message">Bot: ${data.response}</div>`;
+            document.getElementById("messages").scrollTop = document.getElementById("messages").scrollHeight;
+
+            // Clear input field
+            document.getElementById("user-input").value = "";
+        }
+    </script>
+</body>
+</html> -->
