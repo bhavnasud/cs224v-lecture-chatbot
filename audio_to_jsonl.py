@@ -57,7 +57,7 @@ for lecture in lectures:
         lecture_json = json.load(f)
     lecture_num = lectures[lecture]["lecture_num"]
     lecture_date = lectures[lecture]["last_edit_date"]
-    lecture_title = lectures[lecture].get("lecture_title")
+    lecture_title = lectures[lecture].get("lecture_title", "")
     url = lectures[lecture]["url"]
     speakers = lectures[lecture]["speakers"]
     for item in lecture_json:
@@ -71,11 +71,10 @@ for lecture in lectures:
                 "block_type": "text",
                 "language": LANGUAGE,
                 "time_range_minutes": f"{math.floor(item['start'])}-{math.ceil(item['end'])}",
-                "speakers": speakers
+                "speakers": ", ".join(speakers),
+                "lecture_title": lecture_title
             }
         }
-        if lecture_title:
-            entry["block_metadata"]["lecture_title"] = lecture_title
         json_lines.append(entry)
 
 # Define output file path and write JSON lines format data
