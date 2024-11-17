@@ -143,42 +143,57 @@
         </div>
         
         <div id="input-container">
-            <input type="text" id="user-input" placeholder="Type a question..." />
+            <input type="text" id="user-input" placeholder="Type a question..." onkeypress="handleKeyPress(event)" />
             <button id="send-button" onclick="sendMessage()">&#10148;</button> <!-- Send icon -->
         </div>
     </div>
 
     <script>
         async function sendMessage() {
-            const userInput = document.getElementById("user-input").value;
-            if (userInput.trim() === "") return;
+            const userInput = document.getElementById("user-input");
+            const message = userInput.value.trim();
+
+            if (message === "") {
+                userInput.value = ""; // Clear the input field
+                return;
+            }
 
             // Append user message
             document.getElementById("messages").innerHTML += `
-                <div class="message user-message">${userInput}</div>`;
+                <div class="message user-message">${message}</div>`;
             document.getElementById("messages").scrollTop = document.getElementById("messages").scrollHeight;
+
+            // Clear the input field immediately after sending
+            userInput.value = "";
 
             // Send message to server
-            const response = await fetch("/chat", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify({ message: userInput }),
-            });
-            
-            const data = await response.json();
+            try {
+                const response = await fetch("/chat", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({ message: message }),
+                });
 
-            // Append bot response
-            document.getElementById("messages").innerHTML += `
-                <div class="message-container">
-                    <span class="icon">🔘</span>
-                    <div class="message bot-message">${data.response}</div>
-                </div>`;
-            document.getElementById("messages").scrollTop = document.getElementById("messages").scrollHeight;
+                const data = await response.json();
 
-            // Clear input field
-            document.getElementById("user-input").value = "";
+                // Append bot response
+                document.getElementById("messages").innerHTML += `
+                    <div class="message-container">
+                        <span class="icon">🔘</span>
+                        <div class="message bot-message">${data.response}</div>
+                    </div>`;
+                document.getElementById("messages").scrollTop = document.getElementById("messages").scrollHeight;
+            } catch (error) {
+                console.error("Error:", error);
+            }
+        }
+
+        function handleKeyPress(event) {
+            if (event.key === "Enter") {
+                sendMessage();
+            }
         }
     </script>
 </body>
