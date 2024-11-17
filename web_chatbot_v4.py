@@ -9,19 +9,21 @@ import together
 # Define the schema for the output
 class RelevantDocumentIndices(BaseModel):
     indices: list[int] = Field(description="The document indices that are relevant to the user query")
+
 class Chatbot:
     def __init__(self, api_key):
         self.together_client = Together(api_key=api_key)
         self.together = Together()
         self.documents_queue = deque([])
         self.prev_context = ""
+
     def _fetch_from_rag(self, user_queries):  # Accepts a list of queries now
         rag_endpoint = "https://search.genie.stanford.edu/stanford_MED275_v2"
         rag_payload = {
             "query": user_queries,  # Now expects a list of queries
             "rerank": True,
             "num_blocks_to_rerank": 25,
-            "num_blocks": 10 # TODO: potentially increase this to 10
+            "num_blocks": 10
         }
         rag_headers = {
             "Content-Type": "application/json"
@@ -58,21 +60,22 @@ class Chatbot:
 
     def _generate_response_with_llm(self, user_query, documents, prev_context):
         # Format the prompt to provide context and the user query
+        documents_context = json.dumps(documents, indent=4, separators=",\n")
         prompt = (
-            f"You are a chatbot answering student questions about MED 275, a lung cancer course taught by Prof. Bryant Lin at Stanford University."
-            f"Use only the provided Context, User Question and Previous Conversation History to respond. If specific details are unavailable,"
-            f"inform the user with something like, 'That topic wasn’t covered in the information I have so far, but it might appear in later lectures or"
-            f"supplementary materials.' Reuse information from past responses if relevant, but do not create new information beyond what’s provided."
-            f"If entirely missing, state, 'I'm sorry, I don't have enough information on that topic.\n\n"
+            f"You are a chatbot answering student questions about MED 275, a lung cancer course taught by Prof. Bryant Lin at Stanford University.\n"
+            f"Use only the provided Context, User Question and Previous Conversation History to respond. Do not create new information beyond what’s provided.\n\n"
+            f"Do not repeat information from previous responses.\n\n"
+            f"If the context contains no implicitly or explicitly relevant information to the user query, state, 'I'm sorry, I don't have enough information on that topic.\n\n"
             f"If asked for a recommendation, you can provide relevant URLs.\n\n"
             f"Only answer the student's question.\n\n"
+            f"Make sure that the information aggregated from multiple sources is consistent.\n\n"
             # f"Maintain a conversational tone, cite sources naturally in sentences (e.g., 'In Lecture 1, on Diagnosis and Screening, they discussed...'), and do not compile citations at the end.\n\n"
             f"Cite the source used to generate each sentence in the response by adding a shortened version of the section_title (Less than 30 characters) of the source in parenthesis after the sentence.\n\n"
             f"If citing a lecture, also include the start and end time of the part of the lecture you are citing.\n\n"
             f"For example, when citing a lecture 2, cite that sentence with (Lecture 2, start_time-end_time min)"
             f"Previous Conversation History:\n{prev_context}\n\n"
             f"User Question:\n{user_query}\n\n"
-            f"Context:\n{documents}\n\n"
+            f"Context:\n{documents_context}\n\n"
             f"Answer:"
         )
         # Generate a response using the Together API
@@ -80,12 +83,6 @@ class Chatbot:
         return response
 
     def _filter_relevant_documents(self, documents, prev_context, user_query):
-        # Pre-process documents by removing unwanted keys
-        for document in documents:
-            document.pop("similarity_score", None)
-            document.pop("probability_score", None)
-
-        # Prepare the prompt for the LLM
         messages = [
             {
                 "role": "system",
@@ -138,21 +135,18 @@ class Chatbot:
         
         return relevant_documents
     
-    def _generate_llm_rag_query(self, prev_context, user_query, irrelevant_documents):
+    def _generate_llm_rag_query(self, prev_context, user_query):
         prompt = (
-            f"You are a highly intelligent and precise assistant tasked with refining user queries to retrieve the most relevant documents "
-            f"from a Retrieval-Augmented Generation (RAG) system for a course called MED 275.\n\n"
-            f"In this case, a previous search based on the embedded user query returned no relevant documents.\n\n"
-            f"Your goal is to rewrite the query to improve relevance by:\n\n"
+            f"You are a highly intelligent assistant tasked with refining user queries to retrieve the most relevant documents "
+            f"from an embedding search system.\n\n"
+            f"Your goal is to rewrite the user query to improve relevance by:\n\n"
             f"1. Removing generic terms or words likely to result in irrelevant matches.\n\n"
             f"2. Adding specific keywords or phrases that are closely associated with the user intent.\n\n"
-            f"3. Ensure the new query is concise, unambiguous, and targeted to the user's request.\n\n"
+            f"3. Ensure the new search query is concise. It is fine if the new query is just one word long.\n\n"
             f"Context from the previous conversation:\n{prev_context}\n\n"
             f"The user's query:\n{user_query}\n\n"
-            f"Previously retrieved irrelevant documents:\n{json.dumps(irrelevant_documents)}\n\n"
             f"Provide only the rewritten query as output in a single line, without any additional text, explanations, or formatting.\n\n"
         )
-        # Generate a response using the Together API
         response = self._together_generation(prompt)
         return response.strip()
     
@@ -167,7 +161,8 @@ class Chatbot:
             return "Please enter a question or type 'exit' to quit."
 
         # Fetch relevant documents using RAG
-        documents = self._fetch_from_rag(user_query)
+        documents = self._fetch_from_rag(user_query)[0]["results"]
+
         self.documents_queue.append(documents)
         if len(self.documents_queue) > 3: # TODO: potentially increase length of queue
             self.documents_queue.popleft()
@@ -175,29 +170,28 @@ class Chatbot:
         documents_list = []
         for item in self.documents_queue:
             if len(item) > 0:
-                documents_list.extend(item[0]["results"])
-        relevant_documents = self._filter_relevant_documents(documents_list, self.prev_context, user_query)
-        if len(relevant_documents) == 0:
-            print("No relevant documents, generating LLM query!!")
-            # TODO: also generate llm rag query if unable to formulate a response based on query
-            llm_rag_query = self._generate_llm_rag_query(self.prev_context, user_query, self.documents_queue[-1])
-            print("LLM RAG query is ", llm_rag_query)
-            documents = self._fetch_from_rag(llm_rag_query)
-            self.documents_queue[-1].extend(documents)
-            documents_list = []
-            for item in self.documents_queue:
-                if len(item) > 0:
-                    documents_list.extend(item[0]["results"])
-            relevant_documents = self._filter_relevant_documents(documents_list, self.prev_context, user_query)
-            if len(relevant_documents) == 0:
-                print("Still no relevant documents")
-                response = "No relevant documents"
-            else:
-                response = self._generate_response_with_llm(user_query, json.dumps(relevant_documents), self.prev_context)
-        else:
+                for document in item:
+                    document.pop("similarity_score", None)
+                    document.pop("probability_score", None)
+                documents_list.extend(item)
+
+        # relevant_documents = self._filter_relevant_documents(documents_list, self.prev_context, user_query)
+        # if len(relevant_documents) == 0:
+        #     print("No relevant documents!!")
+        #     response = "I'm sorry, I don't have enough information on that topic.\n"
+        # else:
             # Generate a response with the LLM using RAG documents as context
-            response = self._generate_response_with_llm(user_query, json.dumps(relevant_documents), self.prev_context)
-            # if "have enough information" in response or "wasn’t covered in the information" in response:
-            #     print(relevant_documents)
-        self.prev_context += "query: {}, response: {}".format(user_query, response)
+        response = self._generate_response_with_llm(user_query, json.dumps(documents_list, indent=4, separators=(",\n")), self.prev_context)
+        if "don't have enough information" in response:
+            llm_rag_query = self._generate_llm_rag_query(self.prev_context, user_query)
+            print(f"Not enough information to generate response, generating LLM RAG query: {llm_rag_query}")
+            additional_documents = self._fetch_from_rag(llm_rag_query)[0]["results"]
+            for document in additional_documents:
+                document.pop("similarity_score", None)
+                document.pop("probability_score", None)
+            # replace stored documents for this query
+            self.documents_queue[-1] = additional_documents
+            print("LLM RAG retrieved documents: ", [document['section_title'] for document in additional_documents])
+            response = self._generate_response_with_llm(user_query, json.dumps(additional_documents, indent=4, separators=(",\n")), self.prev_context)
+        self.prev_context += "\nQuery: {}, Response: {}".format(user_query, response)
         return f"{response}"
