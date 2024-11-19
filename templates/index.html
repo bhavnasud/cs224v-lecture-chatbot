@@ -25,7 +25,6 @@
             flex-direction: column;
         }
 
-        /* Header styling */
         #chat-header {
             background-color: #1D3557; /* Slate Blue */
             color: #ffffff;
@@ -49,7 +48,13 @@
         .message-container {
             display: flex;
             align-items: flex-start;
-            gap: 10px; /* Space between icon and message */
+            gap: 10px;
+        }
+
+        .icon {
+            display: block;
+            margin-top: auto;
+            font-size: 24px;
         }
 
         .message {
@@ -65,18 +70,35 @@
         .user-message {
             background-color: #A8DADC; /* Pastel Aqua */
             align-self: flex-end;
-            color: #313638; /* Dark Slate */
+            color: #313638;
         }
 
         .bot-message {
             background-color: #e9ecef;
-            color: #313638; /* Dark Slate */
+            color: #313638;
         }
 
-        .icon {
-            font-size: 24px; /* Adjust size of the icon */
-            color: #457B9D; /* Match header color */
-            align-self: flex-end; /* Align icon with bottom of chat box */
+        .loading-animation {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .loading-icon {
+            font-size: 24px;
+            animation: grow-shrink 2s ease-in-out infinite;
+        }
+
+        @keyframes grow-shrink {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
         }
 
         #input-container {
@@ -98,13 +120,13 @@
         }
 
         #user-input:focus {
-            border-color: #457B9D; /* Slate Blue */
+            border-color: #457B9D;
         }
 
         #send-button {
             padding: 10px;
             font-size: 16px;
-            background-color: #457B9D; /* Navy Blue */
+            background-color: #457B9D;
             color: #ffffff;
             border: none;
             border-radius: 50%;
@@ -118,12 +140,7 @@
         }
 
         #send-button:hover {
-            background-color: #1D3557; /* Darker Navy Blue */
-        }
-
-        #send-button:focus {
-            outline: none;
-            background-color: #1d2b43; /* Darker Navy Blue */
+            background-color: #1D3557;
         }
 
         #send-button:active {
@@ -133,52 +150,70 @@
 </head>
 <body>
     <div id="chat-container">
-        <div id="chat-header">MED 275 Chatbot</div> <!-- Chat header -->
-        
+        <div id="chat-header">MED 275 Chatbot</div>
         <div id="messages">
             <div class="message-container">
                 <span class="icon">🔘</span>
                 <div class="message bot-message">Welcome to the MED 275 Chatbot! Please enter a question.</div>
             </div>
         </div>
-        
         <div id="input-container">
             <input type="text" id="user-input" placeholder="Type a question..." onkeypress="handleKeyPress(event)" />
-            <button id="send-button" onclick="sendMessage()">&#10148;</button> <!-- Send icon -->
+            <button id="send-button" onclick="sendMessage()">&#10148;</button>
         </div>
     </div>
 
     <script>
+        function showLoadingAnimation() {
+            const messages = document.getElementById("messages");
+
+            // Create loading animation dynamically
+            const loadingContainer = document.createElement("div");
+            loadingContainer.classList.add("message-container", "loading-animation");
+            loadingContainer.innerHTML = `
+                <span class="loading-icon">🔘</span>
+            `;
+
+            messages.appendChild(loadingContainer);
+            messages.scrollTop = messages.scrollHeight;
+
+            // Store for later removal
+            return loadingContainer;
+        }
+
+        function hideLoadingAnimation(loadingContainer) {
+            if (loadingContainer) {
+                loadingContainer.remove();
+            }
+        }
+
         async function sendMessage() {
             const userInput = document.getElementById("user-input");
             const message = userInput.value.trim();
 
-            if (message === "") {
-                userInput.value = ""; // Clear the input field
-                return;
-            }
+            if (message === "") return;
 
-            // Append user message
+            // Add user message to the chat
             document.getElementById("messages").innerHTML += `
                 <div class="message user-message">${message}</div>`;
             document.getElementById("messages").scrollTop = document.getElementById("messages").scrollHeight;
 
-            // Clear the input field immediately after sending
-            userInput.value = "";
+            userInput.value = ""; // Clear the input
 
-            // Send message to server
+            // Show loading animation
+            const loadingContainer = showLoadingAnimation();
+
             try {
                 const response = await fetch("/chat", {
                     method: "POST",
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify({ message: message }),
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ message }),
                 });
 
                 const data = await response.json();
+                hideLoadingAnimation(loadingContainer);
 
-                // Append bot response
+                // Add bot response to the chat
                 document.getElementById("messages").innerHTML += `
                     <div class="message-container">
                         <span class="icon">🔘</span>
@@ -186,14 +221,13 @@
                     </div>`;
                 document.getElementById("messages").scrollTop = document.getElementById("messages").scrollHeight;
             } catch (error) {
+                hideLoadingAnimation(loadingContainer);
                 console.error("Error:", error);
             }
         }
 
         function handleKeyPress(event) {
-            if (event.key === "Enter") {
-                sendMessage();
-            }
+            if (event.key === "Enter") sendMessage();
         }
     </script>
 </body>
