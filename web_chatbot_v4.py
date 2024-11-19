@@ -87,9 +87,10 @@ class Chatbot:
             f"Do not create new information outside the scope of the provided context, but feel free to synthesize insights if relevant.\n\n"
             f"If the context contains no implicitly or explicitly relevant information to the user query, respond only with 'I'm sorry, I don't have enough information on that topic.'\n"
             f"Where applicable, suggest additional resources, such as course material, relevant URLs, or further steps the user might take.\n\n"
+            f"Lectures are 60 minutes long, use the start and end times of lecture in the context to answer questions about time.\n"
             f"Cite the source used to generate each sentence in the response by adding a shortened version of the section_title (Less than 30 characters) of the source in parenthesis after the sentence.\n"
             #f"When generating a response, ensure that each sentence derived from a document is immediately followed by its corresponding citation in parentheses. Use the 'citation' field provided in the document metadata for the citation. If a sentence combines information from multiple documents, include citations for all relevant sources. For example, if the information comes from 'Lecture 5,' the citation should be formatted as (Lecture 5, Epidemiology and Cultural Considerations). Make sure the citations follow these rules consistently throughout the response."
-            f"If citing a lecture, also include the start and end time and the unit of time minutes of the part of the lecture you are citing.\n\n"
+            f"If citing a lecture, include the start and end time and the unit of time minutes of the part of the lecture you are citing.\n\n"
             f"Previous Conversation History:\n{prev_context}\n\n"
             f"User Question:\n{user_query}\n\n"
             f"Context:\n{documents_context}\n\n"
@@ -103,7 +104,7 @@ class Chatbot:
         messages = [
             {
                 "role": "system",
-                "content": f"The following is a list of documents that may be relevant to the user query. "
+                "content": f"The following is a list of documents that may be relevant to the user query."
                         f"Analyze the documents and user query carefully. "
                         f"Return only the indices of documents that contain information that answer the user query, using the format {{\"indices\": [<indices>]}}. "
                         f"Ensure indices are within the range 0 to {len(documents) - 1}. If no documents are relevant, return {{\"indices\": []}}. "
@@ -167,6 +168,19 @@ class Chatbot:
         response = self._together_generation_short(prompt)
         return response.strip()
     
+    # def _update_time_queries(self, user_query):
+    #     prompt = (
+    #         f"Update the query based on the following rules for time ranges in lectures:\n"
+    #         f"Replace 'beginning of a lecture' with '0-20 minutes.'\n"
+    #         f"Replace 'middle of a lecture' with '20-40 minutes.'\n"
+    #         f"Replace 'end of a lecture' with '40-60 minutes.'\n"
+    #         f"Make only the specified updates to the query and return it as a single line without any additional text, explanations, or formatting. If the query does not reference a time range in lectures, return it unchanged in a single line.\n"
+    #         f"Query: {user_query}\n"
+    #     )
+    #     response = self._together_generation_short(prompt)
+    #     return response.strip()
+
+    
     def clear_queue_and_prev_context(self):
         self.documents_queue.clear()
         self.prev_context = ""
@@ -176,6 +190,10 @@ class Chatbot:
         # asking about a lecture that doesn't exist
         if user_query == "":
             return "Please enter a question or type 'exit' to quit."
+        
+        # print("Before User Query:", user_query)
+        # user_query = self._update_time_queries(user_query)
+        # print("After User Query:", user_query)
 
         # Fetch relevant documents using RAG
         fetch = self._fetch_from_rag(user_query)
@@ -199,6 +217,7 @@ class Chatbot:
         #     response = "I'm sorry, I don't have enough information on that topic.\n"
         # else:
             # Generate a response with the LLM using RAG documents as context
+        print(document)
         response = self._generate_response_with_llm(user_query, json.dumps(documents_list, indent=4, separators=(",\n")), self.prev_context)
         if "don't have enough information" in response:
             llm_rag_query = self._generate_llm_rag_query(self.prev_context, user_query)
