@@ -1,6 +1,6 @@
 # app.py
 from flask import Flask, request, jsonify, render_template
-from web_chatbot_v4 import Chatbot  # Replace with your chatbot code
+from web_chatbot_v4 import Chatbot 
 import os
 
 app = Flask(__name__)
