@@ -1,11 +1,15 @@
 # Auto Evaluator for Med 275 chatbot
-from web_chatbot_v4 import Chatbot  
+from web_chatbot_v4 import Chatbot_v4
+from web_chatbot_v5 import Chatbot_v5  
+from basic_chatbot import BasicChatbot
 import os
 
 os.environ["TOGETHER_API_KEY"] = "30cde163d78fa4c02d653ab94957386b6dcfb1c370e2a04c8678dc17197794e1"
 
 # Initialize your chatbot with the API key
-chatbot = Chatbot(api_key=os.environ["TOGETHER_API_KEY"]) 
+chatbot_v4 = Chatbot_v4(api_key=os.environ["TOGETHER_API_KEY"]) 
+chatbot_v5 = Chatbot_v5(api_key=os.environ["TOGETHER_API_KEY"])
+basic_chatbot = BasicChatbot(api_key=os.environ["TOGETHER_API_KEY"])
 
 # from https://github.com/langchain-ai/auto-evaluator/blob/main/api/text_utils.py
 template = """You are a teacher grading a quiz. 
@@ -23,8 +27,8 @@ GRADE: (Correct or Incorrect)
 JUSTIFICATION: (Without mentioning the student/teacher framing of this prompt, explain why the STUDENT ANSWER is Correct or Incorrect. Use one or two sentences maximum. Keep the answer as concise as possible.)
 """
 
-def evaluate(queries, true_answers):
-    with open("example.txt", "w") as file:
+def evaluate(file_name, queries, true_answers, chatbot):
+    with open(file_name, "w") as file:
         for i in range(len(queries)):
             print(i,"out of", len(queries) - 1)
             if queries[i] == "clear":
@@ -32,9 +36,9 @@ def evaluate(queries, true_answers):
                 continue
             bot_answer = chatbot.get_response(queries[i])
             prompt = template.format(query=queries[i], result=bot_answer, answer=true_answers[i])
-            file.write("query:" + queries[i] + "\n") 
-            file.write("bot_answer:" + bot_answer + "\n")
-            file.write("true_answer:" + true_answers[i]+ "\n")
+            # file.write("query:" + queries[i] + "\n") 
+            # file.write("bot_answer:" + bot_answer + "\n")
+            # file.write("true_answer:" + true_answers[i]+ "\n")
             grade = chatbot._together_generation_eval(prompt)
             file.write("grade:" + grade + "\n") 
 
@@ -68,4 +72,6 @@ true_answers = [
                 "Women who have never smoked are more than twice as likely to develop lung cancer than men who have never smoked (LoPiccolo et al, 2024). The proportion of lung cancers attributable to tobacco smoking varies across countries, with a higher proportion of lung cancers occurring in never-smokers in East Asia (Lung cancer in never smokers—the East Asian experience, 2018)."
 ]
 
-evaluate(queries, true_answers)
+# evaluate("v4_eval.txt", queries, true_answers, chatbot_v4)
+# evaluate("basic_eval.txt", queries, true_answers, basic_chatbot)
+evaluate("v5_eval.txt", queries, true_answers, chatbot_v5)

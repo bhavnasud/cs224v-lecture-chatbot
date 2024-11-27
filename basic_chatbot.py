@@ -1,17 +1,9 @@
 import requests
-import os
 import json
 from together import Together
 from collections import deque
-from pydantic import BaseModel, Field
-import together
-import re
 
-# Define the schema for the output
-class RelevantDocumentIndices(BaseModel):
-    indices: list[int] = Field(description="The document indices that are relevant to the user query")
-
-class Chatbot_v4:
+class BasicChatbot:
     def __init__(self, api_key):
         self.together_client = Together(api_key=api_key)
         self.together = Together()
@@ -76,63 +68,6 @@ class Chatbot_v4:
         except Exception as e:
             print("Error generating response:", e)
             return "There was an issue generating a response. Please try again later."
-        
-    def _together_generation_short(self, prompt):
-        try:
-            response = self.together_client.completions.create(
-                model="meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo",
-                prompt=prompt,
-                max_tokens=100,  
-                temperature=0.5,  
-            )
-            
-            if response.choices and response.choices[0].text.strip():
-                return response.choices[0].text.strip()
-            else:
-                return "I'm sorry, that is outside my knowledge capabilites. Please try again."
-                
-        except Exception as e:
-            print("Error generating response:", e)
-            return "There was an issue generating a response. Please try again later."
-
-    def add_citations(self, documents):
-        updated_documents = []
-        for document in documents:
-            citation = ""
-            if document["document_title"] == "Readings":
-                # print('readings with section title ', document["section_title"])
-                parts = document["section_title"].split(">")
-                title = parts[0].strip()
-                # print("title is ", title)
-                author_pattern = r"\b[A-Za-z]+(?:[A-Z][a-z]*)* et al"
-                # Search for the pattern in the section title
-                match = re.search(author_pattern, title)
-                authors = match.group(0) if match else None
-                # print("found authors ", authors)
-                year = document["last_edit_date"][:4]
-                if authors is not None:
-                    citation = f"{authors},{year}"
-                elif title is not None:
-                    citation = f"{title},{year}"
-                else:
-                    citation = document["section_title"]
-            elif document["document_title"] == "Lectures":
-                # print("lectures")
-                parts = document["section_title"].split(">")
-                title = None
-                if len(parts) > 1:
-                    title = parts[1].strip()
-                time_range = document["block_metadata"]["time_range_minutes"]
-                if title is None:
-                    title = document["section_title"]
-                citation = f"{title}, {time_range} minutes"
-            elif document["document_title"] == "Slides":
-                # print("slides")
-                citation = f"Slides: {document['section_title']}"
-            document["citation"] = citation
-            # print("added citation ", citation)
-            updated_documents.append(document)
-        return updated_documents
 
     def _generate_response_with_llm(self, user_query, documents, prev_context):
         # Format the prompt to provide context and the user query
@@ -160,85 +95,6 @@ class Chatbot_v4:
         response = self._together_generation_long(prompt)
         return response
 
-    def _filter_relevant_documents(self, documents, prev_context, user_query):
-        messages = [
-            {
-                "role": "system",
-                "content": f"The following is a list of documents that may be relevant to the user query."
-                        f"Analyze the documents and user query carefully. "
-                        f"Return only the indices of documents that contain information that answer the user query, using the format {{\"indices\": [<indices>]}}. "
-                        f"Ensure indices are within the range 0 to {len(documents) - 1}. If no documents are relevant, return {{\"indices\": []}}. "
-                        f"Do not return anything else."
-            },
-            {
-                "role": "user",
-                "content": json.dumps({
-                    "user_query": user_query,
-                    "prev_context": prev_context,
-                    "documents": documents
-                })
-            }
-        ]
-
-        # Call the LLM without using a structured response format
-        extract = self.together.chat.completions.create(
-            messages=messages,
-            model="meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo"
-        )
-
-        # Parse the response content
-        try:
-            response_content = json.loads(extract.choices[0].message.content)
-            indices = response_content.get("indices", [])
-        except (json.JSONDecodeError, KeyError):
-            print("Failed to parse LLM response. Returning an empty list of relevant documents.")
-            indices = []
-
-        # Filter relevant documents based on indices
-        relevant_documents = []
-        for index in indices:
-            if 0 <= index < len(documents):
-                relevant_documents.append(documents[index])
-            else:
-                # Debugging invalid indices
-                print(f"Invalid index: {index}")
-        
-        # Debugging output
-        print("Query ", user_query)
-        print("Number of documents:", len(documents))
-        print("Number of relevant documents:", len(relevant_documents))
-        print("Relevant documents:", relevant_documents)
-        
-        return relevant_documents
-    
-    def _generate_llm_rag_query(self, prev_context, user_query):
-        prompt = (
-            f"You are a highly intelligent assistant tasked with refining user queries to retrieve the most relevant documents "
-            f"from an embedding search system.\n\n"
-            f"Your goal is to rewrite the user query to improve relevance by:\n\n"
-            f"1. Removing generic terms or words likely to result in irrelevant matches.\n\n"
-            f"2. Adding specific keywords or phrases that are closely associated with the user intent.\n\n"
-            f"3. Ensure the new search query is concise. It is fine if the new query is just one word long.\n\n"
-            f"Context from the previous conversation:\n{prev_context}\n\n"
-            f"The user's query:\n{user_query}\n\n"
-            f"Provide only the rewritten query as output in a single line, without any additional text, explanations, or formatting.\n\n"
-        )
-        response = self._together_generation_short(prompt)
-        return response.strip()
-    
-    # def _update_time_queries(self, user_query):
-    #     prompt = (
-    #         f"Update the query based on the following rules for time ranges in lectures:\n"
-    #         f"Replace 'beginning of a lecture' with '0-20 minutes.'\n"
-    #         f"Replace 'middle of a lecture' with '20-40 minutes.'\n"
-    #         f"Replace 'end of a lecture' with '40-60 minutes.'\n"
-    #         f"Make only the specified updates to the query and return it as a single line without any additional text, explanations, or formatting. If the query does not reference a time range in lectures, return it unchanged in a single line.\n"
-    #         f"Query: {user_query}\n"
-    #     )
-    #     response = self._together_generation_short(prompt)
-    #     return response.strip()
-
-    
     def clear_queue_and_prev_context(self):
         self.documents_queue.clear()
         self.prev_context = ""
@@ -247,11 +103,7 @@ class Chatbot_v4:
         # Potential fail cases: querying with time range of lecture, asking for recommendations -> should lead to graceful failure or cite additional resources,
         # asking about a lecture that doesn't exist
         if user_query == "":
-            return "Please enter a question"
-        
-        # print("Before User Query:", user_query)
-        # user_query = self._update_time_queries(user_query)
-        # print("After User Query:", user_query)
+            return "Please enter a question or type 'exit' to quit."
 
         # Fetch relevant documents using RAG
         fetch = self._fetch_from_rag(user_query)
@@ -269,26 +121,6 @@ class Chatbot_v4:
                     document.pop("probability_score", None)
                 documents_list.extend(item)
 
-        # relevant_documents = self._filter_relevant_documents(documents_list, self.prev_context, user_query)
-        # if len(relevant_documents) == 0:
-        #     print("No relevant documents!!")
-        #     response = "I'm sorry, I don't have enough information on that topic.\n"
-        # else:
-            # Generate a response with the LLM using RAG documents as context
-        # print(document)
-        documents_list = self.add_citations(documents_list)
         response = self._generate_response_with_llm(user_query, json.dumps(documents_list, indent=4, separators=(",\n")), self.prev_context)
-        if "don't have enough information" in response:
-            llm_rag_query = self._generate_llm_rag_query(self.prev_context, user_query)
-            print(f"Not enough information to generate response, generating LLM RAG query: {llm_rag_query}")
-            additional_documents = self._fetch_from_rag(llm_rag_query)[0]["results"]
-            for document in additional_documents:
-                document.pop("similarity_score", None)
-                document.pop("probability_score", None)
-            # replace stored documents for this query
-            self.documents_queue[-1] = additional_documents
-            print("LLM RAG retrieved documents: ", [document['section_title'] for document in additional_documents])
-            additional_documents = self.add_citations(additional_documents)
-            response = self._generate_response_with_llm(user_query, json.dumps(additional_documents, indent=4, separators=(",\n")), self.prev_context)
         self.prev_context += "\nQuery: {}, Response: {}".format(user_query, response)
         return f"{response}"

@@ -17,7 +17,7 @@ class LLMGeneratedQuery(BaseModel):
     updated_query: str = Field(description="Rewritten query that will return more relevant embedding matches")
     document_title: DocumentTitle = Field(None, description="Optional field to filter returned document titles by")
 
-class Chatbot:
+class Chatbot_v5:
     def __init__(self, api_key):
         self.together_client = Together(api_key=api_key)
         self.together = Together()
@@ -226,7 +226,7 @@ class Chatbot:
         # Potential fail cases: querying with time range of lecture, asking for recommendations -> should lead to graceful failure or cite additional resources,
         # asking about a lecture that doesn't exist
         if user_query == "":
-            return "Please enter a question or type 'exit' to quit."
+            return "Please enter a question"
         
         # print("Before User Query:", user_query)
         # user_query = self._update_time_queries(user_query)
