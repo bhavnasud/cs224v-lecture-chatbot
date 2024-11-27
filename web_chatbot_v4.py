@@ -23,8 +23,8 @@ class Chatbot:
         rag_payload = {
             "query": user_queries,  # Now expects a list of queries
             "rerank": True,
-            "num_blocks_to_rerank": 25,
-            "num_blocks": 10
+            "num_blocks_to_rerank": 30,
+            "num_blocks": 15
         }
         rag_headers = {
             "Content-Type": "application/json"

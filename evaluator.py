@@ -35,7 +35,8 @@ def evaluate(queries, true_answers):
             file.write("query:" + queries[i] + "\n") 
             file.write("bot_answer:" + bot_answer + "\n")
             file.write("true_answer:" + true_answers[i]+ "\n")
-            file.write("grade:" + chatbot._together_generation_eval(prompt) + "\n") 
+            grade = chatbot._together_generation_eval(prompt)
+            file.write("grade:" + grade + "\n") 
 
 queries = ["Give me a summary of the class", 
            "What is discussed in the beginning of lecture 1?", 
