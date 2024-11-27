@@ -1,0 +1,51 @@
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately captures the main points of the class, including the instructor's background, the topics covered, and the unique format of the course. Although the student answer does not mention all the specific topics covered, it does not contain any conflicting statements.
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately captures the main points discussed in the first half of lecture 1, including the instructor's personal experience with lung cancer and his goals for the class, despite some minor differences in phrasing and detail. The student answer does not contain any conflicting statements with the true answer.
+grade:```
+
+GRADE: Incorrect
+
+JUSTIFICATION: The student answer does not mention the risk factors of lung cancer in Asian populations, the NLST study, or the specific recommendation for high-risk individuals, which are the main topics discussed at the end of lecture 1. The student answer instead focuses on lung cancer staging and screening, which is not the primary topic discussed at the end of the lecture.
+grade:(line break)
+ADDITIONAL FEEDBACK: (Optional, but recommended. Provide additional context or information that may be helpful to the student.)
+
+
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately lists some of the methods used to diagnose lung cancer, including imaging tests and biopsy, without containing any conflicting statements.
+
+ADDITIONAL FEEDBACK: The student answer does not mention the Lung-RADS system, screening programs, or the challenges of diagnosis, but this information is not necessary to make the answer correct. The student answer provides a good overview of the diagnostic methods used for lung cancer.
+grade:(line break)
+ADDITIONAL FEEDBACK: (Optional, but recommended. Provide additional context or suggestions for improvement. Keep the answer as concise as possible.)
+
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately identifies several difficulties with diagnosing lung cancer, including non-specific symptoms, delays in seeking medical attention, and healthcare provider and system factors, which align with the true answer. The student answer also provides additional relevant information that does not conflict with the true answer.
+
+ADDITIONAL FEEDBACK: The student answer is thorough and well-supported by references, but could be improved by summarizing the main points more concisely and clearly. The true answer is more concise and focused on the key challenges, so the student answer could benefit from a clearer structure and summary of the main difficulties.
+grade:(line break)
+ADDITIONAL FEEDBACK: (Optional, but recommended. Provide additional context or information that may help the student improve their answer. Keep the answer as concise as possible.)
+
+Please respond in the requested format.
+grade:(line break)
+ADDITIONAL FEEDBACK: (Optional, but recommended. Provide additional feedback to help the student improve their answer. This can include pointing out specific errors, suggesting alternative approaches, or providing additional context.)
+
+Please respond in the requested format.
+grade:```
+GRADE: Incorrect
+
+JUSTIFICATION: The student answer does not provide any information about the readings in the class, instead mentioning the lack of explicit readings and providing unrelated details about the course materials. The student answer does not match the factual content of the true answer, which describes specific readings and their topics.
+grade:```
+
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately states that women who have never smoked are more than twice as likely to develop lung cancer than men who have never smoked, which is the key point of the true answer. The additional information provided in the student answer does not conflict with the true answer.
+grade:```
+GRADE: Incorrect
+
+JUSTIFICATION: The student answer does not provide any information about lecture 2, and instead provides a summary of lecture 1, which is not relevant to the question. The student's admission of not having enough information on lecture 2 is also an admission of not knowing the answer.

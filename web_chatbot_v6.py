@@ -71,7 +71,7 @@ class Chatbot_v6:
     def _together_generation_eval(self, prompt):
         try:
             response = self.together_client.completions.create(
-                model="meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo",
+                model="meta-llama/Llama-3-70b-chat-hf",
                 prompt=prompt,
                 max_tokens=400,  
                 temperature=0,  

@@ -7,7 +7,6 @@ class BasicChatbot:
     def __init__(self, api_key):
         self.together_client = Together(api_key=api_key)
         self.together = Together()
-        self.documents_queue = deque([])
         self.prev_context = ""
 
     def _fetch_from_rag(self, user_queries):  # Accepts a list of queries now
@@ -54,7 +53,7 @@ class BasicChatbot:
     def _together_generation_eval(self, prompt):
         try:
             response = self.together_client.completions.create(
-                model="meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo",
+                model="meta-llama/Llama-3-70b-chat-hf",
                 prompt=prompt,
                 max_tokens=400,  
                 temperature=0,  
@@ -104,22 +103,13 @@ class BasicChatbot:
         # asking about a lecture that doesn't exist
         if user_query == "":
             return "Please enter a question or type 'exit' to quit."
-
+        
+        documents_list = []
         # Fetch relevant documents using RAG
         fetch = self._fetch_from_rag(user_query)
         if len(fetch) > 0:
             documents = fetch[0]["results"]
-            self.documents_queue.append(documents)
-            if len(self.documents_queue) > 3: # TODO: potentially increase length of queue
-                self.documents_queue.popleft()
-        
-        documents_list = []
-        for item in self.documents_queue:
-            if len(item) > 0:
-                for document in item:
-                    document.pop("similarity_score", None)
-                    document.pop("probability_score", None)
-                documents_list.extend(item)
+            documents_list.append(documents)
 
         response = self._generate_response_with_llm(user_query, json.dumps(documents_list, indent=4, separators=(",\n")), self.prev_context)
         self.prev_context += "\nQuery: {}, Response: {}".format(user_query, response)

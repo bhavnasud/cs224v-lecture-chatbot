@@ -1,0 +1,55 @@
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer contains all the key information from the true answer, including the topic of the class, the instructor, and the range of topics covered, and does not contain any conflicting statements. The additional details provided by the student do not contradict the true answer.
+grade:```
+GRADE: Incorrect
+
+JUSTIFICATION: The student answer incorrectly states that the first half of lecture 1 covers lung cancer diagnosis and screening, and the stages of lung cancer, which is not mentioned in the true answer. The student answer also omits key points from the true answer, such as the introduction to the class, logistics, and importance of attendance and participation.
+grade:```
+GRADE: Incorrect
+
+JUSTIFICATION: The student answer does not mention the discussion of lung cancer risk factors, screening, or the NLST study, which are the actual topics discussed at the end of lecture 1. Instead, it provides unrelated information about the professor's introduction and class logistics.
+grade:(line break)
+ADDITIONAL FEEDBACK: (Optional, but recommended. Provide additional context or suggestions for improvement. Keep the answer as concise as possible.)
+
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately describes the methods used to diagnose lung cancer, including LDCT scans, chest X-rays, and biopsies, and provides additional relevant information without conflicting with the true answer.
+
+ADDITIONAL FEEDBACK: The student answer is thorough and well-supported by references, but could be improved by focusing more on the specific question asked and avoiding unnecessary details.
+grade:(line break)
+ADDITIONAL FEEDBACK: (Optional, but recommended. Provide additional context or suggestions for improvement. Keep the answer as concise as possible.)
+
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately identifies the difficulties with lung cancer screening implementation, including radiation exposure, false positives, overdiagnosis, incidental findings, cost, and anxiety, as well as barriers to early diagnosis and treatment. The student answer also provides additional relevant information that does not conflict with the true answer.
+
+ADDITIONAL FEEDBACK: The student answer is thorough and well-supported by references, but could be improved by condensing the information into a more concise and focused response.
+grade:(line break)
+ADDITIONAL FEEDBACK: (Optional, but recommended. Provide additional context or information that may be helpful to the student. Keep the answer as concise as possible.)
+
+Please respond with the requested format.
+grade:(line break)
+ADDITIONAL FEEDBACK: (Optional, but recommended. Provide additional context or information that could help the student improve their answer.)
+
+
+GRADE: Incorrect
+
+JUSTIFICATION: The student answer does not provide information about the top three treatments, and instead focuses on EGFR-TKIs, crizotinib, and alectinib, while also mentioning ALK rearrangement and HER2 mutations. The student answer does not mention immunotherapy with immune checkpoint blockade targeting the PD-1/PD-L1 axis.
+
+ADDITIONAL FEEDBACK: The student answer appears to be a collection of relevant information, but it does not directly address the question. To improve, the student should focus on providing a clear and concise answer that directly addresses the question, and avoid including unnecessary information.
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately lists the readings assigned for the class, including the authors and publication years, and provides information on where to find the readings, without containing any conflicting statements. The additional details in the true answer do not contradict the student's answer.
+grade:```
+
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately states that women who have never smoked are more than twice as likely to develop lung cancer than men who have never smoked, which is a key point in the true answer. The student answer does not contain any conflicting statements or incorrect information.
+grade:```
+
+GRADE: Correct
+
+JUSTIFICATION: The answer acknowledges a lack of information on the topic, which aligns with the true answer. The additional specificity about Lecture 2 does not conflict with the true answer.
