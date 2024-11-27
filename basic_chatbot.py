@@ -95,7 +95,6 @@ class BasicChatbot:
         return response
 
     def clear_queue_and_prev_context(self):
-        self.documents_queue.clear()
         self.prev_context = ""
 
     def get_response(self, user_query):
