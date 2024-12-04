@@ -147,7 +147,7 @@ class Chatbot_v6:
             f"Your answers should be detailed and should use the provided Context and Previous Conversation History to answer the User Question.\n\n"
             f"If the context contains no implicitly or explicitly relevant information to the user query, respond only with 'I'm sorry, I don't have enough information on that topic.'\n"
             f"If the context only contains some of the necessary information to answer the query, infer the best possible answer based on the provided information.\n"
-            f"Try to use multiple sources if possible.\n"
+            f"Try to use multiple diverse sources if possible.\n"
             f"Do not create new information outside the scope of the provided context, but feel free to synthesize insights if relevant.\n\n"
             f"Where applicable, suggest additional resources, such as course material, relevant URLs, or further steps the user might take.\n\n"
             f"Lectures are 60 minutes long, use the start and end times of lecture in the context to answer questions about time.\n\n"
