@@ -1,0 +1,50 @@
+bot_answer:The class seems to be focused on lung cancer, specifically non-small cell lung cancer, and its unique aspects, such as the speaker's personal experience as a patient and physician, and the complexities of healthcare access. The lectures cover various topics like diagnosis and screening, developing culturally attuned interventions to support caregiving in cancer, and nutrition during cancer treatment. The class also includes interactive elements, such as writing down three good things that happened to the students, and discussions on ideal healthcare access. The class is taught by Dr. Bryant Lin, a physician at Stanford, and is designed to be a unique and personal learning experience for the students. (Source: Lecture 1, 3, 4, and 6)
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately captures the main topics and themes covered in the class, and also mentions the professor's personal experience and the interactive elements, which are all consistent with the true answer.
+bot_answer:The first half of Lecture 1 covers an introduction to lung cancer and staging, with the instructor, Dr. Bryant Lin, sharing his personal experience as a patient and physician. He explains the process of diagnosing lung cancer, including using imaging techniques such as X-rays, and the importance of early detection. Dr. Lin also discusses the different stages of lung cancer and how prognosis varies depending on the stage at diagnosis. Additionally, he touches on the topic of cancer screening and its limitations. The lecture is 60 minutes long, and the instructor encourages students to ask questions and share their thoughts and experiences. (Source: Lecture 1, block_metadata, time_range_minutes, and content)
+grade:```
+GRADE: Incorrect
+
+JUSTIFICATION: The student answer focuses on the medical aspects of lung cancer, while the true answer focuses on the introduction to the class, logistics, and the instructor's personal experience.
+bot_answer:Dr. Bryant Lin introduced his team members and assistants, mentioning Steven, who is handling the high-quality recording of the class, and Lisa Kim, who created a segment called "90 Seconds with Lisa Kim". He also mentioned his personal reasons for starting the class and thanked the attendees for their interest. Additionally, he encouraged students to talk to Kate Selig, who may be around after the class. Dr. Lin also introduced himself and mentioned that he is endeavoring to make every single session despite his health. He emphasized the importance of being present in class and encouraged students to be self-conscious about their health, advising them not to attend if they're feeling unwell. He also discussed logistics, such as attendance, assignments, and food. (Source: Lecture 1)
+grade:```
+GRADE: Incorrect
+
+JUSTIFICATION: The student answer discusses unrelated topics such introduction of team members, personal reasons, and logistics, whereas the true answer focuses on the specific medical topics of lung cancer risk factors and screening.
+bot_answer:Doctors diagnose lung cancer through a variety of methods, including imaging tests like low-dose computed tomography (LDCT) scans, chest X-rays, and positron emission tomography (PET) scans, as well as biopsies. (Source: Lecture 1, 39-41 minutes, "Diagnosis and Screening") In a low-dose CT scan, the radiology report will classify findings using the Lung Rad system, which categorizes lung nodules from 0 to 4X based on their suspiciousness. (Source: Lecture 1, 39-41 minutes, "Diagnosis and Screening") If a lung nodule is likely benign, a doctor may recommend a follow-up LDCT in a year, while more suspicious nodules may require a PET CT or biopsy. (Source: Lecture 1, 39-41 minutes, "Diagnosis and Screening") Symptoms such as cough, shortness of breath, and fatigue can be indicative of lung cancer, but are often non-specific and may be misattributed or misinterpreted by patients and healthcare providers. (Source: "How Timely Is Diagnosis of Lung Cancer? Cohort Study of Individuals with Lung Cancer Presenting in Ambulatory Care in the United States (Suchsland et al)", "Symptoms and Signs Prior to Diagnosis") (Source: Lecture 1, 34-35 minutes, "Diagnosis and Screening") (Source: "Patient and carer perceived barriers to early presentation and diagnosis of lung cancer: a systematic review (Cassim et al)", "Results > Patient factors")
+grade:```
+
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately lists the methods used to diagnose lung cancer, including imaging tests and biopsies, and provides additional relevant information about the diagnostic process, without contradicting the true answer.
+bot_answer:Suchsland et al. (lecture 1, minutes 34-35) and Cassim et al. (lecture 3, section "Patient and carer perceived barriers to early presentation and diagnosis of lung cancer: a systematic review") suggested that symptoms such as cough, shortness of breath, and fatigue can be indicative of lung cancer, but are often non-specific and may be misattributed or misinterpreted by patients and healthcare providers. Accessibility, availability, acceptability, affordability, and accommodation (Cassim et al., Methods > Search strategy and selection criteria) can be seen as key barriers to cancer care. Time commitments for caregivers or availability of healthcare providers (Lecture 4, minutes 14-16) can also be a significant concern. Chen et al. (Lecture 3, section "Hidden Disparities: How Language Influences Patients’ Access to Cancer Care") found Hispanic and Asian patients’ barriers in communicating with healthcare providers, mainly due to language. Chen et al. noted that availability, affordability, accessibility, and accommodation all contribute to barriers in healthcare for the under-resourced populations. Difficulties also see intersections with systemic problems from health insurance issues (Chen et al. lecture 3 section "Hidden Disparities"), language issues and cultural misunderstandings (Chen et al. lecture 3 section "Hidden Disparities", lecture 4, minutes 15-17), trouble actually speaking to caregivers, inefficient back-office or insurance issues like challenges with face to face or telephone encounters (Lecture 3, minutes 48-50), as well as past trauma (Cassim et al.). (Source: Lecture 3. September 30th.) Eventually lack of access can occur due to transportation barriers or work responsibilities limiting time for appointments (the CAP2019 مثل Mercer healthcare Research Doc). On the systemic end, Matters of funding for intervention in certain demographic populations were blocking solutions (Cassim et al., lecture 3 section "Patient and carer perceived barriers to early presentation and diagnosis of lung cancer: a systematic review"). Studies suggest– an introvert and shy person for example could be overwhelmed by a busy waiting room, too personal and awkward for many of them also very ethnocentric consisting of hospital staff with clients typically favoring passengers with different backgrounds or greater linguistic diversity. (Source: Lecture 3 minutes 27-29.)  Bryant Lin (MD), How Timely Is Diagnosis of Lung Cancer? Coh
+grade:```
+GRADE: Correct
+JUSTIFICATION: The student answer covers all the main difficulties mentioned in the true answer, including non-specific symptoms, barriers to healthcare, and systemic problems, and provides additional relevant information without introducing any conflicting statements.
+bot_answer:The top three treatments for never-smoker lung cancer are EGFR tyrosine kinase inhibitors (EGFR-TKIs), ALK rearrangement inhibitors, and MET inhibitors. These treatments target specific oncogenic drivers and have shown efficacy in clinical trials. (Source: [https://pubmed.ncbi.nlm.nih.gov/30225210/])
+grade:```
+
+GRADE: Correct
+
+JUSTIFICATION: The student answer correctly identifies the top three treatments for never-smoker lung cancer, including EGFR-TKIs, ALK rearrangement inhibitors, and MET inhibitors, which align with the true answer's targeted therapies, despite some differences in phrasing and additional information provided.
+bot_answer:I'm sorry, I don't have enough information on that topic.
+grade:```
+GRADE: Correct
+JUSTIFICATION: The student answer is Correct because it acknowledges the lack of information on the topic, which is a honest and accurate response.
+bot_answer:I'm sorry, I don't have enough information on that topic.
+grade:```
+GRADE: Incorrect
+
+JUSTIFICATION: The student answer does not provide any information about the readings in the class, instead stating a lack of knowledge on the topic.
+bot_answer:Approximately two-thirds of LCINS cases occur in women, making women who have not smoked more than twice as likely to develop lung cancer than men who have not smoked 5,11 (1).
+grade:```
+
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately states that women who have not smoked are more than twice as likely to develop lung cancer than men who have not smoked, which is the same information as the true answer.
+bot_answer:I apologize, but I don't have enough information on that topic.
+grade:```
+GRADE: Correct
+JUSTIFICATION: The answer acknowledges a lack of knowledge, which is a correct acknowledgment of the student's limitations.

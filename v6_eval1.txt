@@ -1,0 +1,75 @@
+bot_answer:Lecture 4 is titled "Developing Culturally Attuned Interventions to Support Caregiving in Cancer" and it starts at 0 minutes (Lecture 4, 0-2 minutes). Lecture 1 is titled "Diagnosis and Screening" and it starts at 0 minutes (Lecture 1, 0-2 minutes). The class has a cancer storytelling event on November 16th, which includes a short documentary and a graphic novel about a person's experience with cancer (Lecture 4, 0-2 minutes). The class also has a session on how to use ChatGPT to make a cancer swine in a video game (Lecture 4, 0-2 minutes). The instructor, Bryant Lin, encourages students to attend the event and to come to class a little earlier to grab food and take a seat before the lecture starts (Lecture 4, 0-2 minutes). 
+
+The instructor also mentions that the class is going well and that they have a fantastic team of TAs, including Longshaw, Richard, and Steven, who are helping to make the class possible (Lecture 1, 2-5 minutes). The instructor also thanks the students for signing up for the class and for their interest in the topic (Lecture 1, 5-7 minutes). 
+
+The class has a login code that students need to use to attend the class, and the instructor encourages students to input the code on Canvas to attend the class (Lecture 1, 2-5 minutes). The instructor also mentions that the class has a centralized clinical device center that is based in Newark, and that they have a team of people who are organized in 3 areas to handle different types of phone calls (Lecture 3, 42-44 minutes). 
+
+The instructor also shares a personal story about their experience with cancer and their family's experience with caregiving (Lecture 4, 20-22 minutes). The instructor also mentions that the healthcare system is not designed to handle cultural projects, and that they often throw English materials at people and hope for the best (Lecture 4, 20-22 minutes). 
+
+Overall, the class seems to be focused on developing culturally attuned interventions to support caregiving in cancer, and it includes a variety of topics such as diagnosis and screening, cancer storytelling, and the use of technology to support caregiving.
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately summarizes the class, covering various topics and details mentioned in the lectures, even if it does not exactly match the true answer in terms of phrasing and focus.
+bot_answer:The first half of Lecture 1 discusses the diagnosis and screening of cancer, specifically lung cancer. The instructor, Bryant Lin, explains that when cancer is diagnosed, it is classified into stages, with stage 1 being the earliest and stage 4 being metastatic. He also discusses the importance of early diagnosis and the challenges of diagnosing cancer in its early stages. Additionally, he mentions that the class will cover topics such as cancer screening, diagnosis, and treatment, and that the students will have the opportunity to learn from guest speakers and participate in discussions. (Lecture 1, 0-30 minutes)
+grade:```
+GRADE: Incorrect
+
+JUSTIFICATION: The student answer discusses the diagnosis and screening of cancer, which is not the topic covered in the first half of Lecture 1, whereas the true answer covers the introduction to the class, logistics, and the instructor's personal experience.
+bot_answer:At the end of Lecture 1, the instructor discusses the importance of early diagnosis and the challenges of diagnosing cancer in its early stages. He also explains the concept of staging and how it is used to classify cancer based on the size of the tumor and the extent of its spread. Additionally, he mentions the prognosis for lung cancer patients and how it plummets as the stage of the cancer advances. The instructor also talks about the importance of cancer screening and how it can help diagnose cancer before symptoms appear. (Lecture 1, 32-35 minutes, Lecture 1, 34-37 minutes)
+grade:```
+
+GRADE: Incorrect
+
+JUSTIFICATION: The student answer discusses different topics, such as early diagnosis, staging, prognosis, and cancer screening, whereas the true answer focuses on risk factors, lung cancer screening, and the NLST study.
+bot_answer:Doctors diagnose lung cancer through a combination of methods, including low dose computed tomography (LDCT) scans, chest X-rays, and biopsies (Lecture 1, 39-41 minutes). The Lung-RADS system is used to classify lung nodules based on their suspiciousness, and management depends on the classification (Lecture 1, 39-41 minutes). In addition, doctors may use natural language processing (NLP) to identify symptoms and signs of lung cancer from electronic health records (Suchsland et al, 2022). It's also important to note that early recognition of lung cancer symptoms combined with early medical help-seeking behavior can have the potential to increase survival and decrease mortality from lung cancer (Cassim et al, 2019).
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer includes all the main points mentioned in the true answer, including the diagnostic methods and the classification system, and does not contain any conflicting information.
+bot_answer:Some of the difficulties with diagnosing lung cancer include non-specific clinical presentation, lack of clinical quality measures to identify areas for practice improvement, and barriers to access such as difficulty making or accessing appointments, discontinuity of care, long waiting times, and limited access to healthcare providers and services (Suchsland et al, 2022; Cassim et al, 2019). Additionally, the quality of the relationship between general practitioners (GPs) and patients can affect the quality of care provided, with issues such as lack of trust, inadequate information, and GP nihilism towards lung cancer (Cassim et al, 2019). Furthermore, patients may experience delays in diagnosis due to various factors, including lack of awareness of lung cancer symptoms, fear of illness, and societal stigma related to smoking (Cassim et al, 2019). The median time interval from initial clinical presentation to chest CT or chest X-ray imaging can be as long as 291 days, and from initial clinical presentation to specialist visit can be 236 days (Suchsland et al, 2022).
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer provides a detailed and accurate list of difficulties in diagnosing lung cancer, including non-specific clinical presentation, barriers to access, and delays in diagnosis, all of which are supported by the cited sources.
+bot_answer:The top three treatments for never-smoker lung cancer are:
+
+1. EGFR tyrosine kinase inhibitors (EGFR-TKIs), such as gefitinib, erlotinib, and afatinib, which have been shown to be more effective and better tolerated than standard platinum-based doublet chemotherapy in advanced NSCLC patients harboring EGFR activating mutations (Lung cancer in never smokers—the East Asian experience, 2018).
+2. Crizotinib, an oral small-molecule TKI of ALK, MET, and ROS1 kinases, which has been approved for the first-line treatment of advanced ALK-rearranged NSCLC (Lung cancer in never smokers—the East Asian experience, 2018).
+3. Immunotherapy with immune checkpoint blockade targeting the programmed-death 1/programmed-death ligand 1 (PD-1/PD-L1) axis, which has been shown to generate durable responses in some patients with advanced NSCLC, although the current obstacle to the wide use of anti-PD-1/PD-L1 antibodies is the lack of biomarkers to identify beneficial patient populations (Lung cancer in never smokers—the East Asian experience, 2018).
+
+It is worth noting that the effectiveness of these treatments may vary depending on the specific subtype of lung cancer and the individual patient's characteristics.
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately lists the top three treatments for never-smoker lung cancer, including EGFR-TKIs, crizotinib, and immunotherapy with immune checkpoint blockade, and provides additional relevant information about the treatments and their effectiveness.
+bot_answer:Here's a detailed explanation of each of the top three treatments for never-smoker lung cancer:
+
+1. EGFR tyrosine kinase inhibitors (EGFR-TKIs): These are oral medications that target the EGFR protein, which is often mutated in never-smoker lung cancer. EGFR-TKIs have been shown to be more effective and better tolerated than standard platinum-based doublet chemotherapy in advanced NSCLC patients harboring EGFR activating mutations. Examples of EGFR-TKIs include gefitinib, erlotinib, and afatinib.
+
+2. Crizotinib: This is an oral small-molecule TKI of ALK, MET, and ROS1 kinases. Crizotinib has been approved for the first-line treatment of advanced ALK-rearranged NSCLC. It has been shown to have better progression-free survival (PFS) and objective response rate (ORR) compared to chemotherapy in Asian patients with ALK-positive NSCLC.
+
+3. Immunotherapy with immune checkpoint blockade targeting the programmed-death 1/programmed-death ligand 1 (PD-1/PD-L1) axis: This is a novel approach for the treatment of patients with advanced NSCLC. Several randomized trials have demonstrated a significant survival advantage of PD-1/PD-L1 antibodies over docetaxel as second-line therapy. However, the current obstacle to the wide use of anti-PD-1/PD-L1 antibodies is the lack of biomarkers to identify beneficial patient populations. Tumor mutation burden (TMB) has recently been identified as a promising biomarker for response to immune checkpoint inhibitors.
+
+It's worth noting that the effectiveness of these treatments may vary depending on the specific subtype of lung cancer and the individual patient's characteristics. (Lung cancer in never smokers—the East Asian experience, 2018)
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately describes the three treatments for never-smoker lung cancer, including EGFR-TKIs, crizotinib, and immunotherapy with immune checkpoint blockade targeting the PD-1/PD-L1 axis, and provides relevant details about each treatment.
+bot_answer:The readings in MED 275 include articles such as "Hidden Disparities: How Language Influences Patients’ Access to Cancer Care" by Chen et al, "Patient and carer perceived barriers to early presentation and diagnosis of lung cancer: a systematic review" by Cassim et al, and "How Timely Is Diagnosis of Lung Cancer? Cohort Study of Individuals with Lung Cancer Presenting in Ambulatory Care in the United States" by Suchsland et al. These readings may be related to the topics of cancer screening, diagnostics, caregiving, policy, therapy, and spiritual care, which are covered in the course. (Chen et al, 2023; Cassim et al, 2019; Suchsland et al, 2022)
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately lists the readings and mentions the topics covered in the course, which aligns with the true answer's description of the readings' focus on cancer care challenges.
+bot_answer:Women who have never smoked are more than twice as likely to develop lung cancer than men who have never smoked (LoPiccolo et al, 2024).
+grade:```
+
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately states the increased risk of lung cancer in women who have never smoked compared to men who have never smoked, which is a key point in the true answer.
+bot_answer:I'm sorry, I don't have enough information on that topic.
+grade:```
+
+GRADE: Correct
+
+JUSTIFICATION: The student's answer matches the true answer, indicating a lack of knowledge on the topic.

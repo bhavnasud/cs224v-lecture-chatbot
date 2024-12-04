@@ -1,0 +1,63 @@
+bot_answer:I'm sorry, I don't have enough information on that topic.
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student acknowledges their lack of knowledge on the topic, which is a honest and accurate assessment of their abilities.
+bot_answer:In the first half of lecture 1, the discussion covers an introduction to the class, including the topics that will be covered, the format of the class, and the logistics of attendance and assignments. Additionally, the lecture discusses the importance of early diagnosis of lung cancer, the different stages of lung cancer, and the challenges of diagnosing lung cancer in its early stages. (Source: Lectures, Lecture 1, block_metadata: time_range_minutes)
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately covers the main topics discussed in the first half of lecture 1, including the introduction to the class, logistics, and discussion of lung cancer, even if it omits some details and adds others.
+bot_answer:At the end of lecture 1, lecture content includes information on a "90 Seconds with Lisa Kim" segment, an introduction to the teaching assistants (TAs), and an explanation of the attendance policy and logistics of the class, including the use of a login code to mark attendance (Source: Lectures, Lecture 1, block_metadata: time_range_minutes).
+grade:```
+
+GRADE: Incorrect
+
+JUSTIFICATION: The student answer does not mention the risk factors of lung cancer, lung cancer screening, or the NLST study, which are the topics discussed at the end of lecture 1 according to the true answer.
+bot_answer:Doctors diagnose lung cancer through a combination of methods, including low-dose computed tomography (LDCT) scans, chest X-rays, and specialist consultations (Suchsland et al). The LDCT scan is classified using the Lung-RADS system, which categorizes findings from 0 to 4X depending on the level of suspicion (Lung-RADS). The doctor will then decide on the next steps based on the level of suspicion. If the lung nodule is likely benign, the doctor may recommend a follow-up LDCT in a year. If it's probably benign, the doctor may recommend a follow-up in six months. If the nodule is highly suspicious, the doctor may recommend a PET CT, biopsy, or surgery (Bryant Lin (MD), Natalie Liu (MD)). Symptoms of lung cancer can be non-specific and may not appear until the cancer is advanced. These symptoms can include coughing, coughing up blood, headaches, and back pain (Bryant Lin (MD), Natalie Liu (MD)). 
+
+In addition to imaging tests, doctors may also use natural language processing (NLP) to analyze symptoms and signs from free text clinical fields to identify potential cases of lung cancer (Suchsland et al). The most common symptoms/signs prior to diagnosis were cough, shortness of breath, and fatigue (Suchsland et al). Healthcare provider and system factors, such as the quality of the relationship between GPs and patients, can also play a role in the diagnosis of lung cancer (Cassim et al). 
+
+Doctors may also use the pack-year system to determine the patient's smoking history. The pack-year system calculates the number of packs smoked per day multiplied by the number of years smoked. For example, someone who smoked 1 pack per day for 20 years has 1 x 20 = 20 pack-years (N Engl J Med 2011;365:395-409).
+
+Early detection of lung cancer is critical to improving survival rates. Doctors may recommend annual LDCT screenings for heavy smokers, defined as those with at least 20 pack-years of smoking history, who are between 50-80 years old (CA Cancer J Clin 2024;74:12-49). Doctors may also recommend LDCT screenings for those who have quit smoking within the past 15 years.
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately describes the methods used to diagnose lung cancer, including LDCT scans, chest X-rays, and specialist consultations, and provides additional relevant information about the diagnosis process without contradicting the true answer.
+bot_answer:One of the difficulties with diagnosing and treating lung cancer is the lack of effective communication between patients and healthcare providers. Language barriers, cultural differences, and limited access to care can all contribute to delays in diagnosis and treatment (Ranak Trivedi (PhD, FSBM, FGSA), Bryant Lin (MD)). For example, patients who speak a non-English language may have difficulty communicating with healthcare providers, and patients from different cultural backgrounds may have different expectations and preferences for care (Ranak Trivedi (PhD, FSBM, FGSA), Bryant Lin (MD)).
+
+Another difficulty that arises in the early detection and diagnosis of lung cancer is transportation to doctors. It is very important, and you can say it's equally easy or equally hard depending on your insurance to get to the doctor (Bryant Lin (MD). Additionally, not speaking the primary language being used is a huge barrier in getting an appointment.
+
+These difficulties underscore the importance of developing culturally attuned interventions to support caregiving in cancer. It is crucial to address the specific needs of minoritized groups and to create interventions that are adaptable to different populations (Ranak Trivedi (PhD, FSBM, FGSA), Bryant Lin (MD)).
+
+Overall, the difficulties with diagnosing and treating lung cancer highlight the need for a comprehensive and culturally sensitive approach to care that addresses the unique needs of patients and their caregivers. Bryant Lin (MD).
+grade:```
+GRADE: Incorrect
+JUSTIFICATION: The student answer focuses on difficulties related to communication, transportation, and cultural differences, whereas the true answer discusses the non-specific clinical presentation, risks of screening, and barriers to early diagnosis, which are unrelated to the student's answer.
+bot_answer:The top three treatments for never-smoker lung cancer are: (1) EGFR tyrosine kinase inhibitors (EGFR-TKIs), which have been shown to be more effective and better tolerated than standard platinum-based doublet chemotherapy in advanced NSCLC patients harboring EGFR activating mutation; (2) ALK inhibitors, such as crizotinib, which have been approved for the first-line treatment of advanced ALK-rearranged NSCLC; and (3) Immunotherapy with immune checkpoint blockade targeting the programmed-death 1/programmed-death ligand 1 (PD-1/PD-L1) axis, which has been shown to generate durable response in some patients with advanced NSCLC. (Source: https://pubmed.ncbi.nlm.nih.gov/30225210/)
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately lists the top three treatments for never-smoker lung cancer, including EGFR-TKIs, ALK inhibitors, and immunotherapy with PD-1/PD-L1 axis, which matches the true answer. The additional details provided by the student do not contradict the true answer.
+bot_answer:To expand on the three treatments for never-smoker lung cancer: (1) EGFR tyrosine kinase inhibitors (EGFR-TKIs): These targeted therapies specifically address the genetic mutations that drive the cancer's growth. By blocking the signals that promote tumor growth, EGFR-TKIs can lead to improved patient outcomes and a better quality of life. Research has shown that EGFR-TKIs are more effective and better tolerated than standard platinum-based doublet chemotherapy in advanced NSCLC patients harboring EGFR activating mutations. (2) ALK inhibitors: For patients with ALK-rearranged NSCLC, ALK inhibitors such as crizotinib have been approved as a first-line treatment. These inhibitors work by targeting the abnormal ALK protein, disrupting the signals that lead to cancer cell growth and proliferation. Clinical trials have demonstrated the efficacy and safety of ALK inhibitors in this subset of patients. (3) Immunotherapy: Immunotherapies that target the PD-1/PD-L1 axis have been shown to generate durable responses in some patients with advanced NSCLC. By enhancing the body's immune response, immunotherapies can help the immune system recognize and attack cancer cells more effectively. Various studies have explored the role of immunotherapy in the treatment of NSCLC, and ongoing research continues to uncover new opportunities for improving patient outcomes. Source: https://pubmed.ncbi.nlm.nih.gov/30225210/.
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately describes the three treatments for never-smoker lung cancer, including EGFR tyrosine kinase inhibitors, ALK inhibitors, and immunotherapy, and provides relevant details about each treatment's mechanism and efficacy.
+bot_answer:The course material and readings are not explicitly mentioned in the provided context. However, the context appears to be a series of lectures and discussions related to lung cancer, diagnosis, screening, nutrition during cancer treatment, and other relevant topics. The lectures are led by various speakers, including Prof. Bryant Lin. 
+
+For more information on the readings, I suggest checking the course website, Canvas, or contacting the instructor or teaching assistant for more information on the required readings and course materials. Additionally, you may want to review the lecture notes, slides, and other resources provided on the course website or through the course learning management system.
+grade:```
+GRADE: Incorrect
+JUSTIFICATION: The student answer does not provide any specific information about the readings in the class, instead offering general suggestions for finding the information, whereas the true answer provides a clear and detailed description of the readings.
+bot_answer:The population most at risk for developing never smoker lung cancer is women who have never smoked, particularly those of East Asian descent. According to the data, approximately two-thirds of never smoker lung cancer cases occur in women, who are more than twice as likely to develop lung cancer than men who have not smoked. (Source: "Lung cancer in patients who have never smoked — an emerging disease (LoPiccolo et al) > Epidemiology")
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately states that women who have never smoked, particularly those of East Asian descent, are at higher risk for developing never smoker lung cancer, which aligns with the true answer.
+bot_answer:(https://mediasite.stanford.edu/Mediasite/Play/069f043e54e84dadb2d0637e6b6df1cd1d) Lecture 2 started after Lecture 1, which is from 1-3 minutes. Lectures are 60 minutes long, so Lecture 2 would start at 3 minutes and end at 63 minutes. There is no explicit content provided for Lecture 2, so I am unable to provide a summary of this lecture's content. However, I can tell you that the time range of this lecture would be from 3 to 63 minutes, and outside the classroom, the class also has extra activities like the "Lung Cancer, Special Session: Cancer Storytelling" event which is on November 16th, so this might give you an idea of the content of Lecture 2. (https://mediasite.stanford.edu/Mediasite/Play/f92af043a02844109253875ab70d0f051d)
+grade:```
+
+GRADE: Correct
+JUSTIFICATION: The student answer acknowledges the lack of explicit content for Lecture 2 and does not provide any conflicting information, instead providing some context about the lecture's timing and related events.

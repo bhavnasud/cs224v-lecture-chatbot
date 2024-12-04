@@ -79,8 +79,8 @@ true_answers = [
 ]
 
 
-i = 0
-evaluate("basic_eval" + str(i) + ".txt", queries, true_answers, basic_chatbot)
+i = 2
+# evaluate("basic_eval" + str(i) + ".txt", queries, true_answers, basic_chatbot)
 # evaluate("v4_eval" + str(i) + ".txt", queries, true_answers, chatbot_v4)
 # evaluate("v5_eval" + str(i) + ".txt", queries, true_answers, chatbot_v5)
-# evaluate("v6_eval" + str(i) + ".txt", queries, true_answers, chatbot_v6)
+evaluate("v6_eval" + str(i) + ".txt", queries, true_answers, chatbot_v6)

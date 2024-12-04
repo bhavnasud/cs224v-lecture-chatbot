@@ -109,7 +109,8 @@ class BasicChatbot:
         if len(fetch) > 0:
             documents = fetch[0]["results"]
             documents_list.append(documents)
-
+        else:
+            return "I'm sorry, I don't have enough information on that topic."
         response = self._generate_response_with_llm(user_query, json.dumps(documents_list, indent=4, separators=(",\n")), self.prev_context)
         self.prev_context += "\nQuery: {}, Response: {}".format(user_query, response)
         return f"{response}"
