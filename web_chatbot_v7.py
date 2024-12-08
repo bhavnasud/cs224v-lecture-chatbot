@@ -25,7 +25,7 @@ class Chatbot_v7:
         self.documents_queue = deque([])
         self.prev_context = ""
 
-    def _fetch_from_rag(self, user_queries, document_title=None, time_range_minutes=None):  # Accepts a list of queries now
+    def _fetch_from_rag(self, user_queries, document_title=None, time_range_minutes=[-1,-1]):  # Accepts a list of queries now
         rag_endpoint = "https://search.genie.stanford.edu/stanford_MED275_v3"
         rag_payload = {
             "query": user_queries,  # Now expects a list of queries
@@ -48,7 +48,7 @@ class Chatbot_v7:
             print("Response Text:", response.text)
             print("Error contacting RAG system:", e)
             return []
-        if time_range_minutes != [-1,-1]:
+        if document_title != "Slides" and document_title != "Readings" and time_range_minutes != [-1,-1]:
             results_to_keep = [] 
             for result in rag_data[0]['results']:
                 time_range = re.match(r"^(\d+)-(\d+)$", result['block_metadata']['time_range_minutes'])
@@ -190,8 +190,8 @@ class Chatbot_v7:
                         f"1. Removing generic terms or words likely to result in irrelevant matches.\n\n"
                         f"2. Adding specific keywords or phrases that are closely associated with the user intent.\n\n"
                         f"3. Ensure the new search query is concise. It is fine if the new query is just one word long.\n\n"
-                        f"You also can fill in the document_title field with either 'Lectures', 'Readings', or 'Slides' depending on the user query. If the user does not mention Lectures, Readings, or Slides or leave it empty.\n\n"
-                        f"You also can fill in the time_range_minutes field with the relevant start time and end time in minutes depending on the user query. A lecture is 60 minutes long. The first half is between 0 and 30 minutes, the second half is between 30 and 60 minutes. You should set it to [-1,-1] if the user does not mention time.\n\n"
+                        f"You also can fill in the document_title field with either 'Lectures', 'Readings', or 'Slides' depending on the user query. If the user does not mention Lectures, Readings, or Slides or leave it empty..\n\n"
+                        f"You also can fill in the time_range_minutes field with the relevant start time and end time in minutes depending on the user query. A lecture is 60 minutes long. The beginning is between 0 and 15 minutes, the end is between 45 and 60 minutes. You should set it to [-1,-1] if the user does not mention time or asks for a summary.\n\n"
                 },
                 {
                     "role": "user",
@@ -235,49 +235,49 @@ class Chatbot_v7:
         self.prev_context = ""
 
     def get_response(self, user_query):
-        # Potential fail cases: querying with time range of lecture, asking for recommendations -> should lead to graceful failure or cite additional resources,
-        # asking about a lecture that doesn't exist
         if user_query == "":
             return "Please enter a question"
-        
-        # print("Before User Query:", user_query)
-        # user_query = self._update_time_queries(user_query)
-        # print("After User Query:", user_query)
 
         # Fetch relevant documents using RAG
-        # documents = self._fetch_from_rag(user_query)[0]["results"]
-        # self.documents_queue.append(documents)
-        # if len(self.documents_queue) > 3: # TODO: potentially increase length of queue
-        #     self.documents_queue.popleft()
+        llm_rag_query = self._generate_llm_rag_query(self.prev_context, user_query)
+        if llm_rag_query["time_range_minutes"] != [-1,-1]:
+            documents = self._fetch_from_rag(llm_rag_query["updated_query"], document_title=llm_rag_query.get("document_title"), time_range_minutes=llm_rag_query.get("time_range_minutes"))[0]["results"]
+        else:
+            documents = self._fetch_from_rag([user_query, llm_rag_query["updated_query"]])[0]["results"]
+            documents += self._fetch_from_rag(llm_rag_query["updated_query"], document_title=llm_rag_query.get("document_title"), time_range_minutes=llm_rag_query.get("time_range_minutes"))[0]["results"]
+
+        self.documents_queue.append(documents)
+        if len(self.documents_queue) > 3: 
+            self.documents_queue.popleft()
         
         documents_list = []
-        # for item in self.documents_queue:
-        #     if len(item) > 0:
-        #         for document in item:
-        #             document.pop("similarity_score", None)
-        #             document.pop("probability_score", None)
-        #         documents_list.extend(item)
+        for item in self.documents_queue:
+            if len(item) > 0:
+                for document in item:
+                    document.pop("similarity_score", None)
+                    document.pop("probability_score", None)
+                documents_list.extend(item)
 
-        # documents_list = self.add_citations(documents_list)
+        documents_list = self.add_citations(documents_list)
         response = self._generate_response_with_llm(user_query, json.dumps(documents_list, indent=4, separators=(",\n")), self.prev_context)
-        if "don't have enough information" in response:
-            llm_rag_query = self._generate_llm_rag_query(self.prev_context, user_query)
-            if llm_rag_query == {} or not llm_rag_query.get("updated_query"):
-                return response
-            print(f"Not enough information to generate response, generated LLM RAG query: {llm_rag_query}")
+        # if "don't have enough information" in response:
+        #     llm_rag_query = self._generate_llm_rag_query(self.prev_context, user_query)
+        #     if llm_rag_query == {} or not llm_rag_query.get("updated_query"):
+        #         return response
+        #     print(f"Not enough information to generate response, generated LLM RAG query: {llm_rag_query}")
 
-            additional_documents = self._fetch_from_rag(llm_rag_query["updated_query"], document_title=llm_rag_query.get("document_title"), time_range_minutes=llm_rag_query.get("time_range_minutes"))[0]["results"]
-            for document in additional_documents:
-                document.pop("similarity_score", None)
-                document.pop("probability_score", None)
-            # replace stored documents for this query
-            if len(self.documents_queue) > 0:
-                self.documents_queue[-1] = additional_documents
-            else:
-                self.documents_queue.append(additional_documents)
-            print("LLM RAG retrieved documents: ", [document['section_title'] for document in additional_documents])
-            additional_documents = self.add_citations(additional_documents)
-            response = self._generate_response_with_llm(user_query, json.dumps(additional_documents, indent=4, separators=(",\n")), self.prev_context)
+        #     additional_documents = self._fetch_from_rag(llm_rag_query["updated_query"], document_title=llm_rag_query.get("document_title"), time_range_minutes=llm_rag_query.get("time_range_minutes"))[0]["results"]
+        #     for document in additional_documents:
+        #         document.pop("similarity_score", None)
+        #         document.pop("probability_score", None)
+        #     # replace stored documents for this query
+        #     if len(self.documents_queue) > 0:
+        #         self.documents_queue[-1] = additional_documents
+        #     else:
+        #         self.documents_queue.append(additional_documents)
+        #     print("LLM RAG retrieved documents: ", [document['section_title'] for document in additional_documents])
+        #     additional_documents = self.add_citations(additional_documents)
+        #     response = self._generate_response_with_llm(user_query, json.dumps(additional_documents, indent=4, separators=(",\n")), self.prev_context)
         self.prev_context += "\nQuery: {}, Response: {}".format(user_query, response)
         return response
     
