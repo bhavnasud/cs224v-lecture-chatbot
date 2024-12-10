@@ -1,0 +1,64 @@
+bot_answer:In today's class, we'll be discussing diagnosis and screening. Please take a few minutes to grab a plate of food and take your seat so we can start on time. Also, please note that if you're not officially enrolled in the class, we kindly ask that you email us and we'll send you the recordings. We want to prioritize students who are officially enrolled due to limited space. (https://mediasite.stanford.edu/Mediasite/Play/069f043e54e84dadb2d0637e6b6df1cd1d)
+
+You'll need to use the attendance code to log in to Canvas and complete the assignments. If you have any questions, feel free to reach out to us. Also, please be mindful of the time and try to arrive a little earlier to class since we have a limited time slot of 50 minutes. (https://mediasite.stanford.edu/Mediasite/Play/069f043e54e84dadb2d0637e6b6df1cd1d)
+
+In addition, we have a cancer storytelling event on November 16th, which will feature a short documentary and a graphic novel about cancer experiences. We hope to see you there! (https://mediasite.stanford.edu/Mediasite/Play/f92af043a02844109253875ab70d0f051d)
+grade:```
+
+GRADE: Incorrect
+
+JUSTIFICATION: The student answer does not provide a summary of the class, but rather provides logistical information and announcements, and does not mention the topics or format of the class.
+bot_answer:The first half of Lecture 1 discusses the importance of early diagnosis of lung cancer, the different stages of lung cancer, and the challenges of diagnosing lung cancer early (https://mediasite.stanford.edu/Mediasite/Play/069f043e54e84dadb2d0637e6b6df1cd1d). 
+
+Additionally, Professor Bryant Lin shares his personal experience with lung cancer and discusses the purpose of the class, which is to raise awareness about lung cancer and provide a platform for discussion and education (https://mediasite.stanford.edu/Mediasite/Play/069f043e54e84dadb2d0637e6b6df1cd1d). 
+
+The lecture also covers the logistics of the class, including the importance of attending classes on time, the availability of food and masks, and the attendance code required for logging in to Canvas (https://mediasite.stanford.edu/Mediasite/Play/069f043e54e84dadb2d0637e6b6df1cd1d).
+grade:```
+
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately covers the main topics discussed in the first half of Lecture 1, including the introduction to the class, logistics, and the instructor's personal experience with lung cancer, without any conflicting statements.
+bot_answer:At the end of Lecture 1, Professor Bryant Lin expresses gratitude to the students for signing up for the class and discusses the importance of the topic. He also mentions Kate Selig, Lisa Kim, and Steven, who are involved in the class. Additionally, he mentions that the class will be recorded and distributed later for broader consumption. (https://mediasite.stanford.edu/Mediasite/Play/069f043e54e84dadb2d0637e6b6df1cd1d)
+grade:```
+
+GRADE: Incorrect
+
+JUSTIFICATION: The student answer does not mention the risk factors of lung cancer, lung cancer screening, or the NLST study, which are the main topics discussed at the end of lecture 1.
+bot_answer:Doctors diagnose lung cancer using a combination of methods, including low-dose computed tomography (LDCT) scans, chest X-rays, and biopsies. They also consider the patient's symptoms, medical history, and risk factors, such as smoking history and age. (Lectures, Lecture 1, time_range_minutes: 39-41).
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately lists the methods used to diagnose lung cancer, including LDCT scans, chest X-rays, and biopsies, and also mentions considering patient symptoms, medical history, and risk factors.
+bot_answer:Some difficulties with diagnosing lung cancer include language barriers, transportation issues, lack of time for health care providers to engage with caregivers, and cultural differences in caregiving practices (Lectures, Lecture 4, time_range_minutes: 14-16). Additionally, there may be difficulties with access to care due to affordability, availability, accommodation, and acceptability (Lectures, Lecture 3, time_range_minutes: 27-28). Patients may also experience barriers to early presentation and diagnosis, including difficulty understanding their symptoms and accessing health care services (Readings, Patient and carer perceived barriers to early presentation and diagnosis of lung cancer: a systematic review). (Lectures, Lecture 6, time_range_minutes: 14-15). I'm sorry, I don't have enough information on that topic. Please refer to the lecture material or relevant research articles for more information, such as the article "Patient and carer perceived barriers to early presentation and diagnosis of lung cancer: a systematic review" (Cassim et al).
+grade:```
+
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately lists several difficulties with diagnosing lung cancer, including language barriers, transportation issues, and cultural differences, which align with the true answer's mention of barriers to early diagnosis.
+bot_answer:Targeted therapy, specifically EGFR-TKIs, is the most important treatment for never-smokers with lung adenocarcinoma, particularly in East Asian patients. Approximately 70% of these patients have the opportunity to receive EGFR-TKI treatment. (Source: "Lung cancer in never smokers—the East Asian experience > Lung adenocarcinoma in never-smoking East Asian: a subtype largely defined by oncogenic drivers > EGFR sensitizing mutations")
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer correctly identifies targeted therapy with EGFR-TKIs as a treatment for never-smoker lung cancer, which is one of the top three treatments mentioned in the true answer.
+bot_answer:I apologize, but the requested information about the top three treatments for never-smoker lung cancer, specifically the details of each of them, cannot be found in the provided context.
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer is correct because it accurately states that the requested information cannot be found in the provided context, which is true since the question does not provide any context about the top three treatments.
+bot_answer:I'm sorry, I don't have enough information on that topic.
+grade:```
+GRADE: Incorrect
+
+JUSTIFICATION: The student answer does not provide any information about the readings in the class, instead stating a lack of knowledge on the topic.
+bot_answer:Women who have never smoked are more than twice as likely to develop lung cancer than men who have never smoked (5,11). Approximately two-thirds of LCINS cases occur in women (5,11).
+grade:```
+
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately states that women who have never smoked are more likely to develop lung cancer than men who have never smoked, and provides a relevant statistic about the proportion of cases occurring in women.
+bot_answer:I'm sorry, I don't have enough information on that topic.
+grade:```
+
+GRADE: Correct
+
+JUSTIFICATION: The student's answer matches the true answer, indicating a lack of knowledge on the topic.

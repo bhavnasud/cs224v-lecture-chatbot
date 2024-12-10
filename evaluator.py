@@ -2,6 +2,7 @@
 from web_chatbot_v4 import Chatbot_v4
 from web_chatbot_v5 import Chatbot_v5  
 from web_chatbot_v6 import Chatbot_v6
+from web_chatbot_timetest import Chatbot_v7
 from basic_chatbot import BasicChatbot
 import os
 
@@ -11,6 +12,7 @@ os.environ["TOGETHER_API_KEY"] = "30cde163d78fa4c02d653ab94957386b6dcfb1c370e2a0
 chatbot_v4 = Chatbot_v4(api_key=os.environ["TOGETHER_API_KEY"]) 
 chatbot_v5 = Chatbot_v5(api_key=os.environ["TOGETHER_API_KEY"])
 chatbot_v6 = Chatbot_v6(api_key=os.environ["TOGETHER_API_KEY"])
+chatbot_v7 = Chatbot_v7(api_key=os.environ["TOGETHER_API_KEY"])
 basic_chatbot = BasicChatbot(api_key=os.environ["TOGETHER_API_KEY"])
 
 # from https://github.com/langchain-ai/auto-evaluator/blob/main/api/text_utils.py
@@ -79,8 +81,9 @@ true_answers = [
 ]
 
 
-i = 2
+i = 4
 # evaluate("basic_eval" + str(i) + ".txt", queries, true_answers, basic_chatbot)
 # evaluate("v4_eval" + str(i) + ".txt", queries, true_answers, chatbot_v4)
 # evaluate("v5_eval" + str(i) + ".txt", queries, true_answers, chatbot_v5)
 evaluate("v6_eval" + str(i) + ".txt", queries, true_answers, chatbot_v6)
+# evaluate("v7_eval" + str(i) + ".txt", queries, true_answers, chatbot_v7)

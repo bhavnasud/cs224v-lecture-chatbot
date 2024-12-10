@@ -30,8 +30,8 @@ class Chatbot_v7:
         rag_payload = {
             "query": user_queries,  # Now expects a list of queries
             "rerank": True,
-            "num_blocks_to_rerank": 30,
-            "num_blocks": 25
+            "num_blocks_to_rerank": 20,
+            "num_blocks": 10
         }
         if document_title:
             rag_payload["search_filters"] = [{"field_name": "document_title", "filter_type": "eq", "field_value": document_title}]
@@ -168,7 +168,7 @@ class Chatbot_v7:
             f"Do not create new information outside the scope of the provided context, but feel free to synthesize insights if relevant.\n\n"
             f"Where applicable, suggest additional resources, such as course material, relevant URLs, or further steps the user might take.\n\n"
             f"Lectures are 60 minutes long, use the start and end times of lecture in the context to answer questions about time.\n\n"
-            f"Cite the source used to generate each sentence in the response in parenthesis after the sentence.\n\n"
+            f"Cite the source used to generate each sentence in the response in parenthesis after the sentence. Use the 'citation' field in the context to cite the source.\n\n"
             f"Vary your answer from previous responses, and avoid repeating information in Previous Conversation History.\n\n"
             f"Previous Conversation History:\n{prev_context}\n\n"
             f"User Question:\n{user_query}\n\n"
@@ -216,18 +216,6 @@ class Chatbot_v7:
             print("LLM response ", extract.choices[0].message.content)
             return {}
         return llm_generated_query
-    
-    # def _update_time_queries(self, user_query):
-    #     prompt = (
-    #         f"Update the query based on the following rules for time ranges in lectures:\n"
-    #         f"Replace 'beginning of a lecture' with '0-20 minutes.'\n"
-    #         f"Replace 'middle of a lecture' with '20-40 minutes.'\n"
-    #         f"Replace 'end of a lecture' with '40-60 minutes.'\n"
-    #         f"Make only the specified updates to the query and return it as a single line without any additional text, explanations, or formatting. If the query does not reference a time range in lectures, return it unchanged in a single line.\n"
-    #         f"Query: {user_query}\n"
-    #     )
-    #     response = self._together_generation_short(prompt)
-    #     return response.strip()
 
     
     def clear_queue_and_prev_context(self):
@@ -243,8 +231,8 @@ class Chatbot_v7:
         if llm_rag_query["time_range_minutes"] != [-1,-1]:
             documents = self._fetch_from_rag(llm_rag_query["updated_query"], document_title=llm_rag_query.get("document_title"), time_range_minutes=llm_rag_query.get("time_range_minutes"))[0]["results"]
         else:
-            documents = self._fetch_from_rag([user_query, llm_rag_query["updated_query"]])[0]["results"]
-            documents += self._fetch_from_rag(llm_rag_query["updated_query"], document_title=llm_rag_query.get("document_title"), time_range_minutes=llm_rag_query.get("time_range_minutes"))[0]["results"]
+            documents = self._fetch_from_rag(llm_rag_query["updated_query"], document_title=llm_rag_query.get("document_title"), time_range_minutes=llm_rag_query.get("time_range_minutes"))[0]["results"]
+            documents += self._fetch_from_rag([user_query, llm_rag_query["updated_query"]])[0]["results"]
 
         self.documents_queue.append(documents)
         if len(self.documents_queue) > 3: 
@@ -259,7 +247,9 @@ class Chatbot_v7:
                 documents_list.extend(item)
 
         documents_list = self.add_citations(documents_list)
-        response = self._generate_response_with_llm(user_query, json.dumps(documents_list, indent=4, separators=(",\n")), self.prev_context)
+        print("hi")
+        print("documents_list", documents_list)
+        response = self._generate_response_with_llm(user_query + "or" + llm_rag_query["updated_query"], json.dumps(documents_list, indent=4, separators=(",\n")), self.prev_context)
         # if "don't have enough information" in response:
         #     llm_rag_query = self._generate_llm_rag_query(self.prev_context, user_query)
         #     if llm_rag_query == {} or not llm_rag_query.get("updated_query"):

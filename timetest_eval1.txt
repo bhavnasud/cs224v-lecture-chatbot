@@ -1,0 +1,63 @@
+bot_answer:I'm sorry, I don't have enough information on that topic.
+grade:```
+
+GRADE: Correct
+JUSTIFICATION: The student explicitly states they lack information on the topic, which is a truthful and humble response, rather than providing incorrect information.
+bot_answer:I'm sorry, I don't have enough information on that topic.
+grade:```
+
+GRADE: Incorrect
+
+JUSTIFICATION: The student answer indicates a lack of knowledge or information on the topic, which is not a correct answer.
+bot_answer:I'm sorry, I don't have enough information on that topic.
+grade:```
+
+GRADE: Incorrect
+JUSTIFICATION: The student answer explicitly states a lack of knowledge, which is not a correct answer to the question.
+bot_answer:Doctors diagnose lung cancer through a combination of methods, including low-dose computed tomography (LDCT) scans, chest X-rays, and biopsies (Suchsland et al, 2022). The diagnosis process often involves a series of steps, including initial symptomatic presentation, chest imaging, specialist consultation, diagnostic confirmation, and treatment initiation (Suchsland et al, 2022). The time intervals between these steps can vary, with a median time interval from initial clinical presentation to chest CT or chest X-ray imaging of 291 days, and from initial clinical presentation to specialist visit of 236 days (Suchsland et al, 2022). The median duration between chest CT or chest X-ray imaging and diagnosis is 43 days, and from specialist visit to diagnosis is 72 days (Suchsland et al, 2022). The time interval from diagnosis to treatment initiation is typically short, with a median of 7 days (Suchsland et al, 2022). It's worth noting that the diagnosis process can be challenging due to non-specific clinical presentation, and there are currently no clinical quality measures (CQMs) in the United States used to identify areas for practice improvement in diagnosis (Suchsland et al, 2022).
+grade:```
+
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately describes the methods used to diagnose lung cancer, including LDCT scans, chest X-rays, and biopsies, and also mentions the challenges of diagnosis due to non-specific clinical presentations, which aligns with the true answer.
+bot_answer:The diagnosis of lung cancer can be challenging due to non-specific clinical presentation, and there are currently no clinical quality measures (CQMs) in the United States used to identify areas for practice improvement in diagnosis (Suchsland et al, 2022). The time intervals between initial symptomatic presentation and diagnosis can be long, with a median time interval from initial clinical presentation to chest CT or chest X-ray imaging of 291 days, and from initial clinical presentation to specialist visit of 236 days (Suchsland et al, 2022). The median duration between chest CT or chest X-ray imaging and diagnosis is 43 days, and from specialist visit to diagnosis is 72 days (Suchsland et al, 2022). The time interval from diagnosis to treatment initiation is typically short, with a median of 7 days (Suchsland et al, 2022). The lack of association between time to diagnosis and stage is echoed in a recent study of 10,824 patients with NSCLC, which found an inverse relationship between time to diagnosis and overall survival, even after adjusting for multiple potential confounders (Suchsland et al, 2022). Additionally, patient and carer perceived barriers to early presentation and diagnosis of lung cancer include poor relationships between GPs and patients, a lack of access to services and care for patients, and a lack of awareness of lung cancer symptoms and treatment (Cassim et al, 2019). Addressing these barriers offers opportunities to improve rates of early diagnosis of lung cancer. (Cassim et al, 2019)
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately lists several difficulties with diagnosing lung cancer, including non-specific clinical presentation, delays in diagnosis, and patient and caregiver barriers, which aligns with the true answer.
+bot_answer:The top three treatments for never-smoker lung cancer are: 
+1. Targeted therapy inhibiting specific oncogenic mutant kinases, particularly EGFR tyrosine kinase inhibitors (EGFR-TKIs), which have been shown to be effective in treating lung adenocarcinoma in never-smoking East Asians (Lung cancer in never smokers—the East Asian experience, 2018).
+2. Immunotherapy with immune checkpoint blockade targeting the programmed-death 1/programmed-death ligand 1 (PD-1/PD-L1) axis, which has been shown to be effective in treating patients with advanced NSCLC, although the beneficial population for this treatment is not well defined (Lung cancer in never smokers—the East Asian experience, 2018).
+3. Crizotinib, a targeted therapy for patients with ALK-positive NSCLC, which has been shown to be effective in treating this subtype of lung cancer (Lung cancer in never smokers—the East Asian experience, 2018).
+
+It's worth noting that the effectiveness of these treatments can vary depending on the specific subtype of lung cancer and the individual patient's characteristics. (Lung cancer in never smokers—the East Asian experience, 2018)
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately lists the top three treatments for never-smoker lung cancer, including targeted therapy with EGFR-TKIs, immunotherapy with PD-1/PD-L1 axis, and crizotinib for ALK-positive NSCLC, which aligns with the true answer.
+bot_answer:Targeted therapy inhibiting specific oncogenic mutant kinases, particularly EGFR tyrosine kinase inhibitors (EGFR-TKIs), is a treatment for never-smoker lung cancer patients with EGFR mutations. EGFR-TKIs have been shown to be effective in treating lung adenocarcinoma in never-smoking East Asians, with approximately 70% of these patients having the opportunity to receive EGFR-TKI treatment. (Lung cancer in never smokers—the East Asian experience, 2018)
+
+Immunotherapy with immune checkpoint blockade targeting the programmed-death 1/programmed-death ligand 1 (PD-1/PD-L1) axis is a treatment for patients with advanced NSCLC. However, the beneficial population for this treatment is not well defined, and current evidence suggests that never-smoking adenocarcinoma from East Asia may not be the same beneficial population of immunotherapy. (Lung cancer in never smokers—the East Asian experience, 2018)
+
+Crizotinib, a targeted therapy for patients with ALK-positive NSCLC, has been shown to be effective in treating this subtype of lung cancer. Crizotinib has been approved for the first-line treatment of advanced ALK-rearranged NSCLC based on the results from PROFILE1014 trial. (Lung cancer in never smokers—the East Asian experience, 2018)
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately describes the three treatments, including targeted therapy with EGFR-TKIs, immunotherapy with immune checkpoint blockade, and ALK inhibitors, and provides relevant details about each treatment, matching the factual accuracy of the true answer.
+bot_answer:The readings in this class include articles such as "Hidden Disparities: How Language Influences Patients’ Access to Cancer Care" by Chen et al, "How Timely Is Diagnosis of Lung Cancer? Cohort Study of Individuals with Lung Cancer Presenting in Ambulatory Care in the United States" by Suchsland et al, and "Patient and carer perceived barriers to early presentation and diagnosis of lung cancer: a systematic review" by Cassim et al. These articles discuss topics such as language barriers in cancer care, the timeliness of lung cancer diagnosis, and perceived barriers to early presentation and diagnosis of lung cancer. (Chen et al, 2023; Suchsland et al, 2022; Cassim et al, 2019)
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately lists the articles and summarizes their topics, matching the factual content of the true answer.
+bot_answer:The population most at risk for developing never smoker lung cancer (LCINS) is women, particularly those of Asian ancestry (LoPiccolo et al, 2024). Approximately two-thirds of LCINS cases occur in women, making women who have not smoked more than twice as likely to develop lung cancer than men who have not smoked (LoPiccolo et al, 2024). Additionally, the proportion of lung cancers attributable to tobacco smoking varies across countries, with a higher proportion of LCINS in East Asia, including China, Japan, Mongolia, North Korea, and South Korea (Lung cancer in never smokers—the East Asian experience, 2018).
+grade:```
+
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately identifies the population most at risk for developing never smoker lung cancer, and provides additional relevant information that does not contradict the true answer.
+bot_answer:I'm sorry, I don't have enough information on that topic.
+grade:```
+
+GRADE: Correct
+
+JUSTIFICATION: The student's answer matches the true answer, indicating a lack of knowledge on the topic.

@@ -1,0 +1,68 @@
+bot_answer:I'm sorry, I don't have enough information on that topic.
+grade:```
+
+GRADE: Correct
+JUSTIFICATION: The student explicitly states they lack information on the topic, which is a truthful and humble response, rather than providing incorrect information.
+bot_answer:The first half of lecture 1 covers topics such as the stages of lung cancer, the importance of early diagnosis, and the challenges of diagnosing people early due to the lack of symptoms in the early stages (1). It also discusses the different subcategories of stages, with stage 1 having the highest survival rate and stage 4 having the lowest (1). Additionally, the lecture touches on the concept of cancer screening, which involves performing tests on healthy people to detect diseases before they cause symptoms (1). The lecture is delivered by Professor Bryant Lin, who shares his personal experience of being diagnosed with lung cancer and the challenges he faced as a patient (2). The first half of the lecture also includes an introduction to the class, the logistics of attendance and assignments, and an announcement about a special session on cancer storytelling (3, 4). Overall, the first half of lecture 1 provides an overview of lung cancer, its stages, and the importance of early diagnosis, while also introducing the class and its themes.
+Sources:
+(1) Document Title: "Lectures", Section Title: "Lecture 1", Content: (block_metadata, time_range_minutes: 32-35, speakers: Bryant Lin (MD), Natalie Liu (MD), lecture_title: Diagnosis and Screening)
+(2) Document Title: "Lectures", Section Title: "Lecture 1", Content: (block_metadata, time_range_minutes: 6-8, speakers: Bryant Lin (MD), Natalie Liu (MD), lecture_title: Diagnosis and Screening)
+(3) Document Title: "Lectures", Section Title: "Lecture 1", Content: (block_metadata, time_range_minutes: 1-3, speakers: Bryant Lin (MD), Natalie Liu (MD), lecture_title: Diagnosis and Screening)
+(4) Document Title: "Lectures", Section Title: "Lecture 1", Content: (block_metadata, time_range_minutes: 4-6, speakers: Bryant Lin (MD), Natalie Liu (MD), lecture_title: Diagnosis and Screening)
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately covers the main topics discussed in the first half of Lecture 1, including the introduction to the class, the instructor's personal experience, and the discussion of lung cancer, despite some differences in phrasing and emphasis.
+bot_answer:At the end of lecture 1, Professor Bryant Lin discusses various administrative and logistical aspects of the course, such as the availability of food and the recording of the lecture, as well as the importance of students following proper protocols, such as getting their attendance codes and completing assignments on time (1). He also mentions his personal appreciation for the students' interest in the course and thanks the teaching assistants for their efforts (1). Furthermore, Professor Lin briefly introduces the concept of a "moonshot effort" to raise money and resources for non-smoking lung cancer (1). Additionally, he mentions the idea of a cancer storytelling event and a mixer for medical humanities, which will take place on October 2nd (1). Overall, the end of the lecture focuses on wrapping up the class and providing additional information to the students.
+
+Source:
+(1) Document Title: "Lectures", Section Title: "Lecture 1", Content: (block_metadata, time_range_minutes: 4-6, speakers: Bryant Lin (MD), Natalie Liu (MD), lecture_title: Diagnosis and Screening)
+grade:```
+
+GRADE: Incorrect
+
+JUSTIFICATION: The student answer does not mention the risk factors of lung cancer, lung cancer screening, or the NLST study, which are the main topics discussed at the end of lecture 1.
+bot_answer:Doctors diagnose lung cancer through a combination of methods, including low-dose computed tomography (LDCT) scans, chest X-rays, and symptom evaluation (Source: Lectures, Lecture 1). Doctors may use the Lung-RADS system to classify lung nodules based on their suspiciousness for cancer (Source: Lectures, Lecture 1). If a lung nodule is suspected to be cancerous, doctors may order additional tests, such as a PET-CT scan or biopsy (Source: Lectures, Lecture 1). In some cases, lung cancer may be diagnosed incidentally during imaging tests for other conditions (Source: Readings, Patient and carer perceived barriers to early presentation and diagnosis of lung cancer: a systematic review).
+grade:```
+
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately lists the methods used to diagnose lung cancer, including LDCT scans, chest X-rays, and biopsies, and mentions the Lung-RADS system, which is consistent with the true answer.
+bot_answer:The implementation of interventions to improve access to cancer care for patients with limited English proficiency (LEP) is challenging due to various barriers. One of the difficulties is the lack of availability of language-concordant staff or provided language-concordant information, which can lead to patients not being connected with the necessary resources. Additionally, hospital general information telephone lines often disconnect callers without connecting them to a live person, and workflows can be revised to address this issue (Source: Readings, Hidden Disparities: How Language Influences Patients’ Access to Cancer Care (Chen et al) > Discussion). I'm sorry, I don't have enough information on other potential difficulties with this.
+grade:```
+GRADE: Incorrect
+
+JUSTIFICATION: The student answer discusses difficulties with implementing interventions for patients with limited English proficiency, whereas the true answer discusses difficulties with diagnosing lung cancer, which are unrelated topics.
+bot_answer:Around 70% of never-smoking lung adenocarcinoma patients from East Asia have the opportunity to receive EGFR-TKI treatment, as they harbor EGFR sensitizing mutations. (https://pubmed.ncbi.nlm.nih.gov/30225210/)
+grade:```
+
+GRADE: Correct
+
+JUSTIFICATION: The student answer correctly mentions EGFR-TKI treatment, which is one of the top three treatments for non-smoker lung cancer, and provides accurate information about its application in patients with EGFR sensitizing mutations.
+bot_answer:I'm sorry, I don't have enough information on that topic.
+grade:```
+GRADE: Incorrect
+JUSTIFICATION: The student answer does not provide any information about the topic, and instead states a lack of knowledge, which is not a correct answer.
+bot_answer:I'm sorry, I don't have enough information on that topic.
+grade:```
+GRADE: Incorrect
+
+JUSTIFICATION: The student answer does not provide any information about the readings in the class, instead stating a lack of knowledge on the topic.
+bot_answer:Never smokers, specifically East Asian women, are at a higher risk of developing lung cancer, with a higher proportion of cases occurring in this population. (Source: https://www.nature.com/articles/s41571-023-00844-0, https://pubmed.ncbi.nlm.nih.gov/30225210/)
+
+Looking at other relevant factors, family history of cancer can be used as a simplified surrogate for inherited susceptibility, particularly in the context of LCINS, and having a first-degree relative with lung cancer is associated with a twofold increased lung cancer risk. (Source: https://www.nature.com/articles/s41571-023-00844-0)
+
+Additionally, exposure to second-hand smoke, cooking fumes, and environmental factors such as indoor and outdoor pollution can also contribute to the risk of developing lung cancer in never smokers. (Source: https://www.nature.com/articles/s41571-023-00844-0)
+
+It's also worth noting that genetic predisposition, such as inherited genetic susceptibility, can play a role in the development of lung cancer in never smokers. (Source: https://www.nature.com/articles/s41571-023-00844-0)
+grade:```
+
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately identifies the population most at risk for developing never smoker lung cancer, specifically East Asian women, and provides additional relevant information about other risk factors, without contradicting the true answer.
+bot_answer:I'm sorry, I don't have enough information on that topic.
+grade:```
+
+GRADE: Correct
+
+JUSTIFICATION: The student's answer matches the true answer, indicating a lack of knowledge on the topic.

@@ -1,0 +1,65 @@
+bot_answer:The class is about lung cancer, and it's taught by Professor Bryant Lin at Stanford University. The lectures are 60 minutes long, and the class has a limited number of seats available, so students who are not officially enrolled are asked to email the TAs to receive recordings of the class. The class covers topics such as diagnosis and screening, developing culturally attuned interventions to support caregiving in cancer, and the complexities of the healthcare system. The class also includes guest speakers, such as Kate Selig and Lisa Kim, who share their experiences and expertise on the topic. The TAs, Longshaw, Richard, and Steven, are responsible for making the class possible and are available to answer questions and provide support to students. (Lecture 1, 0-2 minutes; Lecture 1, 2-5 minutes; Lecture 4, 0-2 minutes)
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately summarizes the class, covering the main topics, format, and instructors, without any conflicting statements.
+bot_answer:The first half of lecture 1 discusses the logistics of the class, including attendance, assignments, and food, as well as introductions by the TAs and Professor Lin (Lecture 1, 0-2 minutes; Lecture 1, 2-5 minutes). The lecture also covers the topic of diagnosis and screening, including the importance of early detection and the use of imaging tests such as X-rays (Lecture 1, 18-20 minutes; Lecture 1, 32-35 minutes). Additionally, the lecture touches on the topic of cancer staging and the prognosis for different stages of lung cancer (Lecture 1, 32-35 minutes; Lecture 1, 34-37 minutes).
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately covers the main topics discussed in the first half of Lecture 1, including the introduction, logistics, and personal experience, despite providing additional details not mentioned in the true answer.
+bot_answer:At the end of lecture 1, Professor Lin thanks the students for signing up for the class and expresses his happiness that the class is interesting and unusual. He also mentions that he wants to start by talking about why he decided to start the class. Additionally, he introduces Kate Selig and Lisa Kim, who will be speaking in the class, and mentions that Steven is doing a high-quality recording of the class to distribute later. (Lecture 1, 5-7 minutes)
+grade:```
+
+GRADE: Incorrect
+
+JUSTIFICATION: The student answer does not mention the risk factors of lung cancer, lung cancer screening, or the NLST study, which are the actual topics discussed at the end of lecture 1.
+bot_answer:Doctors diagnose lung cancer through a combination of methods, including low-dose computed tomography (LDCT) scans, chest X-rays, and biopsies. (Lecture 1, 39-41 minutes) The LDCT scan is classified using the Lung-RADS system, which categorizes findings from 0 to 4X depending on the level of suspicion. (Lecture 1, 39-41 minutes) If a lung nodule is detected, further testing, such as a PET CT scan or biopsy, may be necessary to confirm the diagnosis. (Lecture 1, 39-41 minutes)
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately lists the methods used to diagnose lung cancer, including LDCT scans, chest X-rays, and biopsies, and provides additional relevant information about the Lung-RADS system and further testing.
+bot_answer:The difficulties with diagnosing lung cancer include the fact that symptoms often do not appear until the cancer is advanced, making it hard to diagnose people early. Additionally, the symptoms that do appear, such as coughing and back pain, are common and can be caused by many other conditions, making it difficult to determine if lung cancer is the cause. (Lecture 1, 34-35 minutes)
+
+Furthermore, lung cancer screening has its own set of challenges, including radiation exposure, false positives, overdiagnosis, and incidental findings, which can lead to unnecessary tests, procedures, and anxiety. (Lecture 1, 42-44 minutes)
+
+The implementation of lung cancer screening has also been slow, with low screening rates among eligible populations, and the detection rate for lung cancer can vary depending on the population being screened and the screening guidelines used. (Lecture 1, 40-43 minutes)
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately lists several difficulties with diagnosing lung cancer, including delayed symptoms, non-specific symptoms, and challenges with screening programs, which aligns with the true answer.
+bot_answer:The top three treatments for never-smoker lung cancer are: 1) EGFR tyrosine kinase inhibitors (EGFR-TKIs), 2) ALK inhibitors, and 3) immunotherapy with immune checkpoint blockade targeting the programmed-death 1/programmed-death ligand 1 (PD-1/PD-L1) axis. (Lung cancer in never smokers—the East Asian experience, 2018)
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately lists the top three treatments for never-smoker lung cancer, which are EGFR-TKIs, ALK inhibitors, and immunotherapy with immune checkpoint blockade targeting the PD-1/PD-L1 axis, matching the true answer.
+bot_answer:Here's more information about each of the top three treatments for never-smoker lung cancer:
+
+1. EGFR tyrosine kinase inhibitors (EGFR-TKIs): EGFR-TKIs are a type of targeted therapy that specifically targets the EGFR protein, which is often mutated in never-smoker lung cancer. The most common driver gene found in never-smoker adenocarcinoma from East Asia is EGFR sensitizing mutation, and EGFR-TKIs have been shown to be more effective and better tolerated than standard platinum-based doublet chemotherapy in advanced NSCLC patients harboring EGFR activating mutation (Lung cancer in never smokers—the East Asian experience, 2018).
+
+2. ALK inhibitors: ALK rearrangement defines another distinct subtype of patients with NSCLC, accounting for about 5% of all NSCLC cases. Crizotinib is an oral small-molecule TKI of ALK, MET, and ROS1 kinases and has been approved for the first-line treatment of advanced ALK-rearranged NSCLC. Alectinib is a highly selective ALK inhibitor with high brain-penetrant that has shown high anti-tumor activity both in ALK inhibitor-naive and crizotinib-resistant patients (Lung cancer in never smokers—the East Asian experience, 2018).
+
+3. Immunotherapy with immune checkpoint blockade targeting the programmed-death 1/programmed-death ligand 1 (PD-1/PD-L1) axis: Immunotherapy with immune checkpoint blockade targeting the PD-1/PD-L1 axis represents a novel approach for the treatment of patients with advanced NSCLC. Several randomized trials have demonstrated a significant survival advantage of PD-1/PD-L1 antibodies over docetaxel as second-line therapy. However, the current obstacle to the wide use of anti-PD-1/PD-L1 antibodies is the lack of biomarkers to identify beneficial patient populations, as only about 20% of patients with NSCLC respond to anti-PD-1/PD-L1 antibodies (Lung cancer in never smokers—the East Asian experience, 2018).
+
+It's worth noting that never-smoking East Asian patients with NSCLC do not seem to be the beneficial population for immunotherapy, as they have a lower total mutation burden and fewer neoantigens, which are recognized by T cells and enhance tumor immunogenicity (Lung cancer in never smokers
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer provides accurate information about the top three treatments for never-smoker lung cancer, including EGFR tyrosine kinase inhibitors, ALK inhibitors, and immunotherapy with immune checkpoint blockade targeting the PD-1/PD-L1 axis, and cites the same source as the true answer.
+bot_answer:The readings in this class cover topics such as how language influences patients' access to cancer care, barriers to early presentation and diagnosis of lung cancer, and the timeliness of diagnosis of lung cancer. The readings include articles by Chen et al, Cassim et al, and Suchsland et al, which discuss the impact of language on cancer care access, the barriers to early presentation and diagnosis of lung cancer, and the use of natural language processing to extract information from electronic medical records, respectively. (Chen et al, 2023; Cassim et al, 2019; Suchsland et al, 2022)
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately summarizes the topics covered in the readings, including the impact of language on cancer care access, barriers to early presentation and diagnosis of lung cancer, and the timeliness of diagnosis of lung cancer, and correctly cites the relevant articles.
+bot_answer:Women who have never smoked, particularly those of East Asian ancestry, are at a higher risk of developing lung cancer. (LoPiccolo et al, 2024)
+grade:```
+
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately identifies the at-risk population as women who have never smoked, particularly those of East Asian ancestry, which aligns with the true answer.
+bot_answer:I'm sorry, I don't have enough information on that topic.
+grade:```
+
+GRADE: Correct
+
+JUSTIFICATION: The student's answer matches the true answer, indicating a lack of knowledge on the topic.

@@ -1,0 +1,65 @@
+bot_answer:The class is about lung cancer, and it is taught by Professor Bryant Lin at Stanford University. The class is 60 minutes long, and the lectures are available on the Mediasite platform. The class covers various topics related to lung cancer, including diagnosis and screening, culturally attuned interventions to support caregiving in cancer, and system improvement and quality and safety. The class also features guest speakers, including patients who share their own stories of living with cancer. The class is designed to be interactive, with opportunities for students to ask questions and provide feedback. (Lecture 1, 0-2 minutes; Lecture 1, 2-5 minutes; Lecture 4, 0-2 minutes)
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately summarizes the class, covering the main topics and format, and does not contain any conflicting information.
+bot_answer:The first half of Lecture 1 covers the introduction to the class, attendance, assignments, and logistics, as well as a discussion on the importance of early diagnosis and screening for lung cancer (Lecture 1, 0-30 minutes).
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately covers the main topics discussed in the first half of Lecture 1, including the introduction, logistics, and importance of early diagnosis and screening for lung cancer, even if it omits some details.
+bot_answer:At the end of Lecture 1, the discussion is about the logistics of the class, including attendance, assignments, and Canvas usage (Lecture 1, 2-5 minutes). The instructor also thanks the teaching assistants for their help in making the class possible and expresses gratitude to the students for signing up for the class (Lecture 1, 2-5 minutes). Additionally, the instructor mentions that the class is being recorded and will be made available to those who are not officially enrolled (Lecture 1, 5-7 minutes).
+grade:```
+
+GRADE: Incorrect
+
+JUSTIFICATION: The student answer does not match the true answer, discussing logistics and class details instead of risk factors of lung cancer and lung cancer screening.
+bot_answer:Doctors diagnose lung cancer through various methods, including low dose computed tomography (LDCT) scans, chest X-rays, and biopsies (Lecture 1, 39-41 minutes). The Lung Rad system is used to classify findings from LDCT scans, with classifications ranging from 0 to 4X depending on the level of suspicion (Lecture 1, 39-41 minutes). Symptoms such as coughing, chest pain, and weight loss can be indicative of lung cancer, but these symptoms can be non-specific and may be misinterpreted by both patients and healthcare providers (Cassim et al, 2019). A study found that the median time interval from initial clinical presentation to chest CT or chest X-ray imaging was 291 days, and from initial clinical presentation to specialist visit was 236 days (Suchsland et al, 2022). Another study found that lung cancer symptoms can be identified over a year prior to diagnosis using Natural Language Processing (NLP) (Suchsland et al, 2022). 
+
+It's worth noting that the diagnosis of lung cancer can be challenging due to non-specific clinical presentation, and there is a need for more research on clinical quality measures (CQMs) to improve the timeliness of diagnosis (Suchsland et al, 2022). Additionally, patient and carer perceived barriers to early presentation and diagnosis of lung cancer include issues relating to delivery and healthcare policy, and barriers to access, such as difficulty making or accessing appointments, discontinuity of care, and limited access to health care (Cassim et al, 2019). 
+
+For further information on lung cancer diagnosis, you can refer to the National Lung Screening Trial, which found that annual LDCT decreased lung cancer mortality by 20% (Slides: Lung cancer staging and screening). You can also refer to the American Cancer Society's guidelines for lung cancer screening, which recommend annual LDCT for heavy smokers aged 50-80 years old (Slides: Lung cancer staging and screening).
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately describes the methods used to diagnose lung cancer, including LDCT scans, chest X-rays, and biopsies, and also provides additional relevant information about the challenges of diagnosis and the need for improved clinical quality measures.
+bot_answer:The difficulties with lung cancer diagnosis include non-specific clinical presentation, lack of clinical quality measures (CQMs) to identify areas for practice improvement in diagnosis, and barriers to access, such as difficulty making or accessing appointments, discontinuity of care, and limited access to healthcare (Suchsland et al, 2022; Cassim et al, 2019). Additionally, patient and carer perceived barriers to early presentation and diagnosis of lung cancer include issues relating to delivery and healthcare policy, and barriers to access, such as difficulty making or accessing appointments, discontinuity of care, and limited access to healthcare (Cassim et al, 2019). The lack of association between time to diagnosis and stage is also a challenge, and the use of Natural Language Processing (NLP) may help identify symptoms/signs from free text clinical fields (Suchsland et al, 2022). Furthermore, the diagnosis of lung cancer can be challenging due to non-specific clinical presentation, and there is a need for more research on clinical quality measures (CQMs) to improve the timeliness of diagnosis (Suchsland et al, 2022).
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately lists several difficulties with lung cancer diagnosis, including non-specific clinical presentation, barriers to access, and lack of clinical quality measures, which are all supported by the true answer.
+bot_answer:The top three treatments for never-smoker lung cancer are (Lung cancer in never smokers—the East Asian experience, 2018):
+
+1. EGFR tyrosine kinase inhibitors (EGFR-TKIs) for patients with EGFR sensitizing mutations, which are the most common driver gene found in never-smoker adenocarcinoma from East Asia, constituting 60-78% of this subgroup (Lung cancer in never smokers—the East Asian experience, 2018).
+2. Crizotinib for patients with ALK rearrangement, which defines another distinct subtype of patients with NSCLC, accounting for about 5% of all NSCLC cases (Lung cancer in never smokers—the East Asian experience, 2018).
+3. Alectinib for patients with ALK-positive NSCLC, which has shown high anti-tumor activity both in ALK inhibitor-naïve and crizotinib-resistant patients (Lung cancer in never smokers—the East Asian experience, 2018).
+
+Note: These treatments are specifically mentioned in the context of never-smoker lung cancer in East Asian patients, and may not be applicable to all never-smoker lung cancer patients.
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer correctly identifies the top three treatments for never-smoker lung cancer, including EGFR-TKIs, crizotinib, and alectinib, which align with the true answer, despite some differences in phrasing and additional information provided.
+bot_answer:EGFR tyrosine kinase inhibitors (EGFR-TKIs) are the most important targeted therapy in lung adenocarcinoma from East Asian never-smokers, with approximately 70% of these patients having the opportunity to receive EGFR-TKI treatment (Lung cancer in never smokers—the East Asian experience, 2018). Several randomized phase III trials have consistently demonstrated that gefitinib, erlotinib, and afatinib are more effective in terms of objective response rate (ORR) and progression-free survival (PFS), and better tolerated than standard platinum-based doublet chemotherapy in advanced NSCLC patients harboring EGFR activating mutation (Lung cancer in never smokers—the East Asian experience, 2018). 
+
+Crizotinib is an oral small-molecule TKI of ALK, MET, and ROS1 kinases and has been approved for the first-line treatment of advanced ALK-rearranged NSCLC (Lung cancer in never smokers—the East Asian experience, 2018). Alectinib is a highly selective ALK inhibitor with high brain-penetrant that has shown high anti-tumor activity both in ALK inhibitor-naïve and crizotinib-resistant patients (Lung cancer in never smokers—the East Asian experience, 2018). The J-ALEX trial showed the superiority of alectinib over crizotinib in terms of PFS, and the results of J-ALEX trial were further confirmed in ALEX trial (Lung cancer in never smokers—the East Asian experience, 2018).
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately describes the targeted therapies, including EGFR-TKIs and ALK inhibitors, and their effectiveness in treating lung adenocarcinoma in East Asian never-smokers, matching the factual information provided in the true answer.
+bot_answer:The readings in this class include "Hidden Disparities: How Language Influences Patients’ Access to Cancer Care" by Chen et al, "Patient and carer perceived barriers to early presentation and diagnosis of lung cancer: a systematic review" by Cassim et al, and "How Timely Is Diagnosis of Lung Cancer? Cohort Study of Individuals with Lung Cancer Presenting in Ambulatory Care in the United States" by Suchsland et al. (Chen et al, 2023; Cassim et al, 2019; Suchsland et al, 2022)
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately lists the readings in the class, including the authors and publication years, which matches the factual information provided in the true answer.
+bot_answer:Approximately two-thirds of LCINS cases occur in women, making women who have not smoked more than twice as likely to develop lung cancer than men who have not smoked (LoPiccolo et al, 2024).
+grade:```
+
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately states that women who have not smoked are more than twice as likely to develop lung cancer than men who have not smoked, which is the key point of the true answer.
+bot_answer:I'm sorry, I don't have enough information on that topic.
+grade:```
+
+GRADE: Correct
+
+JUSTIFICATION: The student's answer matches the true answer, indicating a lack of knowledge on the topic.

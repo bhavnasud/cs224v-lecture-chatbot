@@ -1,0 +1,65 @@
+bot_answer:"The class is about lung cancer, specifically non-small cell lung cancer, and the instructor, Professor Bryant Lin, shares his personal experience as a patient with this type of cancer. The class covers topics such as diagnosis, screening, and treatment options, as well as the importance of culturally attuned interventions to support caregiving in cancer. The instructor also discusses the complexity of the healthcare system and the challenges of navigating it as a patient. The class includes guest speakers, such as Brian Fees, who wrote a graphic novel about his mother's experience with cancer, and Lauren Tober, who teaches art and anatomy. The class also has a special session on cancer storytelling, where patients and caregivers share their own stories. The instructor emphasizes the importance of attendance, assignments, and feedback, and encourages students to ask questions and engage with the material. The class is recorded and made available to students who are unable to attend in person. (Lecture 1, 1-3 minutes, Lecture 4, 1-3 minutes, Lecture 3, 12-14 minutes)
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately summarizes the class, covering the main topics and unique aspects of the course, without any conflicting statements.
+bot_answer:The first half of lecture 1 covers the introduction to the class, including the instructor's personal experience with lung cancer, the course objectives, and the logistics of the class, such as attendance, assignments, and feedback (Lecture 1, 1-3 minutes, Lecture 1, 2-5 minutes). The instructor, Professor Bryant Lin, also discusses the importance of attendance, being present, and being self-conscious, as well as the provision of masks and the recording of the class (Lecture 1, 1-3 minutes). Additionally, the instructor introduces the teaching assistants, Longshaw, Richard, and Steven, and thanks them for their help in making the class possible (Lecture 1, 2-5 minutes). The instructor also mentions the limited space in the class and asks non-enrolled students to email them for recordings (Lecture 1, 0-2 minutes). The first half of the lecture also covers the instructor's personal story of being diagnosed with stage 4 cancer and their experience as a patient (Lecture 1, 7-9 minutes). (Lecture 1, 0-30 minutes)
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately covers all the main points discussed in the first half of Lecture 1, including the introduction, logistics, instructor's personal experience, and importance of attendance, without any conflicting statements.
+bot_answer:At the end of Lecture 1, Professor Lin thanks the teaching assistants, Longshaw, Richard, and Steven, for making the class possible and appreciates their volunteer work in putting the class together (Lecture 1, 2-5 minutes). He also mentions that he wants to start the class on time and maximize the 50 minutes they have each week, so he encourages students to grab food and take a seat before the class starts (Lecture 1, 2-5 minutes). Additionally, Professor Lin introduces Lisa Kim, who works at Stanford and does a fantastic piece called "90 Seconds with Lisa Kim," and mentions that Steven is doing a high-quality recording for the class to make and distribute later (Lecture 1, 5-7 minutes). He also thanks the students for signing up for the class and expresses his honor that they would want to take his class, despite having great choices (Lecture 1, 5-7 minutes).
+grade:```
+GRADE: Incorrect
+
+JUSTIFICATION: The student answer does not mention the risk factors of lung cancer, lung cancer screening, or the NLST study, which are the topics discussed at the end of Lecture 1.
+bot_answer:Doctors diagnose lung cancer through a combination of methods, including clinical presentation, chest imaging, specialist consultation, and diagnostic confirmation (Suchsland et al, 2022). The most common symptoms prior to diagnosis are cough, shortness of breath, and fatigue (Suchsland et al, 2022). Lung cancer screening using low-dose computed tomography (LDCT) can help detect lung cancer at an earlier stage and reduce mortality (N Engl J Med 2011;365:395-409). However, there are challenges to implementing lung cancer screening, including radiation exposure, false positives, overdiagnosis, incidental findings, cost, and anxiety (JAMA Intern Med. 2024;184(8):882-891). The Lung-RADS system is used to classify findings from LDCT scans, and management depends on the level of suspicion (N Engl J Med 2011;365:395-409). 
+
+In addition to these methods, doctors may also use other diagnostic tools such as positron emission tomography (PET) scans, biopsies, and surgical removal of nodules (Slides: Lung cancer staging and screening). The time interval from diagnosis to treatment initiation can vary, but it is typically around 7-12 days (Suchsland et al, 2022).
+
+It's worth noting that there are barriers to early presentation and diagnosis of lung cancer, including patient factors, system factors, and tumor factors (Cassim et al, 2019). These barriers can include issues related to the quality of the relationship between patients and their general practitioners (GPs), difficulty making or accessing appointments, discontinuity of care, long waiting times, and limited access to healthcare (Cassim et al, 2019). Addressing these barriers is critical to improving survival rates for lung cancer patients.
+
+References:
+Cassim et al, 2019
+Suchsland et al, 2022
+Slides: Lung cancer staging and screening
+N Engl J Med 2011;365:395-409
+JAMA Intern Med. 2024;184(8):882-891
+grade:```
+
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately describes the methods used to diagnose lung cancer, including clinical presentation, chest imaging, specialist consultation, and diagnostic confirmation, and provides additional relevant information about lung cancer screening and barriers to early diagnosis.
+bot_answer:Barriers to early presentation and diagnosis of lung cancer include patient factors, system factors, and tumour factors. Patient factors include a lack of awareness of lung cancer symptoms and a tendency to misinterpret or misattribute symptoms. System factors include issues related to the quality of the relationship between patients and their general practitioners (GPs), difficulty making or accessing appointments, discontinuity of care, long waiting times, and limited access to healthcare. Tumour factors include the fact that lung cancer symptoms can be different from person to person, and while most people show at least some early symptoms, some show none. Additionally, symptoms particular to lung cancer may be subtle and not directly related to the lungs and chest. (Cassim et al, 2019)
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately lists the barriers to early presentation and diagnosis of lung cancer, including patient factors, system factors, and tumour factors, which aligns with the true answer.
+bot_answer:I'm sorry, I don't have enough information on that topic.
+grade:```
+
+GRADE: Incorrect
+
+JUSTIFICATION: The student answer indicates a lack of knowledge on the topic, which is not a correct answer.
+bot_answer:I apologize, but I'm unable to provide a detailed answer to your question as the context provided does not contain relevant information on the topic of never-smoker lung cancer treatments. The context appears to be a collection of readings and lectures related to lung cancer, but it does not provide specific information on the top three treatments for never-smoker lung cancer. If you could provide more context or clarify your question, I would be happy to try and assist you further.
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer is Correct because it acknowledges the lack of context and information to provide a detailed answer, and it does not provide any conflicting or incorrect information.
+bot_answer:The readings in this class include articles such as "Hidden Disparities: How Language Influences Patients’ Access to Cancer Care" by Chen et al, "How Timely Is Diagnosis of Lung Cancer? Cohort Study of Individuals with Lung Cancer Presenting in Ambulatory Care in the United States" by Suchsland et al, and "Patient and carer perceived barriers to early presentation and diagnosis of lung cancer: a systematic review" by Cassim et al. (Chen et al, 2023; Suchsland et al, 2022; Cassim et al, 2019)
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately lists the articles read in the class, including their authors and publication years, which aligns with the factual information provided in the true answer.
+bot_answer:According to the provided context, the population most at risk for developing never smoker lung cancer are women, particularly those of Asian ancestry. Approximately two-thirds of LCINS cases occur in women, making women who have not smoked more than twice as likely to develop lung cancer than men who have not smoked. (LoPiccolo et al, 2024)
+grade:```
+
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately identifies the population most at risk for developing never smoker lung cancer, which is women, particularly those of Asian ancestry, and provides additional relevant information that does not contradict the true answer.
+bot_answer:I'm sorry, I don't have enough information on that topic.
+grade:```
+
+GRADE: Correct
+
+JUSTIFICATION: The student's answer matches the true answer, indicating a lack of knowledge on the topic.

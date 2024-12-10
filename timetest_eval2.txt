@@ -1,0 +1,84 @@
+bot_answer:I'm sorry, I don't have enough information on that topic.
+grade:```
+
+GRADE: Correct
+JUSTIFICATION: The student explicitly states they lack information on the topic, which is a truthful and humble response, rather than providing incorrect information.
+bot_answer:In the first half of lecture 1, the following topics are discussed:
+
+* Introduction to the course and the instructor, Prof. Bryant Lin, who is a primary care doctor and has been diagnosed with stage 4 cancer (time range: 7-9 minutes)
+* The importance of the class and the instructor's personal connection to the topic of cancer (time range: 7-9 minutes)
+* The instructor's diagnosis and experience with non-small cell lung cancer, and how this experience has given him a unique perspective to share with the class (time range: 6-8 minutes)
+* The instructor's goals for the class, including wanting to inspire students to go into cancer care and research (time range: 6-8 minutes)
+* The instructor's personal story and why he decided to start the class (time range: 5-7 minutes)
+* Information about the course, including the attendance policy, assignments, and login codes (time range: 2-5 minutes)
+* Introduction to the teaching assistants, Longshaw, Richard, and Steven, and their role in the class (time range: 2-5 minutes)
+* Information about the food provided in class and the mixer for medical humanities (time range: 4-6 minutes)
+* Introduction to Dr. Paul Ford, a guest speaker who is a primary care doctor at Stanford and has worked with the sports team (time range: 11-13 minutes)
+* The instructor's experience with a patient and how it relates to the topic of cancer and healthcare access (time range: 9-11 minutes)
+
+Note: The time ranges are estimates based on the provided block metadata and may not be exact.
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately covers all the main points discussed in the first half of Lecture 1, including the introduction, logistics, and the instructor's personal experience with lung cancer, without any conflicting statements.
+bot_answer:At the end of lecture 1, discussions included a reminder about the importance of arriving on time, the announcement of a mixer for medical humanities, a personal story from Professor Lin's experience as a patient, and an introduction to guest speaker Dr. Paul Ford (time range: 55 minutes).
+grade:```
+
+GRADE: Incorrect
+
+JUSTIFICATION: The student answer does not mention the risk factors of lung cancer, lung cancer screening, or the NLST study, which are the topics discussed at the end of lecture 1 according to the true answer.
+bot_answer:Doctors diagnose lung cancer through a combination of physical examination, medical history, imaging tests (such as chest X-rays, CT scans, PET scans, and MRI scans), and laboratory tests (such as biopsies and molecular testing) (Lecture 1, 39-41 minutes). The diagnosis process typically starts with a physical examination and medical history, followed by imaging tests to visualize the lungs and detect any abnormalities. If lung cancer is suspected, a biopsy may be performed to confirm the diagnosis and determine the type of lung cancer. Molecular testing may also be used to identify specific genetic mutations that can inform treatment decisions (Lecture 1, 24-26 minutes).
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately describes the methods used to diagnose lung cancer, including physical examination, medical history, imaging tests, and laboratory tests, which aligns with the true answer.
+bot_answer:The difficulties with diagnosing lung cancer are numerous and complex, involving patient, healthcare provider, and system factors (Cassim et al, 2019; Suchsland et al, 2022). Patients may experience delays in seeking help due to normalization, misattribution, or minimization of symptoms, as well as fear of death, cancer diagnosis, or perceived blame and stigma related to smoking (Cassim et al, 2019). Healthcare providers may lack knowledge or awareness of lung cancer symptoms and treatment options, leading to inadequate diagnosis and delayed referrals (Cassim et al, 2019). System factors, including access to healthcare, waiting times, and difficulty in getting referrals, can also hinder timely diagnosis (Cassim et al, 2019). Additionally, the lack of effective clinical quality measures (CQMs) for lung cancer diagnosis in the US makes it challenging to track and improve diagnostic processes (Suchsland et al, 2022).
+
+The US has no widely accepted CQMs for the diagnosis of lung cancer, and efforts are needed to develop and test interventions to improve the detection of individuals with lung cancer (Suchsland et al, 2022). Current guidelines for lung cancer screening, developed from clinical trials such as the National Lung Screening Trial, have been shown to reduce lung cancer mortality but have been implemented slowly, with low screening rates among eligible populations (Lecture 1, 38-40 minutes).
+
+Future research should focus on addressing these barriers and improving lung cancer diagnosis, particularly among high-risk populations such as heavy smokers and Asian never smokers (Lecture 1, 43-45 minutes; Lecture 5, 32-37 minutes). Additional research is needed to develop effective CQMs, improve patient and healthcare provider awareness of lung cancer symptoms and treatment options, and enhance access to healthcare services. Addressing these challenges can lead to earlier detection and improved survival rates for patients with lung cancer (Lecture 1, 34-37 minutes; Suchsland et al, 2022).
+
+References:
+Cassim et al. (2019). Patient and carer perceived barriers to early presentation and diagnosis of lung cancer: a systematic review. PubMed.
+Lecture 1, 34-37 minutes. Diagnosis and Screening.
+Lecture 5, 32-37 minutes. Epidemiology and Cultural Considerations.
+Suchsland et al. (2022). How Timely Is Diagnosis of
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately lists various difficulties with diagnosing lung cancer, including patient, healthcare provider, and system factors, which aligns with the true answer's mention of barriers to early diagnosis.
+bot_answer:The top three treatments for never-smoker lung cancer are: 1.) EGFR tyrosine kinase inhibitors (EGFR-TKIs), such as gefitinib, erlotinib, and afatinib, which have been shown to be more effective and better tolerated than standard platinum-based doublet chemotherapy in advanced NSCLC patients harboring EGFR activating mutations. 2.) Targeted therapy inhibiting specific oncogenic mutant kinases, such as ALK rearrangements, ROS1 rearrangements, and RET rearrangements, which have been shown to be effective in patients with these mutations. 3.) Immunotherapy with immune checkpoint blockade, such as pembrolizumab, which has been approved as first-line therapy for advanced NSCLC patients with PD-L1 positive tumors. However, it is important to note that the effectiveness of these treatments may vary depending on the specific mutation or biomarker present in the patient's tumor. (Source: "Lung cancer in never smokers—the East Asian experience", 2018)
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately lists the top three treatments for never-smoker lung cancer, including EGFR-TKIs, targeted therapy for specific oncogenic mutations, and immunotherapy, which aligns with the true answer. The additional information provided by the student does not contradict the true answer.
+bot_answer:EGFR tyrosine kinase inhibitors (EGFR-TKIs), such as gefitinib, erlotinib, and afatinib, are more effective and better tolerated than standard platinum-based doublet chemotherapy in advanced NSCLC patients harboring EGFR activating mutations. Targeted therapy inhibiting specific oncogenic mutant kinases plays a pivotal role in the treatment of lung adenocarcinoma in never-smoking East Asians. Immunotherapy with immune checkpoint blockade, such as pembrolizumab, may also be a viable treatment option for advanced NSCLC patients with PD-L1 positive tumors.
+
+ALK rearrangement defines another distinct subtype of patients with NSCLC, accounting for about 5% of all NSCLC cases. Crizotinib is an oral small-molecule TKI of ALK, MET, and ROS1 kinases and has been approved for the first-line treatment of advanced ALK-rearranged NSCLC. Alectinib is a highly selective ALK inhibitor with high brain-penetrant that has shown high anti-tumor activity both in ALK inhibitor-naïve and crizotinib-resistant patients.
+
+ROS1 is another RTK that shares extensive amino acid sequence homology with ALK. Clinical characteristics of patients with ROS1 rearrangement are similar to those observed in patients with ALK-rearranged NSCLC. Crizotinib was highly active in patients with ROS1-rearranged NSCLC, with an ORR of 72% and a median PFS of 19.2 months.
+
+METex14 skipping has been identified as a rare oncogenic alteration in NSCLC, with an overall frequency of 2.7-3.0% in Caucasian patients. Among 795 East Asian NSCLC patients, the prevalence of METex14 skipping was 2.1%. Patients with METex14 skipping can derive clinical benefit from MET inhibitors, such as crizotinib and INC280.
+
+HER2 is a member of the EGFR family of RTKs, which also includes EGFR (HER1), HER3, and HER4. The prevalence of HER2 mutations ranges from 2.4% to 5.94% in the Chinese population. HER2 inhibition therapy with small molecular TKIs, such as afatinib, dacomitinib, neratinib, and lapatinib, may represent a promising therapeutic option in patients with HER
+grade:```
+GRADE: Correct
+
+JUSTIFICATION: The student answer provides accurate information about each of the treatments, including EGFR-TKIs, immunotherapy, ALK inhibitors, ROS1, METex14 skipping, and HER2, and does not contain any conflicting statements.
+bot_answer:I'm sorry, I don't have enough information on that topic.
+grade:```
+GRADE: Incorrect
+
+JUSTIFICATION: The student answer does not provide any information about the readings in the class, instead stating a lack of knowledge on the topic.
+bot_answer:The population that is most at risk for developing never smoker lung cancer are women of Asian descent, who make up approximately two-thirds of lung cancer in never smoker (LCINS) cases. They are more than twice as likely to develop lung cancer than men who have never smoked 5. According to a study by LoPiccolo et al, "Approximately two-thirds of LCINS cases occur in women, making women who have not smoked more than twice as likely to develop lung cancer than men who have not smoked 5,11". (LoPiccolo et al, 2024)
+grade:```
+
+GRADE: Correct
+
+JUSTIFICATION: The student answer accurately identifies the population most at risk for developing never smoker lung cancer, which is women who have never smoked, and provides additional information that is consistent with the true answer.
+bot_answer:I'm sorry, I don't have enough information on that topic.
+grade:```
+
+GRADE: Correct
+
+JUSTIFICATION: The student's answer matches the true answer, indicating a lack of knowledge on the topic.
