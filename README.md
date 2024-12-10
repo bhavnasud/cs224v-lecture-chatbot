@@ -9,3 +9,5 @@ To run the MED-275 Chatbot:
 
 Limitations:
 Lecture 2 was missing an audio recording, so the chatbot is unable to answer questions about lecture 2. Feel free to ask about it though to see how our chatbot responds when it does not have sufficient information. Lectures 1,3,4,5,6 are all fair game. 
+
+Demo Video: https://drive.google.com/file/d/1YaBHZOh_AqTa4nnVkp_8X3MSj5gYFpiR/view?usp=sharing
