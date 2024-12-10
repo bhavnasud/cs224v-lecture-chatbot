@@ -8,7 +8,6 @@ import os
 
 os.environ["TOGETHER_API_KEY"] = "30cde163d78fa4c02d653ab94957386b6dcfb1c370e2a04c8678dc17197794e1"
 
-# Initialize your chatbot with the API key
 chatbot_v4 = Chatbot_v4(api_key=os.environ["TOGETHER_API_KEY"]) 
 chatbot_v5 = Chatbot_v5(api_key=os.environ["TOGETHER_API_KEY"])
 chatbot_v6 = Chatbot_v6(api_key=os.environ["TOGETHER_API_KEY"])
